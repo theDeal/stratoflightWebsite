@@ -11,7 +11,7 @@ L.tileLayer(tileURL, {
 
 
 // Set the view point to auto
-map.locate({setView: true, maxZoom: 9});
+// map.locate({setView: true, maxZoom: 9});
 
 // Fetching data from API
 
@@ -28,6 +28,8 @@ async function fetchdata (){
         displayinformation(data)
     });
 }
+
+
 
 function displayinformation(data) {
     console.log(data);
@@ -55,14 +57,15 @@ function displayinformation(data) {
         })
         console.log(dateandtimegemany);
         console.log(index);
-        marker.bindPopup('<h1 class="title">Punkt '+ index + '</h1><p class="text">lol</p> Hier wurde der Ballon Geortet um:' + dateandtimegemany +'<br>');
+        marker.bindPopup('<h1 class="title">Punkt '+ index + '</h1><p class="text">lol</p> Hier wurde der Ballon Geortet um:' + dateandtimegemany +'<br> Die Batterie hatte einen Status von: ' + message.batteryState);
         
     });
 }
 
+// create a red polygon from an array of LatLng points
+var latlngs = [[37, -109.05],[41, -109.03],[41, -102.05],[37, -102.04]];
 
-    // for ( item of data.response.messages.message) {
-    
-        
-    
-    // }
+var polygon = L.polygon(latlngs, {color: 'red'}).addTo(map);
+
+// zoom the map to the polygon
+map.fitBounds(polygon.getBounds());
