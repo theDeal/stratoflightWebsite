@@ -19,12 +19,25 @@ const apiKEY = "0sJDTpkjL9xgHnZZTT9vajCQfnPnlvTIx"
 
 fetchdata();
 
+
+// function for Fetching the Data from the API
 async function fetchdata (){
     const apiURL = 'https://api.findmespot.com/spot-main-web/consumer/rest-api/2.0/public/feed/' + apiKEY + '/message.json';
     const response = await fetch(apiURL)
     const data = await response.json().then(function(data){
-        console.log(data)
+        displayinformation(data)
     });
+}
+
+function displayinformation(data) {
+    console.log(data);
+    console.log(data.response);
+    console.log(data.response.feedMessageResponse.count); // displays how many points it shows messages
+    console.log(data.response.feedMessageResponse.feed.status); // shows if the Feed is still live
+    console.log(data.response.feedMessageResponse.messages);
+    const messagearray = data.response.feedMessageResponse.messages.message;
+    console.log(messagearray.length)
+    console.log(data.status)
 }
 
 
