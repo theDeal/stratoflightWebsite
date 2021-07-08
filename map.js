@@ -36,15 +36,21 @@ function displayinformation(data) {
     console.log(data.response.feedMessageResponse.feed.status); // shows if the Feed is still live
     console.log(data.response.feedMessageResponse.messages);
     const messagearray = data.response.feedMessageResponse.messages.message;
-    console.log(messagearray.length)
-    console.log(data.status)
+    const lengthofarray = messagearray.length;
+    const lastbaterriestatus = messagearray[lengthofarray-1].batteryState;
+    console.log(lastbaterriestatus)
+// adding all the markers to the Map
+    messagearray.forEach(message => {
+        const marker = L.marker([message.latitude, message.longitude]).addTo(map);
+        const dateandtime = new.Date(message.dateTime);
+        marker.bindPopup('<h1 class="title">'+ message.dateTime + '</h1><p class="text">' + message.dateTime +'</p><br><img width="100%" class="image" src="' + item.imageurl + '" /><br><a class="btn" href="' + item.link + '">Website</a><br />');
+        
+    });
 }
 
 
     // for ( item of data.response.messages.message) {
     
         
-    //     const marker = L.marker([item.latitude, item.longitude]).addTo(map);
     
-    //     // marker.bindPopup('<h1 class="title">'+ item.name + '</h1><p class="text">' + item.description +'</p><br><img width="100%" class="image" src="' + item.imageurl + '" /><br><a class="btn" href="' + item.link + '">Website</a><br />');
     // }
