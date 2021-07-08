@@ -40,10 +40,22 @@ function displayinformation(data) {
     const lastbaterriestatus = messagearray[lengthofarray-1].batteryState;
     console.log(lastbaterriestatus)
 // adding all the markers to the Map
-    messagearray.forEach(message => {
+    messagearray.forEach((message, index) => {
         const marker = L.marker([message.latitude, message.longitude]).addTo(map);
-        const dateandtime = new.Date(message.dateTime);
-        marker.bindPopup('<h1 class="title">'+ message.dateTime + '</h1><p class="text">' + message.dateTime +'</p><br><img width="100%" class="image" src="' + item.imageurl + '" /><br><a class="btn" href="' + item.link + '">Website</a><br />');
+        // format of date and time "2021-07-08T10:22:42+0000"
+        var dateandtime = new Date(message.dateTime);
+        var dateandtimegemany = dateandtime.toLocaleString('de-DE', {
+            weekday: 'short', // long, short, narrow
+            day: 'numeric', // numeric, 2-digit
+            year: 'numeric', // numeric, 2-digit
+            month: 'long', // numeric, 2-digit, long, short, narrow
+            hour: 'numeric', // numeric, 2-digit
+            minute: 'numeric', // numeric, 2-digit
+            second: 'numeric', // numeric, 2-digit
+        })
+        console.log(dateandtimegemany);
+        console.log(index);
+        marker.bindPopup('<h1 class="title">Punkt '+ index + '</h1><p class="text">lol</p> Hier wurde der Ballon Geortet um:' + dateandtimegemany +'<br>');
         
     });
 }
