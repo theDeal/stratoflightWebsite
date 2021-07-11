@@ -1,0 +1,17 @@
+{
+  "name": "website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "tailwindcss build -i src/styles.css -c ./tailwind.config.js -o public/styles.css --watch",
+    "live-server": "live-server ./public"
+  },
+  "author": "Carlo von Reyher",
+  "license": "ISC",
+  "dependencies": {
+    "live-server": "^1.2.1",
+    "tailwind": "^4.0.0",
+    "tailwindcss": "^2.2.4"
+  }
+}
