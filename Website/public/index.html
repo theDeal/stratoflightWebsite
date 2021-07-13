@@ -8,8 +8,12 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body class="dark bg-black">
+    <div class="bg-black w-full h-100">
+
+    </div>
+
     <!-- Desktop Navigation -->
-    <div class="header p-8 absolute z-50  md:grid-cols-12 md:grid-rows-1 w-full hidden md:grid">
+    <div class="topbottom header p-8 absolute z-50  md:grid-cols-12 md:grid-rows-1 w-full hidden md:grid">
         <div class="logo md:col-start-2 md:col-span-1">
             <img class="z-50" style="width: 70px;" src="./assets/Mission-THEO-1-THG-Space-Agency-SVG.svg" alt="Logo">
         </div>
@@ -24,7 +28,7 @@
     </div>
     <!-- Mobile Navigation -->
      <!-- Top Bar -->
-    <div class="md:hidden p-5 w-full absolute z-50">
+    <div class="md:hidden p-5 w-full absolute z-50 topbottom">
         <div class="flex w-full justify-between items-center">
             <div class="logo">
                 <img src="./assets/Mission-THEO-1-THG-Space-Agency-SVG.svg" alt="Logo THG Space Agency" style="height: 60px;">
@@ -61,7 +65,7 @@
     <!-- Video Wrapper with Live Countdown -->
     <div class="videowrapper w-full h-screen overflow-hidden z-10">
         <div class="h-screen w-full absolute bg-gray-900 bg-opacity-50 justify-center flex items-center md:block">
-            <div class="p-5 md:absolute md:bottom-20 md:left-2 md:p-10">
+            <div class="p-5 md:absolute md:bottom-20 md:left-2 md:p-10 bottomtop">
                 <h1 class="text-white text-2xl font-sans pb-3">Start</h1>
                 <p id="countdown" class="text-white text-4xl font-mono md:text-6xl"></p>
 
@@ -98,7 +102,7 @@
     <!-- Second Website Block -->
     <div class=" bg-gray-900 dark:bg-black md:h-screen grid md:grid-rows-6 gird-cols-1 md:grid-cols-12">
         <div class="md:col-start-8 md:col-span-5 md:row-start-1 md:row-span-4 overflow-hidden">
-            <img style="object-fit: cover; height: 100%;" src="./assets/mael-balland-wcBFtctph_M-unsplash.jpg" alt="">
+            <img style="object-fit: cover;" src="./assets/mael-balland-wcBFtctph_M-unsplash.jpg" alt="">
         </div>
         <div class="md:col-start-2 md:col-span-5 md:row-start-3 md:row-span-4 p-5">
             <div class="mt-5 md:mt-0 mb-4 flex items-center text-2xl font-sans text-gray-200"><img src="./assets/iconposition.svg" class="mr-2" style="animation: pulse 1s infinite alternate forwards; height:15px;" alt=""><a href="#" class="hover:text-red-500">Jetzt Live</a></div>
@@ -115,7 +119,7 @@
 
     <div class=" bg-white dark:bg-gray-900 grid md:grid-rows-6 gird-cols-1 md:grid-cols-12 md:h-screen">
         <div class="md:col-start-1 md:col-span-6 md:row-start-1 md:row-end-7 overflow-hidden">
-            <img style="object-fit: cover; height: 100%;" src="./assets/brands-people-br2HgQuvq6I-unsplash.jpg" alt="Film Production">
+            <img style="object-fit: cover;" src="./assets/brands-people-br2HgQuvq6I-unsplash.jpg" alt="Film Production">
         </div>
         <div  class="md:col-start-8 md:col-span-4 md:row-start-3 md:row-span-4 p-4 md:p-0">
             <h1 class=" mb-2 text-4xl md:text-5xl text-gray-900 dark:text-white pb-2">Film Dokumentation</h1>
@@ -154,6 +158,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/ScrollTrigger.min.js"></script>
     <script src="./mobilenavigation.js"></script>
+    <script src="./loadinganimations.js"></script>
     <script src="./homepage.js"></script>
 </body>
 </html>
