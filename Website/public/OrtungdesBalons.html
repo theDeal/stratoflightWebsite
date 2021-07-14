@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ortung des Balons</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+</head>
+<style>
+   model-viewer#reveal {
+          --poster-color: transparent;
+          width: 100%;
+          height: 100vh;
+    }
+</style>
+<body>
+    <div class=" bg-gray-800 dark:bg-black h-100 w-full">
+      <model-viewer id="reveal" loading="eager" camera-controls auto-rotate poster="./assets/3d-model/hgf.gltf" src="./assets/3d-model/hgf.glb" alt="A 3D model of a shishkebab"></model-viewer>
+    </div>
+</body>
+</html>

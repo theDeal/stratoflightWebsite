@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type" : "module",
   "scripts": {
     "build-css": "tailwindcss build -i src/styles.css -c ./tailwind.config.js -o public/styles.css --watch",
     "live-server": "live-server ./public"
@@ -12,6 +13,7 @@
   "dependencies": {
     "live-server": "^1.2.1",
     "tailwind": "^4.0.0",
-    "tailwindcss": "^2.2.4"
+    "tailwindcss": "^2.2.4",
+    "three": "^0.130.1"
   }
 }
