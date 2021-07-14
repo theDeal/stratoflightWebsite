@@ -28,47 +28,12 @@ renderer.setPixelRatio(window.devicePixelRatio);
 renderer.setSize( window.innerWidth, window.innerHeight );
 
 // Set the Camera Posititon away from the Center
-camera.position.setZ(30);
+camera.position.setZ(5);
 
 // Render the Scene we created with the Camera
-renderer.render( scene, camera );
+// renderer.render( scene, camera );
 
 // Add a Object
-
-// Creating an Geometrie
-const geometry = new THREE.TorusGeometry( 10, 3, 16, 100);
-
-// Creating an Basic Material
-const material = new THREE.MeshStandardMaterial({ color: 161616, wireframe: false });
-
-// Creating a Mesh out of the Material and the Geometrie
-const tourus = new THREE.Mesh ( geometry, material );
-
-scene.add(tourus)
-
-// Create lighting
-
-const pointLight = new THREE.PointLight(0xffffff); // the 0x is to say that you are useing a HEX number not dec
-
-pointLight.position.set(7,7,7);
-
-const ambientLight = new THREE.AmbientLight(0xffffff);
-
-
-scene.add(pointLight, ambientLight);
-
-
-// Add the Light Helper and Gridhelper
-
-const lightHelper = new THREE.PointLightHelper(pointLight);
-const Gridhelper = new THREE.GridHelper(200, 5);
-scene.add(lightHelper, Gridhelper);
-
-
-// Add the Orbit Controls
-
-const controls = new OrbitControls(camera, renderer.domElement);
-
 
 // Create Random Stars
 
@@ -86,39 +51,60 @@ function addStar() {
 Array(1000).fill().forEach(addStar);
 
 
-// Creating texture background
 
-// const spaceTexture = new THREE.TextureLoader().load('./assets/daniel-olah-HNkgPFBShSw-unsplash.jpg');
 
-// scene.background = spaceTexture;
+
+// Create lighting
+
+const pointLight = new THREE.PointLight(0xf2c811, 1); // the 0x is to say that you are useing a HEX number not dec
+
+pointLight.position.set(5,7,7);
+
+const ambientLight = new THREE.AmbientLight(0xffffff, 1);
+
+
+scene.add(pointLight, ambientLight);
+
+
+// Add the Light Helper and Gridhelper
+
+const lightHelper = new THREE.PointLightHelper(pointLight);
+scene.add(lightHelper);
+
+
+
+
+
+
 
 
 
 // Load a GLTF Model
 
 const loader = new GLTFLoader();
+var satelit;
 
-
-loader.load( './assets/3d-model/hgf.glb', function ( gltf ) {
-
-							
-
+loader.load( './assets/3d-model/Astronaut.glb', function ( gltf ) {
+    
 	scene.add( gltf.scene );
+    satelit = gltf.scene;
 
-	roughnessMipmapper.dispose();
-
+    
+    
 } );
+
+
 
 
 // normaly all the time the Render needs to be called again renderer.render( scene, camera );
 // Thats why you call the animation function once 
 
+// Add the Orbit Controls
+
+const controls = new OrbitControls(camera, renderer.domElement);
+
 function animate() {
     requestAnimationFrame( animate );
-
-    tourus.rotation.x -= 0.01;
-    tourus.rotation.y -= 0.02;
-    tourus.rotation.z -= 0.001;
 
     controls.update();
 
