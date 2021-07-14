@@ -8,6 +8,8 @@ import { OrbitControls } from 'https://cdn.skypack.dev/three@0.130.1/examples/js
 
 import { GLTFLoader } from 'https://cdn.skypack.dev/three@0.130.1/examples/jsm/loaders/GLTFLoader';
 
+// Import GSAP
+
 
 // Creating a new Three JS Scene
 
@@ -21,6 +23,7 @@ const camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.inner
 // Adding a Renerer and apling it to an canvas
 const renderer = new THREE.WebGLRenderer({
     canvas: document.querySelector('#background'),
+    alpha: true,
 });
 
 // Changing the Renderer Ratios
@@ -37,18 +40,18 @@ camera.position.setZ(5);
 
 // Create Random Stars
 
-function addStar() {
-    const geometry = new THREE.SphereGeometry(0.25, 24, 24);
-    const material = new THREE.MeshStandardMaterial( {color: 0xffffff });
-    const star = new THREE.Mesh( geometry, material );
+// function addStar() {
+//     const geometry = new THREE.SphereGeometry(0.25, 24, 24);
+//     const material = new THREE.MeshStandardMaterial( {color: 0xffffff });
+//     const star = new THREE.Mesh( geometry, material );
 
-    const [x, y, z] = Array(3).fill().map(() => THREE.MathUtils.randFloatSpread( 1000 ));
+//     const [x, y, z] = Array(3).fill().map(() => THREE.MathUtils.randFloatSpread( 1000 ));
     
-    star.position.set(x, y, z);
-    scene.add(star);
-}
+//     star.position.set(x, y, z);
+//     scene.add(star);
+// }
 
-Array(1000).fill().forEach(addStar);
+// Array(1000).fill().forEach(addStar);
 
 
 
@@ -90,9 +93,7 @@ loader.load( './assets/3d-model/Astronaut.glb', function ( gltf ) {
     satelit = gltf.scene;
 
     
-    
 } );
-
 
 
 

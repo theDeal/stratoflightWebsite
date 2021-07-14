@@ -5,24 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>THG Stratoflight</title>
+    <link rel="stylesheet" href="./loader.css">
     <link rel="stylesheet" href="styles.css">
 </head>
-<body class="dark bg-black">
-    <div class="bg-black w-full h-100">
+<body class="dark bg-black" data-barba="wrapper">
 
+    <div class=" firstloading bg-black w-full h-full fixed center flex items-center justify-items-center" style="z-index: 200;">
+            <div class="drawing" id="loading">
+                <div class="loading-dot"></div>
+            </div>
+    </div>
+    <div class="loadcontainer bg-black w-full h-0 fixed" style="z-index: 200;">
     </div>
 
     <!-- Desktop Navigation -->
-    <div class="topbottom header p-8 absolute z-50  md:grid-cols-12 md:grid-rows-1 w-full hidden md:grid">
+    <div class="header p-10 absolute z-50  md:grid-cols-12 md:grid-rows-1 w-full hidden md:grid ">
         <div class="logo md:col-start-2 md:col-span-1">
             <img class="z-50" style="width: 70px;" src="./assets/Mission-THEO-1-THG-Space-Agency-SVG.svg" alt="Logo">
         </div>
         <nav class="md:col-start-3 md:col-span-6">
             <ul class="flex text-white items-center ml-5">
-                <li><a href="#" class="font-sans box p-5 hover:text-indigo-500 text-base font-medium">Home</a></li>
+                <li class=""><a href="./" class="font-sans box p-5 hover:text-indigo-500 text-base font-medium">Home</a></li>
                 <li class=""><div class="p-5 flex items-center"><img src="./assets/iconposition.svg" alt="" style="margin-top: 1.5px; height: 15px; animation: pulse 1s infinite alternate forwards;"><a href="map.html" class="pl-2 font-sans box hover:text-indigo-500 text-base font-medium">Live Map</a></div></li>
-                <li><a href="#" class="font-sans box p-5 hover:text-indigo-500 text-base font-medium">Theo 1 Mission</a></li>
-                <li><a href="#" class="font-sans box p-5 hover:text-indigo-500 text-base font-medium">Impressum</a></li>
+                <li class=""><a href="#" class="font-sans box p-5 hover:text-indigo-500 text-base font-medium">Theo 1 Mission</a></li>
+                <li class=""><a href="#" class="font-sans box p-5 hover:text-indigo-500 text-base font-medium">Impressum</a></li>
             </ul>
         </nav>
     </div>
@@ -51,8 +57,8 @@
         </div>
         <div class="overflow-y-auto h-100 navigation text-black dark:text-white mt-5">
             <ul class="p-5">
-                <li class="pb-2" style="transform: translateY(10px); opacity: 0;"><a href="#" class="text-center block w-100 font-sans box p-3 hover:text-indigo-500 text-2xl font-medium">Home</a></li>
-                <li class="pb-2" style="transform: translateY(10px); opacity: 0;"><a href="#" class="text-center block w-100 font-sans box p-3 hover:text-indigo-500 text-2xl font-medium">Karte</a></li>
+                <li class="pb-2" style="transform: translateY(10px); opacity: 0;"><a href="./" class="text-center block w-100 font-sans box p-3 hover:text-indigo-500 text-2xl font-medium">Home</a></li>
+                <li class="pb-2" style="transform: translateY(10px); opacity: 0;"><a href="/map.html" class="text-center block w-100 font-sans box p-3 hover:text-indigo-500 text-2xl font-medium">Karte</a></li>
                 <li class="pb-2" style="transform: translateY(10px); opacity: 0;"><a href="#" class="text-center block w-100 font-sans box p-3 hover:text-indigo-500 text-2xl font-medium">THEO-1 Mission</a></li>
                 <li class="pb-2" style="transform: translateY(10px); opacity: 0;"><a href="#" class="text-center block w-100 font-sans box p-3 hover:text-indigo-500 text-2xl font-medium">About</a></li>
                 <li class="pb-2" style="transform: translateY(10px); opacity: 0;"><a href="#" class="text-center block w-100 font-sans box p-3 hover:text-indigo-500 text-2xl font-medium">Impressum</a></li>
@@ -61,18 +67,20 @@
     </div>
     
 
-  
+    <main data-barba="container" data-barba-namespace="home">
+
+
     <!-- Video Wrapper with Live Countdown -->
     <div class="videowrapper w-full h-screen overflow-hidden z-10">
         <div class="h-screen w-full absolute bg-gray-900 bg-opacity-50 justify-center flex items-center md:block">
-            <div class="p-5 md:absolute md:bottom-20 md:left-2 md:p-10 bottomtop">
+            <div class="p-5 md:absolute md:bottom-20 md:left-2 md:p-10 animatethisonload">
                 <h1 class="text-white text-2xl font-sans pb-3">Start</h1>
                 <p id="countdown" class="text-white text-4xl font-mono md:text-6xl"></p>
 
             </div>
         </div>
         <video style="object-fit: cover;" class="w-full h-screen z-20" src="./assets/Video Background Website Space.mp4" autoplay loop muted type="video/mp4"></video>
-        <div class="text-center py-4 lg:px-4 absolute bottom-0 w-full animate-none md:animate-bounce">
+        <div class="animatethisonload text-center py-4 lg:px-4 absolute bottom-0 w-full animate-none md:animate-bounce">
             <a href="map.html">
                 <div class="p-2 bg-indigo-800 items-center text-red-100 leading-none lg:rounded-full flex lg:inline-flex" role="alert">
                 <span class="flex rounded-full bg-red-500 uppercase px-2 py-1 text-xs font-bold mr-3">Live</span>
@@ -87,10 +95,10 @@
 
     <!-- First Block of the Website -->
     <div class=" bg-white dark:bg-gray-900 grid md:grid-rows-6 gird-cols-1 md:grid-cols-12 md:h-screen">
-        <div class="md:col-start-2 md:col-span-3 md:row-start-2 md:row-span-5 overflow-hidden">
+        <div class="md:col-start-2 md:col-span-3 md:row-start-2 md:row-span-5 overflow-hidden animatethisonload">
             <img class="" src="./assets/nasa-i9w4Uy1pU-s-unsplash.jpg" alt="Image from Space">
         </div>
-        <div  class="md:col-start-7 md:col-span-4 md:row-start-3 md:row-span-4 p-4 md:p-0">
+        <div  class="md:col-start-7 md:col-span-4 md:row-start-3 md:row-span-4 p-4 md:p-0 animatethisonload">
             <h1 class=" mb-2 text-4xl md:text-5xl text-gray-900 dark:text-white pb-2">Die Theo 1 Mission</h1>
             <p class="pb-3 text-gray-900 dark:text-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae perspiciatis ipsum sunt consequuntur sit sapiente, reprehenderit ea non, recusandae, velit placeat quia totam hic fugit deserunt esse sint aspernatur voluptate.</p>
             <button class="mb-10 bg-indigo-500 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded">
@@ -101,10 +109,10 @@
 
     <!-- Second Website Block -->
     <div class=" bg-gray-900 dark:bg-black md:h-screen grid md:grid-rows-6 gird-cols-1 md:grid-cols-12">
-        <div class="md:col-start-8 md:col-span-5 md:row-start-1 md:row-span-4 overflow-hidden">
+        <div class="md:col-start-8 md:col-span-5 md:row-start-1 md:row-span-4 overflow-hidden animatethisonload">
             <img style="object-fit: cover;" src="./assets/mael-balland-wcBFtctph_M-unsplash.jpg" alt="">
         </div>
-        <div class="md:col-start-2 md:col-span-5 md:row-start-3 md:row-span-4 p-5">
+        <div class="md:col-start-2 md:col-span-5 md:row-start-3 md:row-span-4 p-5 animatethisonload">
             <div class="mt-5 md:mt-0 mb-4 flex items-center text-2xl font-sans text-gray-200"><img src="./assets/iconposition.svg" class="mr-2" style="animation: pulse 1s infinite alternate forwards; height:15px;" alt=""><a href="#" class="hover:text-red-500">Jetzt Live</a></div>
             <h1 class="mb-3 text-4xl text-white">Sehe die Route der Theo-1 Mission</h1>
             <p class="text-white mb-7 mt-3 md:mt-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero eos similique voluptas? Iste porro assumenda magnam placeat quis minima corrupti, laborum sunt a necessitatibus! Impedit eaque soluta neque ab aut. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur modi exceptur Lorem ipsum dolor sit.</p> 
@@ -118,10 +126,10 @@
 
 
     <div class=" bg-white dark:bg-gray-900 grid md:grid-rows-6 gird-cols-1 md:grid-cols-12 md:h-screen">
-        <div class="md:col-start-1 md:col-span-6 md:row-start-1 md:row-end-7 overflow-hidden">
+        <div class="md:col-start-1 md:col-span-6 md:row-start-1 md:row-end-7 overflow-hidden animatethisonload">
             <img style="object-fit: cover;" src="./assets/brands-people-br2HgQuvq6I-unsplash.jpg" alt="Film Production">
         </div>
-        <div  class="md:col-start-8 md:col-span-4 md:row-start-3 md:row-span-4 p-4 md:p-0">
+        <div  class="md:col-start-8 md:col-span-4 md:row-start-3 md:row-span-4 p-4 md:p-0 animatethisonload">
             <h1 class=" mb-2 text-4xl md:text-5xl text-gray-900 dark:text-white pb-2">Film Dokumentation</h1>
             <p class="pb-3 text-gray-900 dark:text-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae perspiciatis ipsum sunt consequuntur sit sapiente, reprehenderit ea non, recusandae, velit placeat quia totam hic fugit deserunt esse sint aspernatur voluptate.</p>
             <button class="mb-10 bg-indigo-500 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded">
@@ -129,6 +137,8 @@
             </button>
         </div>
     </div>
+
+    
 
 <!-- Footer -->
     
@@ -154,11 +164,15 @@
               
         </div>
     </div>
+
     
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js"></script>
+</main>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/@barba/core"></script>
     <script src="./mobilenavigation.js"></script>
-    <script src="./loadinganimations.js"></script>
-    <script src="./homepage.js"></script>
+<script src="./loadinganimations.js"></script>
+<script src="./homepage.js"></script>
+
 </body>
 </html>
