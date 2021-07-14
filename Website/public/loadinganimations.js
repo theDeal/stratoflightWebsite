@@ -8,6 +8,12 @@ function pageTransition() {
         ease: "Expo.easeInOut"
     });
 
+
+}
+
+
+function reversePageTransition() {
+    var tl = gsap.timeline();
     tl.to(".loadcontainer",{
         duration: 1,
         height: "0%",
@@ -21,7 +27,6 @@ function pageTransition() {
         height: "0%"
     });
 }
-
 function firstloadinganimation() {
     var tl = gsap.timeline();
     tl.to(".firstloading",{
@@ -67,6 +72,12 @@ document.addEventListener("DOMContentLoaded", function() {
           async enter(data) {
             animationOpenMenuMobile.reverse();
             contentAnimation();
+            
+          },
+
+          async afterEnter(){
+            reversePageTransition();
+            
           },
           
           async once(data) {
