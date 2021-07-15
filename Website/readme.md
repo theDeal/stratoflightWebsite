@@ -22,6 +22,3 @@ run "npm install"
 ## To create a Build just run
 
 "grunt build"
-
-
-Hallo Carlo, das ist mein Test 
