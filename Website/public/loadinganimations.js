@@ -82,7 +82,7 @@ document.addEventListener("DOMContentLoaded", function() {
           
           async once(data) {
             firstloadinganimation();
-           contentAnimation();
+            contentAnimation();
           },
         }]
       });
