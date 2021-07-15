@@ -10,3 +10,8 @@ run "npm install"
 ## How to start the Live Server:
 
 "npm run live-server"
+
+## To create a Build just run
+
+"grunt build"
+
