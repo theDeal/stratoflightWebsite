@@ -55,6 +55,8 @@ module.exports = function(grunt) {
             {expand: true, cwd: 'public', src: ['**/**/**/*.bin'], dest: 'build'},
             {expand: true, cwd: 'public', src: ['**/**/**/*.svg'], dest: 'build'},
             {expand: true, cwd: 'public', src: ['**/**/**/*.mp4'], dest: 'build'},
+            {expand: true, cwd: 'public', src: ['**/**/**/*.json'], dest: 'build'},
+            {expand: true, cwd: 'public', src: ['**/**/**/*.ico'], dest: 'build'},
        
             // includes files within path and its sub-directories
             {expand: true, cwd: 'public', src: ['**/**/**.css'], dest: 'build'},
