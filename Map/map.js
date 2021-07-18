@@ -32,26 +32,23 @@ async function fetchdata (){
     });
 }
 
-
+var redpoint = L.icon({
+    iconUrl: './assets/iconposition.svg',
+    iconSize:     [20, 20], // size of the icon
+});
 
 function displayinformation(data) {
-    console.log(data);
-    console.log(data.response);
-    console.log(data.response.feedMessageResponse.count); // displays how many points it shows messages
-    console.log(data.response.feedMessageResponse.feed.status); // shows if the Feed is still live
-    console.log(data.response.feedMessageResponse.messages);
     const messagearray = data.response.feedMessageResponse.messages.message;
     const lengthofarray = messagearray.length;
     const lastbaterriestatus = messagearray[lengthofarray-1].batteryState;
-    console.log(lastbaterriestatus)
-
+    document.getElementById("battery").innerHTML = lastbaterriestatus;
     // Creating 3d Array with all Points
     var latlngs = [];
 
     // adding all the markers to the Map
     messagearray.forEach((message, index) => {
         latlngs.push([message.latitude, message.longitude]);
-        const marker = L.marker([message.latitude, message.longitude]).addTo(map);
+        const marker = L.marker([message.latitude, message.longitude], {icon: redpoint}).addTo(map);
         // format of date and time "2021-07-08T10:22:42+0000"
         var dateandtime = new Date(message.dateTime);
         var dateandtimegemany = dateandtime.toLocaleString('de-DE', {
@@ -63,9 +60,7 @@ function displayinformation(data) {
             minute: 'numeric', // numeric, 2-digit
             second: 'numeric', // numeric, 2-digit
         })
-        console.log(dateandtimegemany);
-        console.log(index);
-        marker.bindPopup('<h1 class="title">Punkt '+ index + '</h1><p class="text">lol</p> Hier wurde der Ballon Geortet um:' + dateandtimegemany +'<br> Die Batterie hatte einen Status von: ' + message.batteryState);
+        marker.bindPopup('<h1 class="title">Punkt '+ index + '</h1><p class="text"></p> Hier wurde der Ballon um ' + dateandtimegemany +' Geortet.<br> Die Batterie hatte einen Status von: ' + message.batteryState);
         
     });
 
@@ -76,3 +71,5 @@ function displayinformation(data) {
     // zoom the map to the polygon
     map.fitBounds(polygon.getBounds());
 }
+
+
