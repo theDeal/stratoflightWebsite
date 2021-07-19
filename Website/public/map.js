@@ -18,7 +18,7 @@ L.tileLayer(tileURL, {
 
 // Fetching data from API
 
-const apiKEY = "0sJDTpkjL9xgHnZZTT9vajCQfnPnlvTIx"
+const apiKEY = "0S6TC4kGp3KqyL8R7FtKJA5LapeSWEMkA"
 
 fetchdata();
 
