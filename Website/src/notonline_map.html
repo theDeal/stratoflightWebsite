@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THG Stratoflight | THEO-1 Mission | Live Map</title>
+    <link rel="stylesheet" href="./loader.css">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="apple-touch-icon" sizes="57x57" href="./assets/icons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./assets/icons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./assets/icons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./assets/icons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./assets/icons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./assets/icons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./assets/icons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./assets/icons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/icons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="./assets/icons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./assets/icons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/icons/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#141414">
+    <meta name="msapplication-TileImage" content="./assets/icons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#141414">
+    <meta name="description" content="Live Karte der THEO-1 Mission">
+</head>
+<body class="dark bg-black" data-barba="wrapper">
+
+  <div class=" firstloading bg-black w-full h-full fixed center flex items-center justify-items-center" style="z-index: 220;">
+    <div class="drawing" id="loading">
+        <div class="loading-dot"></div>
+    </div>
+  </div>
+  <div class="loadcontainer bg-black w-full h-0 fixed" style="z-index: 200;">
+  </div>
+
+  <!-- Nav----- -->
+
+
+  <!-- Desktop Navigation -->
+  <div class="topbottom header p-8 absolute z-50  md:grid-cols-12 md:grid-rows-1 w-full hidden md:grid">
+    <div class="logo md:col-start-2 md:col-span-1">
+        <img class="z-50" style="width: 70px;" src="./assets/Mission-THEO-1-THG-Space-Agency-SVG.svg" alt="Logo">
+    </div>
+    <nav class="md:col-start-3 md:col-span-6">
+        <ul class="flex text-white items-center ml-5">
+            <li><a href="./" class="font-sans box p-5 hover:text-indigo-500 text-base font-medium">Home</a></li>
+            <li class=""><div class="p-5 flex items-center"><img src="./assets/iconposition.svg" alt="" style="margin-top: 1.5px; height: 15px; animation: pulse 1s infinite alternate forwards;"><a href="map.html" class="pl-2 font-sans box hover:text-indigo-500 text-base font-medium">Live Map</a></div></li>
+            <li><a href="#" class="font-sans box p-5 hover:text-indigo-500 text-base font-medium">Theo 1 Mission</a></li>
+            <li><a href="./impressum.html" class="font-sans box p-5 hover:text-indigo-500 text-base font-medium">Impressum</a></li>
+        </ul>
+    </nav>
+</div>
+<!-- Mobile Navigation -->
+ <!-- Top Bar -->
+<div class="md:hidden p-5 w-full absolute z-50 topbottom">
+    <div class="flex w-full justify-between items-center">
+        <div class="logo">
+            <img src="./assets/Mission-THEO-1-THG-Space-Agency-SVG.svg" alt="Logo THG Space Agency" style="height: 60px;">
+        </div>
+        <div class="p-2 mr-8 block" id="openbutton">
+            <div class="openbutton">
+                <span class="bg-white block" style="height: 4px; width: 35px;"></span>
+                <span class="bg-white block" style="height: 4px; width: 35px; margin: 5px 0px 0px 0px;"></span>
+            </div>
+        </div>
+    </div>
+</div>
+ <!-- Overlay -->
+ <div class="fixed h-full z-50 bg-white dark:bg-black w-full" style="transform: translateX(100%); opacity: 0;" id="overlaywrapper">
+    <div id="closeButton"class="m-5 p-7 flex justify-end" style="transform: translateY(10px); opacity: 0;">
+        <div class="closebutton block">
+            <span class="bg-black dark:bg-gray-200 block" style="height: 5px; width: 35px; transform: rotate(45deg);"></span>
+            <span class="bg-black dark:bg-gray-200 block" style="height: 5px; width: 35px; transform: translateY(-5px) rotate(-45deg);"></span>
+        </div>
+    </div>
+    <div class="overflow-y-auto h-100 navigation text-black dark:text-white mt-5">
+        <ul class="p-5">
+            <li class="pb-2" style="transform: translateY(10px); opacity: 0;"><a href="./" class="text-center block w-100 font-sans box p-3 hover:text-indigo-500 text-2xl font-medium">Home</a></li>
+            <li class="pb-2" style="transform: translateY(10px); opacity: 0;"><a href="./map.html" class="text-center block w-100 font-sans box p-3 hover:text-indigo-500 text-2xl font-medium">Karte</a></li>
+            <li class="pb-2" style="transform: translateY(10px); opacity: 0;"><a href="#" class="text-center block w-100 font-sans box p-3 hover:text-indigo-500 text-2xl font-medium">THEO-1 Mission</a></li>
+            <li class="pb-2" style="transform: translateY(10px); opacity: 0;"><a href="#" class="text-center block w-100 font-sans box p-3 hover:text-indigo-500 text-2xl font-medium">About</a></li>
+            <li class="pb-2" style="transform: translateY(10px); opacity: 0;"><a href="#" class="text-center block w-100 font-sans box p-3 hover:text-indigo-500 text-2xl font-medium">Impressum</a></li>
+        </ul>
+    </div>
+</div>
+
+<!-- Nav over -->
+
+  <main data-barba="container" data-barba-namespace="map">
+
+
+    <div class="bg-gray-800 dark:bg-black w-full h-screen flex items-center justify-center">
+        <div class="max-w-sm rounded overflow-hidden shadow-lg bg-white dark:bg-gray-800 animatethisonload">
+            <img class="w-full" style="height: 250px; object-fit: cover;" src="./assets/nasa-Yj1M5riCKk4-unsplash (1).jpg" alt="Lost Astronaut">
+            <div class="px-6 py-4">
+              <div class="font-bold text-2xl mb-2 dark:text-white animatethisonload">Ohh...</div>
+              <div class="font-medium dark:text-white animatethisonload">Der Ballon ist noch nicht gestartet</div>
+              <p class="text-gray-700 text-base dark:text-gray-500 animatethisonload">
+                Die Karte ist erst ab dem Zeitpunkt des Startes Live Online. Bisdahin kannst du dir <a href="#" class="font-bold"> hier </a> Informationen zur Mission durchlesen.
+              </p>
+            </div>
+            <div class="text-center p-5 animatethisonload">
+                <a href="./" class=" bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">
+                    Zum Countdown
+                </a>
+            </div>
+          </div>
+    </div>
+
+  
+  
+
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/@barba/core"></script>
+    <script src="./mobilenavigation.js"></script>
+    <script src="./loadinganimations.js"></script>
+</body>
+</html>

@@ -15,6 +15,9 @@ run "npm install"
 
 "npm run build-css"
 
+## Start the Production Compiler for HTML:
+"grunt production"
+
 ## How to start the Live Server:
 
 "npm run live-server"
@@ -22,3 +25,11 @@ run "npm install"
 ## To create a Build just run
 
 "grunt build"
+
+#### Informaitons:
+
+Der Public Ordner wird von dem Live-Server local gehostet für die Production.
+Im ./src Ordner werden alle Files geschrieben. --> Wenn man ein neues HTML file erstellt muss es in das
+Gruntfile eingetragen werden. unter Bake:Prod
+
+Zum erstellen des auf den Server zu bringen File bitte Grunt Build laufen lassen und aus dem  Build ordner die Website kopieren.

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THG Stratoflight Agency</title>
+    <link rel="stylesheet" href="./loader.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="apple-touch-icon" sizes="57x57" href="./assets/icons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./assets/icons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./assets/icons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./assets/icons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./assets/icons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./assets/icons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./assets/icons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./assets/icons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/icons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="./assets/icons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./assets/icons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/icons/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#141414">
+    <meta name="msapplication-TileImage" content="./assets/icons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#141414">
+    <meta name="description" content="Das ist die Website von Stratoflight THG Space Agency, mit der THEO-1 Mission">
+    <meta name="keywords" content="space, school, THEO-1, baloon, Wetterballon, All, Stratosphere">
+    <meta name="google-site-verification" content="dOcoOsoBdpItd6QNITsgQXcXQ1YpJzveMIt4N8j59Ec" />
+    <meta property="og:title" content="THG Space Agency | THEO-1 Mission">
+    <meta property="og:description" content="We gonna go to the Edge of Space. Unser Ziel ist es mit einem Wetterballon zur Grenze des All zu fliegen.">
+    <meta property="og:image" content="http://stratoflight.thg.thomas-rosswog.de/assets/">
+    <meta property="og:url" content="http://stratoflight.thg.thomas-rosswog.de/assets/nasa-i9w4Uy1pU-s-unsplash.jpg">
+    <meta name="twitter:title" content="THG Space Agency | THEO-1 Mission">
+    <meta name="twitter:description" content=" We gonna go to the Edge of Space. Unser Ziel ist es mit einem Wetterballon zur Grenze des All zu fliegen.">
+    <meta name="twitter:image" content="http://stratoflight.thg.thomas-rosswog.de/assets/nasa-i9w4Uy1pU-s-unsplash.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+
+</head>
+<body class="dark bg-black" data-barba="wrapper">
+
+
+    <div class=" firstloading bg-black w-full h-full fixed center flex items-center justify-items-center" style="z-index: 200;">
+            <div class="drawing" id="loading">
+                <div class="loading-dot"></div>
+            </div>
+    </div>
+    <div class="loadcontainer bg-black w-full h-0 fixed" style="z-index: 200;">
+    </div>
+
+    <!-- Desktop Navigation -->
+    <div class="header p-10 absolute z-50  md:grid-cols-12 md:grid-rows-1 w-full hidden md:grid ">
+        <div class="logo md:col-start-2 md:col-span-1">
+            <img class="z-50" style="width: 70px;" src="./assets/Mission-THEO-1-THG-Space-Agency-SVG.svg" alt="Logo">
+        </div>
+        <nav class="md:col-start-3 md:col-span-6">
+            <ul class="flex text-white items-center ml-5">
+                <li class=""><a href="./" class="font-sans box p-5 hover:text-indigo-500 text-base font-medium">Home</a></li>
+                <li class=""><div class="p-5 flex items-center"><img src="./assets/iconposition.svg" alt="" style="margin-top: 1.5px; height: 15px; animation: pulse 1s infinite alternate forwards;"><a href="http://stratoflight.thg.thomas-rosswog.de/map.html" target="_blank" class="pl-2 font-sans box hover:text-indigo-500 text-base font-medium">Live Map</a></div></li>
+                <li class=""><a href="#" class="font-sans box p-5 hover:text-indigo-500 text-base font-medium">Theo 1 Mission</a></li>
+                <li class=""><a href="./impressum.html" class="font-sans box p-5 hover:text-indigo-500 text-base font-medium">Impressum</a></li>
+            </ul>
+        </nav>
+    </div>
+    <!-- Mobile Navigation -->
+     <!-- Top Bar -->
+    <div class="md:hidden p-5 w-full absolute z-50 topbottom">
+        <div class="flex w-full justify-between items-center">
+            <div class="logo">
+                <img src="./assets/Mission-THEO-1-THG-Space-Agency-SVG.svg" alt="Logo THG Space Agency" style="height: 60px;">
+            </div>
+            <div class="p-2 mr-8 block" id="openbutton">
+                <div class="openbutton">
+                    <span class="bg-white block" style="height: 4px; width: 35px;"></span>
+                    <span class="bg-white block" style="height: 4px; width: 35px; margin: 5px 0px 0px 0px;"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+     <!-- Overlay -->
+     <div class="fixed h-full z-50 bg-white dark:bg-black w-full" style="transform: translateX(100%); opacity: 0;" id="overlaywrapper">
+        <div id="closeButton"class="m-5 p-7 flex justify-end" style="transform: translateY(10px); opacity: 0;">
+            <div class="closebutton block">
+                <span class="bg-black dark:bg-gray-200 block" style="height: 5px; width: 35px; transform: rotate(45deg);"></span>
+                <span class="bg-black dark:bg-gray-200 block" style="height: 5px; width: 35px; transform: translateY(-5px) rotate(-45deg);"></span>
+            </div>
+        </div>
+        <div class="overflow-y-auto h-100 navigation text-black dark:text-white mt-5">
+            <ul class="p-5">
+                <li class="pb-2" style="transform: translateY(10px); opacity: 0;"><a href="./" class="text-center block w-100 font-sans box p-3 hover:text-indigo-500 text-2xl font-medium">Home</a></li>
+                <li class="pb-2" style="transform: translateY(10px); opacity: 0;"><a href="http://stratoflight.thg.thomas-rosswog.de/map.html" target="_blank" class="text-center block w-100 font-sans box p-3 hover:text-indigo-500 text-2xl font-medium">Karte</a></li>
+                <!-- <li class="pb-2" style="transform: translateY(10px); opacity: 0;"><a href="#" class="text-center block w-100 font-sans box p-3 hover:text-indigo-500 text-2xl font-medium">THEO-1 Mission</a></li> -->
+                <!-- <li class="pb-2" style="transform: translateY(10px); opacity: 0;"><a href="#" class="text-center block w-100 font-sans box p-3 hover:text-indigo-500 text-2xl font-medium">About</a></li> -->
+                <li class="pb-2" style="transform: translateY(10px); opacity: 0;"><a href="./impressum.html" class="text-center block w-100 font-sans box p-3 hover:text-indigo-500 text-2xl font-medium">Impressum</a></li>
+                <li class="pb-2" style="transform: translateY(10px); opacity: 0;"><a href="https://www.instagram.com/stratoflight.thg" target="_blank" class="text-center block w-100 font-sans box p-3 hover:text-indigo-500 text-2xl font-medium">Instagram</a></li>
+                <li class="pb-2" style="transform: translateY(10px); opacity: 0;"><a href="https://twitter.com/StratoflightTHG" target="_blank" class="text-center block w-100 font-sans box p-3 hover:text-indigo-500 text-2xl font-medium">Twitter</a></li>
+            </ul>
+        </div>
+    </div>
+    
+
+    <main data-barba="container" data-barba-namespace="home">
+
+
+    <!-- Video Wrapper with Live Countdown -->
+    <div class="videowrapper w-full h-screen overflow-hidden z-10">
+        <div class="h-screen w-full absolute bg-gray-900 bg-opacity-50 justify-center flex items-center md:block">
+            <div class="p-5 md:absolute md:bottom-20 md:left-2 md:p-10 animatethisonload">
+                <h1 class="text-white text-2xl font-sans pb-3">Start</h1>
+                <p id="countdown" class="text-white text-4xl font-mono md:text-6xl"></p>
+
+            </div>
+        </div>
+        <video style="object-fit: cover;" class="w-full h-screen z-20" alt="Teaser Video Space THG Stratoflight" src="./assets/Video Background Website Space.mp4" autoplay loop muted type="video/mp4"></video>
+        <div class="animatethisonload text-center py-4 lg:px-4 absolute bottom-0 w-full animate-none md:animate-bounce">
+            <a href="map.html">
+                <div class="p-2 bg-indigo-800 items-center text-red-100 leading-none lg:rounded-full flex lg:inline-flex" role="alert">
+                <span class="flex rounded-full bg-red-500 uppercase px-2 py-1 text-xs font-bold mr-3">Live</span>
+                <span class="font-semibold mr-2 text-left flex-auto">Verfolge den Ballon Live auf einer Karte!</span>
+                <svg class="fill-current opacity-75 h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z"/></svg>
+                </div>
+            </a>
+          </div>
+    </div>
+
+    <!-- Main Website Part -->
+
+    <!-- First Block of the Website -->
+    <div class=" bg-white dark:bg-gray-900 grid md:grid-rows-6 gird-cols-1 md:grid-cols-12 md:h-screen">
+        <div class="md:col-start-2 md:col-span-3 md:row-start-2 md:row-span-5 overflow-hidden animatethisonload">
+            <img class="" src="./assets/nasa-i9w4Uy1pU-s-unsplash.jpg" alt="Image from Space THEO 1 Mission">
+        </div>
+        <div  class="md:col-start-7 md:col-span-4 md:row-start-3 md:row-span-4 p-4 md:p-0 animatethisonload">
+            <h1 class=" mb-2 text-4xl md:text-5xl text-gray-900 dark:text-white pb-2">Die Theo 1 Mission</h1>
+            <p class="pb-3 text-gray-900 dark:text-white">Das Ziel der THEO-1 Mission ist es mit einem Wetterballon zum Rand des All zu fliegen. Wärend dem Flug werden verschiedenen Parameter aufgezeichnet. Dazu zählen der Luftdruck, die Temperatur und die Position sowie Höhe des Balons. Außerdem werden wir einen Kamera auf die Mission schicken, eine 360 Grad Kamera und eine normale Kamera. Das Ziel ist es Interessante Daten zu sammeln und diese auszuwerten. </p>
+            <button class="mb-10 bg-indigo-500 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded">
+                Weitere Informationen zu dieser Mission
+            </button>
+        </div>
+    </div>
+
+    <!-- Second Website Block -->
+    <div class=" bg-gray-900 dark:bg-black md:h-screen grid md:grid-rows-6 gird-cols-1 md:grid-cols-12">
+        <div class="md:col-start-8 md:col-span-5 md:row-start-1 md:row-span-4 overflow-hidden animatethisonload">
+            <img style="object-fit: cover;" src="./assets/mael-balland-wcBFtctph_M-unsplash.jpg" alt="">
+        </div>
+        <div class="md:col-start-2 md:col-span-5 md:row-start-3 md:row-span-4 p-5 animatethisonload">
+            <div class="mt-5 md:mt-0 mb-4 flex items-center text-2xl font-sans text-gray-200"><img src="./assets/iconposition.svg" class="mr-2" style="animation: pulse 1s infinite alternate forwards; height:15px;" alt=""><a href="#" class="hover:text-red-500">Jetzt Live</a></div>
+            <h1 class="mb-3 text-4xl text-white">Sehe die Route der Theo-1 Mission</h1>
+            <p class="text-white mb-7 mt-3 md:mt-0">Wärend des Fluges, kann man hier live die Position des Ballons beobachten. Nach dem Flug werden wir die Daten aufbereiten und man kann die Route hier auch nachverfolgen.</p> 
+            <a href="#" class="mb-5 md:mb-0 bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">
+                Zur Karte
+            </a>
+        </div>
+    </div>
+
+    <!-- third block of the Website -->
+
+
+    <div class=" bg-white dark:bg-gray-900 grid md:grid-rows-6 gird-cols-1 md:grid-cols-12 md:h-screen">
+        <div class="md:col-start-1 md:col-span-6 md:row-start-1 md:row-end-7 overflow-hidden animatethisonload">
+            <img style="object-fit: cover;" src="./assets/brands-people-br2HgQuvq6I-unsplash.jpg" alt="Film Production">
+        </div>
+        <div  class="md:col-start-8 md:col-span-4 md:row-start-3 md:row-span-4 p-4 md:p-0 animatethisonload">
+            <h1 class=" mb-2 text-4xl md:text-5xl text-gray-900 dark:text-white pb-2">Film Dokumentation</h1>
+            <p class="pb-3 text-gray-900 dark:text-white">Zu der THEO-1 Mission werden unter anderen <a href="http://niscovering.de/" class="hover:bg-indigo-500 font-bold italic " target="_blank" rel="nofollow">Niscovering</a> und Niklas eine Dokumentation erstellen. Die nach dem Start auf dieser Website anschauen kann. Auch Aufnahmen, die der Ballon gemacht haben werden vorraussichtlich gezeigt.</p>
+            <a href="http://stratoflight.thg.thomas-rosswog.de/map.html" target="_blank" class="mb-10 bg-indigo-500 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded">
+                Jetzt anschauen
+            </a>
+        </div>
+    </div>
+
+    
+
+<!-- Footer -->
+    
+    <div class=" grid bg-black md:grid-rows-1 md:grid-cols-6 pt-5 items-center justify-items-center">
+        <div class="text-white md:col-start-2 md:col-span-1 mt-5 mb-5"> 
+            <img src="./assets/Mission-THEO-1-THG-Space-Agency-SVG.svg" alt="" style="height: 170px;" class=" mb-5">  
+        </div>
+        <div class="text-white md:col-start-3 md:col-span-1 pt-5">
+            <h3 class="text-md text-gray-400">Links:</h3>
+            <ul class="p-2">
+                <li><a href="./sitemap.xml" class="hover:text-indigo-500">Sitemap</a></li>
+                <li><a href="./impressum.html" class="hover:text-indigo-500">Impressum</a></li>
+                <li><a href="#" class="hover:text-indigo-500">Datenschutz</a></li>
+            </ul>
+        </div>
+        <div class="text-white md:col-start-4 md:col-span-2 p-5">
+            <h3 class="text-md text-gray-400">Unterstützt von:</h3>
+            <ul class="p-2 md:flex-row flex-col flex items-center h-100 mt-3">
+                <li class=" md:mt-0 md:mr-5 flex items-center" style="height: 50px;"><a href="https://thomas-rosswog.de" class="text-2xl text-center md:transform hover:translate-y-2 transition ease-in-out duration-300">Thomas Roßwog</a></li>
+                <li class="mt-5 md:mt-0 md:mr-5" style="height: 50px;"><a href="https://www.linkedin.com/in/carlo-von-reyher" class="hover:text-indigo-500"><a href="https://www.linkedin.com/in/carlo-von-reyher"><img src="./assets/Carlo_von_Reyher_Logo.svg" alt="Logo Carlo von Reyher" style="height: 48px;" class="hover:text-indigo-500 text-2xl text-center md:transform hover:translate-y-2 transition ease-in-out duration-300"></a></li>
+            </ul>
+              
+        </div>
+    </div>
+
+    
+</main>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/@barba/core"></script>
+    <script src="./mobilenavigation.js"></script>
+<script src="./loadinganimations.js"></script>
+<script src="./homepage.js"></script>
+
+</body>
+</html>

@@ -45,6 +45,26 @@ module.exports = function(grunt) {
         }]
         }
       },
+      watch: {
+        prod: {
+          files: ['./src/**.html'],
+          tasks: ['bake:prod', 'copy:prod'],
+          options: {
+            spawn: false,
+          },
+        },
+      },
+
+      bake: {
+        prod: {
+            files: {
+              "./public/index.html": "./src/index.html",
+              "./public/dokumentation.html": "./src/dokumentation.html",
+              "./public/impressum.html": "./src/impressum.html",
+              "./public/map.html": "./src/map.html",
+            }
+        }
+    },
       copy: {
         build: {
         
@@ -64,6 +84,16 @@ module.exports = function(grunt) {
        
           ],
         },
+        prod: {
+          files: [
+            // includes files within path
+            {expand: true, cwd: 'src', src: ['**/**/**/*.js'], dest: 'public'},
+            {expand: true, cwd: 'src', src: ['**/**/**/*.bin'], dest: 'public'},
+            {expand: true, cwd: 'src', src: ['**/**/**/*.json'], dest: 'public'},
+            {expand: true, cwd: 'src', src: ['**/**/**/*.xml'], dest: 'public'},
+       
+          ],
+        }
       },
       clean: ['build']
     });
@@ -74,8 +104,11 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-htmlmin');
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-contrib-clean');
+    grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks( "grunt-bake" );
   
     // Default task(s).
     grunt.registerTask('build', ['clean', 'uglify:build', 'imagemin:dynamic','htmlmin:build', 'copy:build']);
+    grunt.registerTask('production', ['watch:prod']);
   
   };

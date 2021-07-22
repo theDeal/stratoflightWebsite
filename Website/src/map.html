@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Tracking Baloon</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="./main.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="160">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THG Stratoflight | THEO-1 Mission | Live Map</title>
+    <link rel="stylesheet" href="./loader.css">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="apple-touch-icon" sizes="57x57" href="./assets/icons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./assets/icons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./assets/icons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./assets/icons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./assets/icons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./assets/icons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./assets/icons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./assets/icons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/icons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="./assets/icons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./assets/icons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/icons/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#141414">
+    <meta name="msapplication-TileImage" content="./assets/icons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#141414">
+    <meta name="description" content="Hier kann man live den Ballon der Mission verfolgen!">
+</head>
+<body>
+    <div style="position: absolute; bottom: 0px; padding: 20px; background-color: aliceblue; z-index: 10000;">
+        <ul style="padding: 5px;">
+            <li><a href="./" style="padding: 3px;" class=" bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">Zurück zur Homepage</a></li>
+            <li style="padding: 3px;">
+                <h5>Letzter Baterie Status:</h5>
+                <div id="battery"></div>
+            </li>
+        </ul>
+    </div>
+    <div id="map" style="z-index: 100;"></div>
+    
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="./map.js"></script>
+</body>
+</body>
+</html>
