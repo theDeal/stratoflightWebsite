@@ -87,10 +87,15 @@ module.exports = function(grunt) {
         prod: {
           files: [
             // includes files within path
-            {expand: true, cwd: 'src', src: ['**/**/**/*.js'], dest: 'public'},
+            {expand: true, cwd: 'src', src: ['**/**/**/*.glb'], dest: 'public'},
+            {expand: true, cwd: 'src', src: ['**/**/**/*.gltf'], dest: 'public'},
             {expand: true, cwd: 'src', src: ['**/**/**/*.bin'], dest: 'public'},
+            {expand: true, cwd: 'src', src: ['**/**/**/*.svg'], dest: 'public'},
+            {expand: true, cwd: 'src', src: ['**/**/**/*.mp4'], dest: 'public'},
             {expand: true, cwd: 'src', src: ['**/**/**/*.json'], dest: 'public'},
+            {expand: true, cwd: 'src', src: ['**/**/**/*.ico'], dest: 'public'},
             {expand: true, cwd: 'src', src: ['**/**/**/*.xml'], dest: 'public'},
+            {expand: true, cwd: 'src', src: ['**/**/**/*.js'], dest: 'public'},
        
           ],
         }
