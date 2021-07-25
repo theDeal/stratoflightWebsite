@@ -1,4 +1,4 @@
-
+const mozjpeg = require('imagemin-mozjpeg');
 
 module.exports = function(grunt) {
 
@@ -23,6 +23,11 @@ module.exports = function(grunt) {
 
       imagemin: {
         dynamic: {
+            options: {
+              optimizationLevel: 3,
+                svgoPlugins: [{removeViewBox: false}],
+                use: [mozjpeg()] // Example plugin usage
+            },
             files: [{
                 expand: true,
                 cwd: 'public',
