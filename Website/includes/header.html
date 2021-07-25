@@ -1,4 +1,4 @@
-<div class=" firstloading bg-black w-full h-full fixed center flex items-center justify-items-center" style="z-index: 200;">
+<div class=" firstloading bg-black w-full h-screen fixed center flex items-center justify-items-center" style="z-index: 200;">
     <div class="drawing" id="loading">
         <div class="loading-dot"></div>
     </div>
@@ -7,23 +7,26 @@
 </div>
 
 <!-- Desktop Navigation -->
-<div class="header p-10 absolute z-50  md:grid-cols-12 md:grid-rows-1 w-full hidden md:grid ">
+<div class="header p-10 absolute z-50  md:grid-cols-12 md:grid-rows-1 w-full hidden md:grid bg-gray-900">
 <div class="logo md:col-start-2 md:col-span-1">
     <img class="z-50" style="width: 70px;" src="./assets/Mission-THEO-1-THG-Space-Agency-SVG.svg" alt="Logo">
 </div>
-<nav class="md:col-start-3 md:col-span-6">
-    <ul class="flex text-white items-center ml-5">
+<nav class="md:col-start-3 md:col-span-9">
+    <ul class="flex text-white items-center ml-5"  id="menulinks">
         <li class=""><a href="./" class="font-sans box p-5 hover:text-indigo-500 text-base font-medium">Home</a></li>
-        <li class=""><div class="p-5 flex items-center"><img src="./assets/iconposition.svg" alt="" style="margin-top: 1.5px; height: 15px; animation: pulse 1s infinite alternate forwards;"><a href="http://stratoflight.thg.thomas-rosswog.de/map.html" target="_blank" class="pl-2 font-sans box hover:text-indigo-500 text-base font-medium">Live Map</a></div></li>
-        <li class=""><a href="#" class="font-sans box p-5 hover:text-indigo-500 text-base font-medium">Theo 1 Mission</a></li>
-        <li class=""><a href="./impressum.html" class="font-sans box p-5 hover:text-indigo-500 text-base font-medium">Impressum</a></li>
+        <li class=""><div class="p-5 flex items-center"><img src="./assets/iconposition.svg" alt="" style="margin-top: 1.5px; height: 15px; animation: pulse 1s infinite alternate forwards;"><a href="http://stratoflight.thg.thomas-rosswog.de/map.html" target="_blank" class="pl-2 font-sans box hover:text-indigo-500 text-base font-medium">Flugroute</a></div></li>
+        <li class=""><a href="./theo1mission.html" class="font-sans box p-5 hover:text-indigo-500 text-base font-medium">Theo 1 Mission</a></li>
+        <li class=""><a href="./galerie.html" class="font-sans box p-5 hover:text-indigo-500 text-base font-medium">Bildergalerie</a></li>
+        <li class=""><a href="./plakatubersicht.html" class="font-sans box p-5 hover:text-indigo-500 text-base font-medium">Plakat übersicht</a></li>
+        <li class=""><a href="./about.html" class="font-sans box p-5 hover:text-indigo-500 text-base font-medium">Über uns</a></li>
+        <li class=""><a href="./dokumentation.html" class="font-sans box p-5 hover:text-indigo-500 text-base font-medium">Dokumentation</a></li>
     </ul>
 </nav>
 </div>
 <!-- Mobile Navigation -->
 <!-- Top Bar -->
-<div class="md:hidden p-5 w-full absolute z-50 topbottom">
-<div class="flex w-full justify-between items-center">
+<div class="md:hidden p-5 w-full absolute z-50 topbottom bg-gray-900">
+<div class="flex w-full justify-between items-center ">
     <div class="logo">
         <img src="./assets/Mission-THEO-1-THG-Space-Agency-SVG.svg" alt="Logo THG Space Agency" style="height: 60px;">
     </div>

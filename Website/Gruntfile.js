@@ -62,6 +62,9 @@ module.exports = function(grunt) {
               "./public/dokumentation.html": "./src/dokumentation.html",
               "./public/impressum.html": "./src/impressum.html",
               "./public/map.html": "./src/map.html",
+              "./public/galerie.html": "./src/galerie.html",
+              "./public/about.html": "./src/about.html",
+              "./public/theo1mission.html": "./src/theo1mission.html",
             }
         }
     },

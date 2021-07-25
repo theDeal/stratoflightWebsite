@@ -37,12 +37,15 @@
         strong{
             font-weight: bold;
         }
+        img{
+            width: 100%;
+        }
     </style>
 </head>
-<body class="bg-white" data-barba="wrapper">
+<body data-barba="wrapper">
 
 
-<div class=" firstloading bg-black w-full h-full fixed center flex items-center justify-items-center" style="z-index: 200;">
+<div class=" firstloading bg-black w-full h-screen fixed center flex items-center justify-items-center" style="z-index: 200;">
     <div class="drawing" id="loading">
         <div class="loading-dot"></div>
     </div>
@@ -51,23 +54,26 @@
 </div>
 
 <!-- Desktop Navigation -->
-<div class="header p-10 absolute z-50  md:grid-cols-12 md:grid-rows-1 w-full hidden md:grid ">
+<div class="header p-10 absolute z-50  md:grid-cols-12 md:grid-rows-1 w-full hidden md:grid bg-gray-900">
 <div class="logo md:col-start-2 md:col-span-1">
     <img class="z-50" style="width: 70px;" src="./assets/Mission-THEO-1-THG-Space-Agency-SVG.svg" alt="Logo">
 </div>
-<nav class="md:col-start-3 md:col-span-6">
-    <ul class="flex text-white items-center ml-5">
+<nav class="md:col-start-3 md:col-span-9">
+    <ul class="flex text-white items-center ml-5"  id="menulinks">
         <li class=""><a href="./" class="font-sans box p-5 hover:text-indigo-500 text-base font-medium">Home</a></li>
-        <li class=""><div class="p-5 flex items-center"><img src="./assets/iconposition.svg" alt="" style="margin-top: 1.5px; height: 15px; animation: pulse 1s infinite alternate forwards;"><a href="http://stratoflight.thg.thomas-rosswog.de/map.html" target="_blank" class="pl-2 font-sans box hover:text-indigo-500 text-base font-medium">Live Map</a></div></li>
-        <li class=""><a href="#" class="font-sans box p-5 hover:text-indigo-500 text-base font-medium">Theo 1 Mission</a></li>
-        <li class=""><a href="./impressum.html" class="font-sans box p-5 hover:text-indigo-500 text-base font-medium">Impressum</a></li>
+        <li class=""><div class="p-5 flex items-center"><img src="./assets/iconposition.svg" alt="" style="margin-top: 1.5px; height: 15px; animation: pulse 1s infinite alternate forwards;"><a href="http://stratoflight.thg.thomas-rosswog.de/map.html" target="_blank" class="pl-2 font-sans box hover:text-indigo-500 text-base font-medium">Flugroute</a></div></li>
+        <li class=""><a href="./theo1mission.html" class="font-sans box p-5 hover:text-indigo-500 text-base font-medium">Theo 1 Mission</a></li>
+        <li class=""><a href="./galerie.html" class="font-sans box p-5 hover:text-indigo-500 text-base font-medium">Bildergalerie</a></li>
+        <li class=""><a href="./plakatubersicht.html" class="font-sans box p-5 hover:text-indigo-500 text-base font-medium">Plakat übersicht</a></li>
+        <li class=""><a href="./about.html" class="font-sans box p-5 hover:text-indigo-500 text-base font-medium">Über uns</a></li>
+        <li class=""><a href="./dokumentation.html" class="font-sans box p-5 hover:text-indigo-500 text-base font-medium">Dokumentation</a></li>
     </ul>
 </nav>
 </div>
 <!-- Mobile Navigation -->
 <!-- Top Bar -->
-<div class="md:hidden p-5 w-full absolute z-50 topbottom">
-<div class="flex w-full justify-between items-center">
+<div class="md:hidden p-5 w-full absolute z-50 topbottom bg-gray-900">
+<div class="flex w-full justify-between items-center ">
     <div class="logo">
         <img src="./assets/Mission-THEO-1-THG-Space-Agency-SVG.svg" alt="Logo THG Space Agency" style="height: 60px;">
     </div>
@@ -100,559 +106,569 @@
 </div>
 </div>
 
-<h1 class="adsimple-321290480">Impressum</h1>
-<p class="adsimple-321290480">Informationspflicht laut § 5 TMG.</p>
-<p class="adsimple-321290480">THG Freiburg<br />Andreas-Hofer-Straße 1, <br />79111 Freiburg im Breisgau, <br />Deutschland</p>
-<p class="adsimple-321290480">
-</p>
-<p class="adsimple-321290480">
-<strong>Tel.:</strong> 0761 2017690<br />
-<strong>E-Mail:</strong> <a href="mailto:sekretariat.thgvn@freiburger-schulen.bwl.de">sekretariat.thgvn@freiburger-schulen.bwl.de</a>
-</p>
-<p class="adsimple-321290480">
-<strong>Aufsichtsbehörde</strong>
-<br>Ministerium für Kultus, Jugend und Sport Baden-Württemberg<br />
-<strong>Anschrift der Aufsichtsbehörde</strong>
-<br> Postfach 10 34 42
-70029 Stuttgart<br />
-</p>
-<p style="margin-top:15px;">Quelle: Erstellt mit dem <a href="https://www.adsimple.de/impressum-generator/" >Impressum Generator</a> von AdSimple</p>
-<h2 id="eu-streitschlichtung" class="adsimple-321290480">EU-Streitschlichtung</h2>
-<p>Gemäß Verordnung über Online-Streitbeilegung in Verbraucherangelegenheiten (ODR-Verordnung) möchten wir Sie über die Online-Streitbeilegungsplattform (OS-Plattform) informieren.<br />
-Verbraucher haben die Möglichkeit, Beschwerden an die Online Streitbeilegungsplattform der Europäischen Kommission unter <a class="adsimple-321290480" href="https://ec.europa.eu/consumers/odr/main/index.cfm?event=main.home2.show&amp;lng=DE" target="_blank" rel="noopener">http://ec.europa.eu/odr?tid=321290480</a> zu richten. Die dafür notwendigen Kontaktdaten finden Sie oberhalb in unserem Impressum.</p>
-<p>Wir möchten Sie jedoch darauf hinweisen, dass wir nicht bereit oder verpflichtet sind, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</p>
-<h2 id="haftungs-inhalte-website" class="adsimple-321290480">Haftung für Inhalte dieser Website</h2>
-<p>Wir entwickeln die Inhalte dieser Webseite ständig weiter und bemühen uns korrekte und aktuelle Informationen bereitzustellen. Laut Telemediengesetz <a class="adsimple-321290480" href="https://www.gesetze-im-internet.de/tmg/__7.html?tid=321290480" rel="noopener" target="_blank">(TMG) §7 (1)</a> sind wir als Diensteanbieter für eigene Informationen, die wir zur Nutzung bereitstellen, nach den allgemeinen Gesetzen verantwortlich. Leider können wir keine Haftung für die Korrektheit aller Inhalte auf dieser Webseite übernehmen, speziell für jene die seitens Dritter bereitgestellt wurden. Als Diensteanbieter im Sinne der §§ 8 bis 10 sind wir nicht verpflichtet, die von ihnen übermittelten oder gespeicherten Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen.</p>
-<p>Unsere Verpflichtungen zur Entfernung von Informationen oder zur Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen aufgrund von gerichtlichen oder behördlichen Anordnungen bleiben auch im Falle unserer Nichtverantwortlichkeit nach den §§ 8 bis 10 unberührt. </p>
-<p>Sollten Ihnen problematische oder rechtswidrige Inhalte auffallen, bitte wir Sie uns umgehend zu kontaktieren, damit wir die rechtswidrigen Inhalte entfernen können. Sie finden die Kontaktdaten im Impressum.</p>
-<h2 id="haftung-links-website" class="adsimple-321290480">Haftung für Links auf dieser Website</h2>
-<p>Unsere Webseite enthält Links zu anderen Webseiten für deren Inhalt wir nicht verantwortlich sind. Haftung für verlinkte Websites besteht für uns nicht, da wir keine Kenntnis rechtswidriger Tätigkeiten hatten und haben, uns solche Rechtswidrigkeiten auch bisher nicht aufgefallen sind und wir Links sofort entfernen würden, wenn uns Rechtswidrigkeiten bekannt werden.</p>
-<p>Wenn Ihnen rechtswidrige Links auf unserer Website auffallen, bitte wir Sie uns zu kontaktieren. Sie finden die Kontaktdaten im Impressum.</p>
-<h2 id="urheberrechtshinweis" class="adsimple-321290480">Urheberrechtshinweis</h2>
-<p>Alle Inhalte dieser Webseite (Bilder, Fotos, Texte, Videos) unterliegen dem Urheberrecht der Bundesrepublik Deutschland. Bitte fragen Sie uns bevor Sie die Inhalte dieser Website verbreiten, vervielfältigen oder verwerten wie zum Beispiel auf anderen Websites erneut veröffentlichen. Falls notwendig, werden wir die unerlaubte Nutzung von Teilen der Inhalte unserer Seite rechtlich verfolgen.</p>
-<p>Sollten Sie auf dieser Webseite Inhalte finden, die das Urheberrecht verletzen, bitten wir Sie uns zu kontaktieren.</p>
-<h2 id="bildernachweis" class="adsimple-321290480">Bildernachweis</h2>
-<p>Die Bilder, Fotos und Grafiken auf dieser Webseite sind urheberrechtlich geschützt.</p>
-<p>Die Bilderrechte liegen bei den folgenden Fotografen und Unternehmen:</p>
-<ul class="adsimple-321290480">
-<li class="adsimple-321290480">Fotograf Mustermann</li>
-</ul>
-<h1 class="adsimple-321290480">Datenschutzerklärung</h1>
-<h2>Inhaltsverzeichnis</h2>
-<ul>
-<li>
-<a href="#einleitung-ueberblick">Einleitung und Überblick</a>
-</li>
-<li>
-<a href="#rechtsgrundlagen">Rechtsgrundlagen</a>
-</li>
-<li>
-<a href="#kontaktdaten-verantwortliche">Kontaktdaten des Verantwortlichen</a>
-</li>
-<li>
-<a href="#rechte-dsgvo">Rechte laut Datenschutzgrundverordnung</a>
-</li>
-<li>
-<a href="#kontaktdaten-datenschutzbeauftragter">Kontaktdaten des Datenschutzbeauftragten</a>
-</li>
-<li>
-<a href="#sicherheit-datenverarbeitung">Sicherheit der Datenverarbeitung</a>
-</li>
-<li>
-<a href="#kommunikation">Kommunikation</a>
-</li>
-<li>
-<a href="#webhosting">Webhosting</a>
-</li>
-<li>
-<a href="#cookies">Cookies</a>
-</li>
-<li>
-<a href="#vimeo-datenschutzerklaerung">Vimeo Datenschutzerklärung</a>
-</li>
-<li>
-<a href="#youtube-datenschutzerklaerung">YouTube Datenschutzerklärung</a>
-</li>
-</ul>
-<h2 id="einleitung-ueberblick" class="adsimple-321290480">Einleitung und Überblick</h2>
-<p>Wir haben diese Datenschutzerklärung (Fassung 15.07.2021-321290480) verfasst, um Ihnen gemäß der Vorgaben der <a class="adsimple-321290480" href="https://eur-lex.europa.eu/legal-content/DE/ALL/?uri=celex%3A32016R0679&amp;tid=321290480" target="_blank" rel="noopener">Datenschutz-Grundverordnung (EU) 2016/679</a> und anwendbaren nationalen Gesetzen zu erklären, welche personenbezogenen Daten (kurz Daten) wir als Verantwortliche &#8211; und die von uns beauftragten Auftragsverarbeiter (z. B. Provider) &#8211; verarbeiten, zukünftig verarbeiten werden und welche rechtmäßigen Möglichkeiten Sie haben. Die verwendeten Begriffe sind geschlechtsneutral zu verstehen.<br />
-<strong class="adsimple-321290480">Kurz gesagt:</strong> Wir informieren Sie umfassend über Daten, die wir über Sie verarbeiten.</p>
-<p>Datenschutzerklärungen klingen für gewöhnlich sehr technisch und verwenden juristische Fachbegriffe. Diese Datenschutzerklärung soll Ihnen hingegen die wichtigsten Dinge so einfach und transparent wie möglich beschreiben. Soweit es der Transparenz förderlich ist, werden technische <strong class="adsimple-321290480">Begriffe leserfreundlich erklärt</strong>, <strong class="adsimple-321290480">Links</strong> zu weiterführenden Informationen geboten und <strong class="adsimple-321290480">Grafiken</strong> zum Einsatz gebracht. Wir informieren damit in klarer und einfacher Sprache, dass wir im Rahmen unserer Geschäftstätigkeiten nur dann personenbezogene Daten verarbeiten, wenn eine entsprechende gesetzliche Grundlage gegeben ist. Das ist sicher nicht möglich, wenn man möglichst knappe, unklare und juristisch-technische Erklärungen abgibt, so wie sie im Internet oft Standard sind, wenn es um Datenschutz geht. Ich hoffe, Sie finden die folgenden Erläuterungen interessant und informativ und vielleicht ist die eine oder andere Information dabei, die Sie noch nicht kannten.<br />
-Wenn trotzdem Fragen bleiben, möchten wir Sie bitten, sich an die unten bzw. im Impressum genannte verantwortliche Stelle zu wenden, den vorhandenen Links zu folgen und sich weitere Informationen auf Drittseiten anzusehen. Unsere Kontaktdaten finden Sie selbstverständlich auch im Impressum.</p>
-<h2 id="rechtsgrundlagen" class="adsimple-321290480">Rechtsgrundlagen</h2>
-<p>In der folgenden Datenschutzerklärung geben wir Ihnen transparente Informationen zu den rechtlichen Grundsätzen und Vorschriften, also den Rechtsgrundlagen der Datenschutz-Grundverordnung, die uns ermöglichen, personenbezogene Daten zu verarbeiten.<br />
-Was das EU-Recht betrifft, beziehen wir uns auf die VERORDNUNG (EU) 2016/679 DES EUROPÄISCHEN PARLAMENTS UND DES RATES vom 27. April 2016. Diese Datenschutz-Grundverordnung der EU können Sie selbstverständlich online auf EUR-Lex, dem Zugang zum EU-Recht, unter <a class="adsimple-321290480" href="https://eur-lex.europa.eu/legal-content/DE/ALL/?uri=celex%3A32016R0679&amp;tid=321290480" target="_blank" rel="noopener">https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=celex%3A32016R0679</a> nachlesen.</p>
-<p>Wir verarbeiten Ihre Daten nur, wenn mindestens eine der folgenden Bedingungen zutrifft:</p>
-<ol>
-<li class="adsimple-321290480">
-<strong class="adsimple-321290480">Einwilligung</strong> (Artikel 6 Absatz 1 lit. a DSGVO): Sie haben uns Ihre Einwilligung gegeben, Daten zu einem bestimmten Zweck zu verarbeiten. Ein Beispiel wäre die Speicherung Ihrer eingegebenen Daten eines Kontaktformulars.</li>
-<li class="adsimple-321290480">
-<strong class="adsimple-321290480">Vertrag</strong> (Artikel 6 Absatz 1 lit. b DSGVO): Um einen Vertrag oder vorvertragliche Verpflichtungen mit Ihnen zu erfüllen, verarbeiten wir Ihre Daten. Wenn wir zum Beispiel einen Kaufvertrag mit Ihnen abschließen, benötigen wir vorab personenbezogene Informationen.</li>
-<li class="adsimple-321290480">
-<strong class="adsimple-321290480">Rechtliche Verpflichtung</strong> (Artikel 6 Absatz 1 lit. c DSGVO): Wenn wir einer rechtlichen Verpflichtung unterliegen, verarbeiten wir Ihre Daten. Zum Beispiel sind wir gesetzlich verpflichtet Rechnungen für die Buchhaltung aufzuheben. Diese enthalten in der Regel personenbezogene Daten.</li>
-<li class="adsimple-321290480">
-<strong class="adsimple-321290480">Berechtigte Interessen</strong> (Artikel 6 Absatz 1 lit. f DSGVO): Im Falle berechtigter Interessen, die Ihre Grundrechte nicht einschränken, behalten wir uns die Verarbeitung personenbezogener Daten vor. Wir müssen zum Beispiel gewisse Daten verarbeiten, um unsere Website sicher und wirtschaftlich effizient betreiben zu können. Diese Verarbeitung ist somit ein berechtigtes Interesse.</li>
-</ol>
-<p>Weitere Bedingungen wie die Wahrnehmung von Aufnahmen im öffentlichen Interesse und Ausübung öffentlicher Gewalt sowie dem Schutz lebenswichtiger Interessen treten bei uns in der Regel nicht auf. Soweit eine solche Rechtsgrundlage doch einschlägig sein sollte, wird diese an der entsprechenden Stelle ausgewiesen.</p>
-<p>Zusätzlich zu der EU-Verordnung gelten auch noch nationale Gesetze:</p>
-<ul class="adsimple-321290480">
-<li class="adsimple-321290480">In <strong class="adsimple-321290480">Österreich</strong> ist dies das Bundesgesetz zum Schutz natürlicher Personen bei der Verarbeitung personenbezogener Daten (<strong class="adsimple-321290480">Datenschutzgesetz</strong>), kurz <strong class="adsimple-321290480">DSG</strong>.</li>
-<li class="adsimple-321290480">In <strong class="adsimple-321290480">Deutschland</strong> gilt das <strong class="adsimple-321290480">Bundesdatenschutzgesetz</strong>, kurz<strong class="adsimple-321290480"> BDSG</strong>.</li>
-</ul>
-<p>Sofern weitere regionale oder nationale Gesetze zur Anwendung kommen, informieren wir Sie in den folgenden Abschnitten darüber.</p>
-<h2 id="kontaktdaten-verantwortliche" class="adsimple-321290480">Kontaktdaten des Verantwortlichen</h2>
-<p>Sollten Sie Fragen zum Datenschutz haben, finden Sie nachfolgend die Kontaktdaten der verantwortlichen Person bzw. Stelle:<br />
-Musterfirma GmbH<br />
-Musterstraße 1, 4711 Musterort<br />
-<span class="adsimple-321290480" style="font-weight: 400;">Vertretungsberechtigt: Markus Mustermann</span>
-<br />
-E-Mail: <a class="adsimple-321290480" href="mailto:office@musterfirma.com">office@musterfirma.com</a>
-<br />
-Telefon: <span class="adsimple-321290480" style="font-weight: 400;">+49 47114 654165</span>
-<br />
-Impressum: <a class="adsimple-321290480" href="http://www.testfirma.de/impressum" target="_blank" rel="noopener">https://www.testfirma.de/impressum</a>
-</p>
-<h2 id="rechte-dsgvo" class="adsimple-321290480">Rechte laut Datenschutzgrundverordnung</h2>
-<p>Laut Artikel 13 DSGVO stehen Ihnen die folgenden Rechte zu, damit es zu einer fairen und transparenten Verarbeitung von Daten kommt:</p>
-<ul class="adsimple-321290480">
-<li class="adsimple-321290480">Sie haben laut Artikel 15 DSGVO ein Auskunftsrecht darüber, ob wir Daten von Ihnen verarbeiten. Sollte das zutreffen, haben Sie Recht darauf eine Kopie der Daten zu erhalten und die folgenden Informationen zu erfahren:
-<ul class="adsimple-321290480">
-<li class="adsimple-321290480">zu welchem Zweck wir die Verarbeitung durchführen;</li>
-<li class="adsimple-321290480">die Kategorien, also die Arten von Daten, die verarbeitet werden;</li>
-<li class="adsimple-321290480">wer diese Daten erhält und wenn die Daten an Drittländer übermittelt werden, wie die Sicherheit garantiert werden kann;</li>
-<li class="adsimple-321290480">wie lange die Daten gespeichert werden;</li>
-<li class="adsimple-321290480">das Bestehen des Rechts auf Berichtigung, Löschung oder Einschränkung der Verarbeitung und dem Widerspruchsrecht gegen die Verarbeitung;</li>
-<li class="adsimple-321290480">dass Sie sich bei einer Aufsichtsbehörde beschweren können (Links zu diesen Behörden finden Sie weiter unten);</li>
-<li class="adsimple-321290480">die Herkunft der Daten, wenn wir sie nicht bei Ihnen erhoben haben;</li>
-<li class="adsimple-321290480">ob Profiling durchgeführt wird, ob also Daten automatisch ausgewertet werden, um zu einem persönlichen Profil von Ihnen zu gelangen.</li>
-</ul>
-</li>
-<li class="adsimple-321290480">Sie haben laut Artikel 16 DSGVO ein Recht auf Berichtigung der Daten, was bedeutet, dass wir Daten richtig stellen müssen, falls Sie Fehler finden.</li>
-<li class="adsimple-321290480">Sie haben laut Artikel 17 DSGVO das Recht auf Löschung („Recht auf Vergessenwerden“), was konkret bedeutet, dass Sie die Löschung Ihrer Daten verlangen dürfen.</li>
-<li class="adsimple-321290480">Sie haben laut Artikel 18 DSGVO das Recht auf Einschränkung der Verarbeitung, was bedeutet, dass wir die Daten nur mehr speichern dürfen aber nicht weiter verwenden.</li>
-<li class="adsimple-321290480">Sie haben laut Artikel 19 DSGVO das Recht auf Datenübertragbarkeit, was bedeutet, dass wir Ihnen auf Anfrage Ihre Daten in einem gängigen Format zur Verfügung stellen.</li>
-<li class="adsimple-321290480">Sie haben laut Artikel 21 DSGVO ein Widerspruchsrecht, welches nach Durchsetzung eine Änderung der Verarbeitung mit sich bringt.
-<ul class="adsimple-321290480">
-<li class="adsimple-321290480">Wenn die Verarbeitung Ihrer Daten auf Artikel 6 Abs. 1 lit. e (öffentliches Interesse, Ausübung öffentlicher Gewalt) oder Artikel 6 Abs. 1 lit. f (berechtigtes Interesse) basiert, können Sie gegen die Verarbeitung Widerspruch einlegen. Wir prüfen danach so rasch wie möglich, ob wir diesem Widerspruch rechtlich nachkommen können.</li>
-<li class="adsimple-321290480">Werden Daten verwendet, um Direktwerbung zu betreiben, können Sie jederzeit gegen diese Art der Datenverarbeitung widersprechen. Wir dürfen Ihre Daten danach nicht mehr für Direktmarketing verwenden.</li>
-<li class="adsimple-321290480">Werden Daten verwendet, um Profiling zu betreiben, können Sie jederzeit gegen diese Art der Datenverarbeitung widersprechen. Wir dürfen Ihre Daten danach nicht mehr für Profiling verwenden.</li>
-</ul>
-</li>
-<li class="adsimple-321290480">Sie haben laut Artikel 22 DSGVO unter Umständen das Recht, nicht einer ausschließlich auf einer automatisierten Verarbeitung (zum Beispiel Profiling) beruhenden Entscheidung unterworfen zu werden.</li>
-</ul>
-<p>Wenn Sie glauben, dass die Verarbeitung Ihrer Daten gegen das Datenschutzrecht verstößt oder Ihre datenschutzrechtlichen Ansprüche in sonst einer Weise verletzt worden sind, können Sie sich bei der Aufsichtsbehörde beschweren. Diese ist für Österreich die Datenschutzbehörde, deren Website Sie unter <a class="adsimple-321290480" href="https://www.dsb.gv.at/?tid=321290480" target="_blank" rel="noopener">https://www.dsb.gv.at/</a> finden und für Deutschland können Sie sich an die <a class="adsimple-321290480" class="321290480" href="https://www.bfdi.bund.de" target="_blank" rel="noopener">Bundesbeauftragte für den Datenschutz und die Informationsfreiheit (BfDI)</a> wenden.</p>
-<p>
-<strong class="adsimple-321290480">Kurz gesagt:</strong> Sie haben Rechte &#8211; zögern Sie nicht, die oben gelistete verantwortliche Stelle bei uns zu kontaktieren!</p>
-<h2 id="kontaktdaten-datenschutzbeauftragter" class="adsimple-321290480">Kontaktdaten des Datenschutzbeauftragten</h2>
-<p>Nachfolgend finden Sie die Kontaktdaten unseres Datenschutzbeauftragten.</p>
-<p>E-Mail: <a class="adsimple-321290480" href="mailto:datenschutz@musterfirma.com">datenschutz@musterfirma.com</a>
-<br />
-Telefon: <span class="adsimple-321290480" style="font-weight: 400;">+43 4711 65416</span>
-</p>
-<h2 id="sicherheit-datenverarbeitung" class="adsimple-321290480">Sicherheit der Datenverarbeitung</h2>
-<p>Um personenbezogene Daten zu schützen, haben wir sowohl technische als auch organisatorische Maßnahmen umgesetzt. Wo es uns möglich ist, verschlüsseln oder pseudonymisieren wir personenbezogene Daten. Dadurch machen wir es im Rahmen unserer Möglichkeiten so schwer wie möglich, dass Dritte aus unseren Daten auf persönliche Informationen schließen können.</p>
-<p>Art. 25 DSGVO spricht hier von &#8220;Datenschutz durch Technikgestaltung und durch datenschutzfreundliche Voreinstellungen&#8221; und meint damit, dass man sowohl bei Software (z. B. Formularen) also auch Hardware (z. B. Zugang zum Serverraum) immer an Sicherheit denkt und entsprechende Maßnahmen setzt. Im Folgenden gehen wir, falls erforderlich, noch auf konkrete Maßnahmen ein.</p>
-<h2 id="kommunikation" class="adsimple-321290480">Kommunikation</h2>
-<table border="1" cellpadding="15">
-<tbody>
-<tr>
-<td>
-<strong class="adsimple-321290480">Kommunikation Zusammenfassung</strong>
-<br />
-&#x1f465; Betroffene: Alle, die mit uns per Telefon, E-Mail oder Online-Formular kommunizieren<br />
-&#x1f4d3; Verarbeitete Daten: z. B. Telefonnummer, Name, E-Mail-Adresse, eingegebene Formulardaten. Mehr Details dazu finden Sie bei der jeweils eingesetzten Kontaktart<br />
-&#x1f91d; Zweck: Abwicklung der Kommunikation mit Kunden, Geschäftspartnern usw.<br />
-&#x1f4c5; Speicherdauer: Dauer des Geschäftsfalls und der gesetzlichen Vorschriften<br />
-&#x2696;&#xfe0f; Rechtsgrundlagen: Art. 6 Abs. 1 lit. a DSGVO (Einwilligung), Art. 6 Abs. 1 lit. b DSGVO (Vertrag), Art. 6 Abs. 1 lit. f DSGVO (Berechtigte Interessen)</td>
-</tr>
-</tbody>
-</table>
-<p>Wenn Sie mit uns Kontakt aufnehmen und per Telefon, E-Mail oder Online-Formular kommunizieren, kann es zur Verarbeitung personenbezogener Daten kommen.</p>
-<p>Die Daten werden für die Abwicklung und Bearbeitung Ihrer Frage und des damit zusammenhängenden Geschäftsvorgangs verarbeitet. Die Daten während ebensolange gespeichert bzw. so lange es das Gesetz vorschreibt.</p>
-<h3 class="adsimple-321290480">Betroffene Personen</h3>
-<p>Von den genannten Vorgängen sind alle betroffen, die über die von uns bereit gestellten Kommunikationswege den Kontakt zu uns suchen.</p>
-<h3 class="adsimple-321290480">Telefon</h3>
-<p>Wenn Sie uns anrufen, werden die Anrufdaten auf dem jeweiligen Endgerät und beim eingesetzten Telekommunikationsanbieter pseudonymisiert gespeichert. Außerdem können Daten wie Name und Telefonnummer im Anschluss per E-Mail versendet und zur Anfragebeantwortung gespeichert werden. Die Daten werden gelöscht, sobald der Geschäftsfall beendet wurde und es gesetzliche Vorgaben erlauben.</p>
-<h3 class="adsimple-321290480">E-Mail</h3>
-<p>Wenn Sie mit uns per E-Mail kommunizieren, werden Daten gegebenenfalls auf dem jeweiligen Endgerät (Computer, Laptop, Smartphone,&#8230;) gespeichert und es kommt zur Speicherung von Daten auf dem E-Mail-Server. Die Daten werden gelöscht, sobald der Geschäftsfall beendet wurde und es gesetzliche Vorgaben erlauben.</p>
-<h3 class="adsimple-321290480">Online Formulare</h3>
-<p>Wenn Sie mit uns mittels Online-Formular kommunizieren, werden Daten auf unserem Webserver gespeichert und gegebenenfalls an eine E-Mail-Adresse von uns weitergeleitet. Die Daten werden gelöscht, sobald der Geschäftsfall beendet wurde und es gesetzliche Vorgaben erlauben.</p>
-<h3 class="adsimple-321290480">Rechtsgrundlagen</h3>
-<p>Die Verarbeitung der Daten basiert auf den folgenden Rechtsgrundlagen:</p>
-<ul class="adsimple-321290480">
-<li class="adsimple-321290480">Art. 6 Abs. 1 lit. a DSGVO (Einwilligung): Sie geben uns die Einwilligung Ihre Daten zu speichern und weiter für den Geschäftsfall betreffende Zwecke zu verwenden;</li>
-<li class="adsimple-321290480">Art. 6 Abs. 1 lit. b DSGVO (Vertrag): Es besteht die Notwendigkeit für die Erfüllung eines Vertrags mit Ihnen oder einem Auftragsverarbeiter wie z. B. dem Telefonanbieter oder wir müssen die Daten für vorvertragliche Tätigkeiten, wie z. B. die Vorbereitung eines Angebots, verarbeiten;</li>
-<li class="adsimple-321290480">Art. 6 Abs. 1 lit. f DSGVO (Berechtigte Interessen): Wir wollen Kundenanfragen und geschäftliche Kommunikation in einem professionellen Rahmen betreiben. Dazu sind gewisse technische Einrichtungen wie z. B. E-Mail-Programme, Exchange-Server und Mobilfunkbetreiber notwendig, um die Kommunikation effizient betreiben zu können.</li>
-</ul>
-<h2 id="webhosting" class="adsimple-321290480">Webhosting</h2>
-<table border="1" cellpadding="15">
-<tbody>
-<tr>
-<td>
-<strong class="adsimple-321290480">Webhosting Zusammenfassung</strong>
-<br />
-&#x1f465; Betroffene: Besucher der Website<br />
-&#x1f91d; Zweck: professionelles Hosting der Website und Absicherung des Betriebs<br />
-&#x1f4d3; Verarbeitete Daten: IP-Adresse, Zeitpunkt des Websitebesuchs, verwendeter Browser und weitere Daten. Mehr Details dazu finden Sie weiter unten bzw. beim jeweils eingesetzten Webhosting Provider.<br />
-&#x1f4c5; Speicherdauer: abhängig vom jeweiligen Provider, aber in der Regel 2 Wochen<br />
-&#x2696;&#xfe0f; Rechtsgrundlagen: Art. 6 Abs. 1 lit.f DSGVO (Berechtigte Interessen)</td>
-</tr>
-</tbody>
-</table>
-<h3 class="adsimple-321290480">Was ist Webhosting?</h3>
-<p>Wenn Sie heutzutage Websites besuchen, werden gewisse Informationen &#8211; auch personenbezogene Daten &#8211; automatisch erstellt und gespeichert, so auch auf dieser Website. Diese Daten sollten möglichst sparsam und nur mit Begründung verarbeitet werden. Mit Website meinen wir übrigens die Gesamtheit aller Webseiten auf einer Domain, d.h. alles von der Startseite (Homepage) bis hin zur aller letzten Unterseite (wie dieser hier). Mit Domain meinen wir zum Beispiel beispiel.de oder musterbeispiel.com.</p>
-<p>Wenn Sie eine Website auf einem Bildschirm ansehen möchten, verwenden Sie dafür ein Programm, das sich Webbrowser nennt. Sie kennen vermutlich einige Webbrowser beim Namen: Google Chrome, Microsoft Edge, Mozilla Firefox und Apple Safari.</p>
-<p>Dieser Webbrowser muss sich zu einem anderen Computer verbinden, wo der Code der Website gespeichert ist: dem Webserver. Der Betrieb eines Webservers ist eine komplizierte und aufwendige Aufgabe, weswegen dies in der Regel von professionellen Anbietern, den Providern, übernommen wird. Diese bieten Webhosting an und sorgen damit für eine verlässliche und fehlerfreie Speicherung der Daten von Websites.</p>
-<p>Bei der Verbindungsaufnahme des Browsers auf Ihrem Computer (Desktop, Laptop, Smartphone) und während der Datenübertragung zu und vom Webserver kann es zu einer Verarbeitung personenbezogener Daten kommen. Einerseits speichert Ihr Computer Daten, andererseits muss auch der Webserver Daten eine Zeit lang speichern, um einen ordentlichen Betrieb zu gewährleisten.</p>
-<p>Zur Veranschaulichung:</p>
-<p>
-<img role="img" src="https://www.adsimple.at/wp-content/uploads/2018/03/browser-und-webserver.svg" alt="Browser und Webserver" width="100%" />
-</p>
-<h3 class="adsimple-321290480">Warum verarbeiten wir personenbezogene Daten?</h3>
-<p>Die Zwecke der Datenverarbeitung sind:</p>
-<ol>
-<li class="adsimple-321290480">Professionelles Hosting der Website und Absicherung des Betriebs</li>
-<li class="adsimple-321290480">zur Aufrechterhaltung der Betriebs- und IT-Sicherheit</li>
-<li class="adsimple-321290480">Anonyme Auswertung des Zugriffsverhaltens zur Verbesserung unseres Angebots und ggf. zur Strafverfolgung bzw. Verfolgung von Ansprüchen</li>
-</ol>
-<h3 class="adsimple-321290480">Welche Daten werden verarbeitet?</h3>
-<p>Auch während Sie unsere Website jetzt gerade besuchen, speichert unser Webserver, das ist der Computer auf dem diese Webseite gespeichert ist, in der Regel automatisch Daten wie</p>
-<ul class="adsimple-321290480">
-<li class="adsimple-321290480">die komplette Internetadresse (URL) der aufgerufenen Webseite (z. B. https://www.beispielwebsite.de/beispielunterseite.html?tid=321290480)</li>
-<li class="adsimple-321290480">Browser und Browserversion (z. B. Chrome 87)</li>
-<li class="adsimple-321290480">das verwendete Betriebssystem (z. B. Windows 10)</li>
-<li class="adsimple-321290480">die Adresse (URL) der zuvor besuchten Seite (Referrer URL) (z. B. https://www.beispielquellsite.de/vondabinichgekommen.html/)</li>
-<li class="adsimple-321290480">den Hostnamen und die IP-Adresse des Geräts von welchem aus zugegriffen wird (z. B. COMPUTERNAME und 194.23.43.121)</li>
-<li class="adsimple-321290480">Datum und Uhrzeit</li>
-<li class="adsimple-321290480">in Dateien, den sogenannten Webserver-Logfiles</li>
-</ul>
-<h3 class="adsimple-321290480">Wie lange werden Daten gespeichert?</h3>
-<p>In der Regel werden die oben genannten Daten zwei Wochen gespeichert und danach automatisch gelöscht. Wir geben diese Daten nicht weiter, können jedoch nicht ausschließen, dass diese Daten beim Vorliegen von rechtswidrigem Verhalten von Behörden eingesehen werden.</p>
-<p>
-<strong class="adsimple-321290480">Kurz gesagt:</strong> Ihr Besuch wird durch unseren Provider (Firma, die unsere Website auf speziellen Computern (Servern) laufen lässt), protokolliert, aber wir geben Ihre Daten nicht ohne Zustimmung weiter!</p>
-<h3 class="adsimple-321290480">Rechtsgrundlage</h3>
-<p>Die Rechtmäßigkeit der Verarbeitung personenbezogener Daten im Rahmen des Webhosting ergibt sich aus Art. 6 Abs. 1 lit. f DSGVO (Wahrung der berechtigten Interessen), denn die Nutzung von professionellem Hosting bei einem Provider ist notwendig, um das Unternehmen im Internet sicher und nutzerfreundlich präsentieren und Angriffe und Forderungen hieraus gegebenenfalls verfolgen zu können.</p>
-<h2 id="cookies" class="adsimple-321290480">Cookies</h2>
-<table border="1" cellpadding="15">
-<tbody>
-<tr>
-<td>
-<strong class="adsimple-321290480">Cookies Zusammenfassung</strong>
-<br />
-&#x1f465; Betroffene: Besucher der Website<br />
-&#x1f91d; Zweck: abhängig vom jeweiligen Cookie. Mehr Details dazu finden Sie weiter unten bzw. beim Hersteller der Software, der das Cookie setzt.<br />
-&#x1f4d3; Verarbeitete Daten: Abhängig vom jeweils eingesetzten Cookie. Mehr Details dazu finden Sie weiter unten bzw. beim Hersteller der Software, der das Cookie setzt.<br />
-&#x1f4c5; Speicherdauer: abhängig vom jeweiligen Cookie, kann von Stunden bis hin zu Jahren variieren<br />
-&#x2696;&#xfe0f; Rechtsgrundlagen: Art. 6 Abs. 1 lit. a DSGVO (Einwilligung), Art. 6 Abs. 1 lit.f DSGVO (Berechtigte Interessen)</td>
-</tr>
-</tbody>
-</table>
-<h3 class="adsimple-321290480">Was sind Cookies?</h3>
-<p>Unsere Website verwendet HTTP-Cookies, um nutzerspezifische Daten zu speichern.<br />
-Im Folgenden erklären wir, was Cookies sind und warum Sie genutzt werden, damit Sie die folgende Datenschutzerklärung besser verstehen.</p>
-<p>Immer wenn Sie durch das Internet surfen, verwenden Sie einen Browser. Bekannte Browser sind beispielsweise Chrome, Safari, Firefox, Internet Explorer und Microsoft Edge. Die meisten Websites speichern kleine Text-Dateien in Ihrem Browser. Diese Dateien nennt man Cookies.</p>
-<p>Eines ist nicht von der Hand zu weisen: Cookies sind echt nützliche Helferlein. Fast alle Websites verwenden Cookies. Genauer gesprochen sind es HTTP-Cookies, da es auch noch andere Cookies für andere Anwendungsbereiche gibt. HTTP-Cookies sind kleine Dateien, die von unserer Website auf Ihrem Computer gespeichert werden. Diese Cookie-Dateien werden automatisch im Cookie-Ordner, quasi dem &#8220;Hirn&#8221; Ihres Browsers, untergebracht. Ein Cookie besteht aus einem Namen und einem Wert. Bei der Definition eines Cookies müssen zusätzlich ein oder mehrere Attribute angegeben werden.</p>
-<p>Cookies speichern gewisse Nutzerdaten von Ihnen, wie beispielsweise Sprache oder persönliche Seiteneinstellungen. Wenn Sie unsere Seite wieder aufrufen, übermittelt Ihr Browser die „userbezogenen“ Informationen an unsere Seite zurück. Dank der Cookies weiß unsere Website, wer Sie sind und bietet Ihnen die Einstellung, die Sie gewohnt sind. In einigen Browsern hat jedes Cookie eine eigene Datei, in anderen wie beispielsweise Firefox sind alle Cookies in einer einzigen Datei gespeichert.</p>
-<p>Die folgende Grafik zeigt eine mögliche Interaktion zwischen einem Webbrowser wie z. B. Chrome und dem Webserver. Dabei fordert der Webbrowser eine Website an und erhält vom Server ein Cookie zurück, welches der Browser erneut verwendet, sobald eine andere Seite angefordert wird.</p>
-<p>
-<img role="img" src="https://www.adsimple.at/wp-content/uploads/2018/03/http-cookie-interaction.svg" alt="HTTP Cookie Interaktion zwischen Browser und Webserver" width="100%" />
-</p>
-<p>Es gibt sowohl Erstanbieter Cookies als auch Drittanbieter-Cookies. Erstanbieter-Cookies werden direkt von unserer Seite erstellt, Drittanbieter-Cookies werden von Partner-Websites (z.B. Google Analytics) erstellt. Jedes Cookie ist individuell zu bewerten, da jedes Cookie andere Daten speichert. Auch die Ablaufzeit eines Cookies variiert von ein paar Minuten bis hin zu ein paar Jahren. Cookies sind keine Software-Programme und enthalten keine Viren, Trojaner oder andere „Schädlinge“. Cookies können auch nicht auf Informationen Ihres PCs zugreifen.</p>
-<p>So können zum Beispiel Cookie-Daten aussehen:</p>
-<p>
-<strong class="adsimple-321290480">Name:</strong> _ga<br />
-<strong class="adsimple-321290480">Wert:</strong> GA1.2.1326744211.152321290480-9<br />
-<strong class="adsimple-321290480">Verwendungszweck:</strong> Unterscheidung der Websitebesucher<br />
-<strong class="adsimple-321290480">Ablaufdatum:</strong> nach 2 Jahren</p>
-<p>Diese Mindestgrößen sollte ein Browser unterstützen können:</p>
-<ul class="adsimple-321290480">
-<li class="adsimple-321290480">Mindestens 4096 Bytes pro Cookie</li>
-<li class="adsimple-321290480">Mindestens 50 Cookies pro Domain</li>
-<li class="adsimple-321290480">Mindestens 3000 Cookies insgesamt</li>
-</ul>
-<h3 class="adsimple-321290480">Welche Arten von Cookies gibt es?</h3>
-<p>Die Frage welche Cookies wir im Speziellen verwenden, hängt von den verwendeten Diensten ab und wird in den folgenden Abschnitten der Datenschutzerklärung geklärt. An dieser Stelle möchten wir kurz auf die verschiedenen Arten von HTTP-Cookies eingehen.</p>
-<p>Man kann 4 Arten von Cookies unterscheiden:</p>
-<p>
-<strong class="adsimple-321290480">Unerlässliche Cookies<br />
-</strong>Diese Cookies sind nötig, um grundlegende Funktionen der Website sicherzustellen. Zum Beispiel braucht es diese Cookies, wenn ein User ein Produkt in den Warenkorb legt, dann auf anderen Seiten weitersurft und später erst zur Kasse geht. Durch diese Cookies wird der Warenkorb nicht gelöscht, selbst wenn der User sein Browserfenster schließt.</p>
-<p>
-<strong class="adsimple-321290480">Zweckmäßige Cookies<br />
-</strong>Diese Cookies sammeln Infos über das Userverhalten und ob der User etwaige Fehlermeldungen bekommt. Zudem werden mithilfe dieser Cookies auch die Ladezeit und das Verhalten der Website bei verschiedenen Browsern gemessen.</p>
-<p>
-<strong class="adsimple-321290480">Zielorientierte Cookies<br />
-</strong>Diese Cookies sorgen für eine bessere Nutzerfreundlichkeit. Beispielsweise werden eingegebene Standorte, Schriftgrößen oder Formulardaten gespeichert.</p>
-<p>
-<strong class="adsimple-321290480">Werbe-Cookies<br />
-</strong>Diese Cookies werden auch Targeting-Cookies genannt. Sie dienen dazu dem User individuell angepasste Werbung zu liefern. Das kann sehr praktisch, aber auch sehr nervig sein.</p>
-<p>Üblicherweise werden Sie beim erstmaligen Besuch einer Website gefragt, welche dieser Cookiearten Sie zulassen möchten. Und natürlich wird diese Entscheidung auch in einem Cookie gespeichert.</p>
-<p>Wenn Sie mehr über Cookies wissen möchten und technische Dokumentationen nicht scheuen, empfehlen wir <a class="adsimple-321290480" href="https://tools.ietf.org/html/rfc6265" target="_blank" rel="nofollow noopener">https://tools.ietf.org/html/rfc6265</a>, dem Request for Comments der Internet Engineering Task Force (IETF) namens &#8220;HTTP State Management Mechanism&#8221;.</p>
-<h3 class="adsimple-321290480">Zweck der Verarbeitung über Cookies</h3>
-<p>Der Zweck ist letztendlich abhängig vom jeweiligen Cookie. Mehr Details dazu finden Sie weiter unten bzw. beim Hersteller der Software, die das Cookie setzt.</p>
-<h3 class="adsimple-321290480">Welche Daten werden verarbeitet?</h3>
-<p>Cookies sind kleine Gehilfen für eine viele verschiedene Aufgaben. Welche Daten in Cookies gespeichert werden, kann man leider nicht verallgemeinern, aber wir werden Sie im Rahmen der folgenden Datenschutzerklärung über die verarbeiteten bzw. gespeicherten Daten informieren.</p>
-<h3 class="adsimple-321290480">Speicherdauer von Cookies</h3>
-<p>Die Speicherdauer hängt vom jeweiligen Cookie ab und wird weiter unter präzisiert. Manche Cookies werden nach weniger als einer Stunde gelöscht, andere können mehrere Jahre auf einem Computer gespeichert bleiben.</p>
-<p>Sie haben außerdem selbst Einfluss auf die Speicherdauer. Sie können über ihren Browser sämtliche Cookies jederzeit manuell löschen (siehe auch unten &#8220;Widerspruchsrecht&#8221;). Ferner werden Cookies, die auf einer Einwilligung beruhen, spätestens nach Widerruf Ihrer Einwilligung gelöscht, wobei die Rechtmäßigkeit der Speicherung bis dahin unberührt bleibt.</p>
-<h3 class="adsimple-321290480">Widerspruchsrecht &#8211; wie kann ich Cookies löschen?</h3>
-<p>Wie und ob Sie Cookies verwenden wollen, entscheiden Sie selbst. Unabhängig von welchem Service oder welcher Website die Cookies stammen, haben Sie immer die Möglichkeit Cookies zu löschen, zu deaktivieren oder nur teilweise zuzulassen. Zum Beispiel können Sie Cookies von Drittanbietern blockieren, aber alle anderen Cookies zulassen.</p>
-<p>Wenn Sie feststellen möchten, welche Cookies in Ihrem Browser gespeichert wurden, wenn Sie Cookie-Einstellungen ändern oder löschen wollen, können Sie dies in Ihren Browser-Einstellungen finden:</p>
-<p>
-<a class="adsimple-321290480" href="https://support.google.com/chrome/answer/95647?tid=321290480" target="_blank" rel="noopener noreferrer">Chrome: Cookies in Chrome löschen, aktivieren und verwalten</a>
-</p>
-<p>
-<a class="adsimple-321290480" href="https://support.apple.com/de-at/guide/safari/sfri11471/mac?tid=321290480" target="_blank" rel="noopener noreferrer">Safari: Verwalten von Cookies und Websitedaten mit Safari</a>
-</p>
-<p>
-<a class="adsimple-321290480" href="https://support.mozilla.org/de/kb/cookies-und-website-daten-in-firefox-loschen?tid=321290480" target="_blank" rel="noopener noreferrer">Firefox: Cookies löschen, um Daten zu entfernen, die Websites auf Ihrem Computer abgelegt haben</a>
-</p>
-<p>
-<a class="adsimple-321290480" href="https://support.microsoft.com/de-at/help/17442/windows-internet-explorer-delete-manage-cookies?tid=321290480" target="_blank" rel="noopener noreferrer">Internet Explorer: Löschen und Verwalten von Cookies</a>
-</p>
-<p>
-<a class="adsimple-321290480" href="https://support.microsoft.com/de-at/help/4027947/windows-delete-cookies?tid=321290480" target="_blank" rel="noopener noreferrer">Microsoft Edge: Löschen und Verwalten von Cookies</a>
-</p>
-<p>Falls Sie grundsätzlich keine Cookies haben wollen, können Sie Ihren Browser so einrichten, dass er Sie immer informiert, wenn ein Cookie gesetzt werden soll. So können Sie bei jedem einzelnen Cookie entscheiden, ob Sie das Cookie erlauben oder nicht. Die Vorgangsweise ist je nach Browser verschieden. Am besten Sie suchen die Anleitung in Google mit dem Suchbegriff “Cookies löschen Chrome” oder &#8220;Cookies deaktivieren Chrome&#8221; im Falle eines Chrome Browsers.</p>
-<h3 class="adsimple-321290480">Rechtsgrundlage</h3>
-<p>Seit 2009 gibt es die sogenannten „Cookie-Richtlinien“. Darin ist festgehalten, dass das Speichern von Cookies eine <strong class="adsimple-321290480">Einwilligung</strong> (Artikel 6 Abs. 1 lit. a DSGVO) von Ihnen verlangt. Innerhalb der EU-Länder gibt es allerdings noch sehr unterschiedliche Reaktionen auf diese Richtlinien. In Österreich erfolgte aber die Umsetzung dieser Richtlinie in § 96 Abs. 3 des Telekommunikationsgesetzes (TKG). In Deutschland wurden die Cookie-Richtlinien nicht als nationales Recht umgesetzt. Stattdessen erfolgte die Umsetzung dieser Richtlinie weitgehend in § 15 Abs.3 des Telemediengesetzes (TMG).</p>
-<p>Für unbedingt notwendige Cookies, auch soweit keine Einwilligung vorliegt. bestehen <strong class="adsimple-321290480">berechtigte Interessen</strong> (Artikel 6 Abs. 1 lit. f DSGVO), die in den meisten Fällen wirtschaftlicher Natur sind. Wir möchten den Besuchern der Website eine angenehme Benutzererfahrung bescheren und dafür sind bestimmte Cookies oft unbedingt notwendig.</p>
-<p>Soweit nicht unbedingt erforderliche Cookies zum Einsatz kommen, geschieht dies nur im Falle Ihrer Einwilligung. Rechtsgrundlage ist insoweit Art. 6 Abs. 1 lit. a DSGVO.</p>
-<p>In den folgenden Abschnitten werden Sie genauer über den Einsatz von Cookies informiert, sofern eingesetzte Software Cookies verwendet.</p>
-<h2 id="vimeo-datenschutzerklaerung" class="adsimple-321290480">Vimeo Datenschutzerklärung</h2>
-<table border="1" cellpadding="15">
-<tbody>
-<tr>
-<td>
-<strong class="adsimple-321290480">Vimeo Datenschutzerklärung Zusammenfassung</strong>
-<br />
-&#x1f465; Betroffene: Besucher der Website<br />
-&#x1f91d; Zweck: Optimierung unserer Serviceleistung<br />
-&#x1f4d3; Verarbeitete Daten: Daten wie etwa Kontaktdaten, Daten zum Nutzerverhalten, Informationen zu Ihrem Gerät und Ihre IP-Adresse können gespeichert werden.<br />
-Mehr Details dazu finden Sie weiter unten in dieser Datenschutzerklärung.<br />
-&#x1f4c5; Speicherdauer: Daten bleiben grundsätzlich gespeichert, solange sie für den Dienstzweck nötig sind<br />
-&#x2696;&#xfe0f; Rechtsgrundlagen: Art. 6 Abs. 1 lit. a DSGVO (Einwilligung), Art. 6 Abs. 1 lit. f DSGVO (Berechtigte Interessen)</td>
-</tr>
-</tbody>
-</table>
-<h3 class="adsimple-321290480">Was ist Vimeo?</h3>
-<p>Wir verwenden auf unserer Website auch Videos der Firma Vimeo. Betrieben wird das Videoportal durch Vimeo LLC, 555 West 18th Street, New York, New York 10011, USA. Mit Hilfe eines Plug-ins können wir Ihnen so interessantes Videomaterial direkt auf unserer Website anzeigen. Dabei können gewissen Daten von Ihnen an Vimeo übertragen werden. In dieser Datenschutzerklärung zeigen wir Ihnen, um welche Daten es sich handelt, warum wir Vimeo verwenden und wie Sie Ihre Daten bzw. die Datenübertragung verwalten oder unterbinden können.</p>
-<p>Vimeo ist eine Videoplattform, die 2004 gegründet wurde und seit 2007 das Streamen von Videos in HD-Qualität ermöglicht. Seit 2015 kann auch in 4k Ultra HD gestreamt werden. Die Nutzung des Portals ist kostenlos, es kann allerdings auch kostenpflichtiger Content veröffentlicht werden. Im Vergleich zum Marktführer YouTube, legt Vimeo vorrangig Wert auf hochwertigen Content in guter Qualität. So bietet das Portal einerseits viele künstlerische Inhalte wie Musikvideos und Kurzfilme, andererseits aber auch wissenswerte Dokumentationen zu den unterschiedlichsten Themen.</p>
-<h3 class="adsimple-321290480">Warum verwenden wir Vimeo auf unserer Webseite?</h3>
-<p>Ziel unserer Webpräsenz ist es, Ihnen den bestmöglichen Content zu liefern. Und zwar so einfach zugänglich wie möglich. Erst wenn wir das geschafft haben, sind wir mit unserem Service zufrieden. Der Videodienst Vimeo unterstützt uns dieses Ziel zu erreichen. Vimeo bietet uns die Möglichkeit, Ihnen qualitativ hochwertige Inhalte direkt auf unserer Website zu präsentieren. Statt Ihnen nur einen Link zu einem interessanten Video zu geben, können Sie so das Video gleich bei uns ansehen. Das erweitert unser Service und erleichtert Ihnen den Zugang zu interessanten Inhalten. Somit bieten wir neben unseren Texten und Bildern auch Video-Content an.</p>
-<h3 class="adsimple-321290480">Welche Daten werden auf Vimeo gespeichert?</h3>
-<p>Wenn Sie auf unserer Website eine Seite aufrufen, die ein Vimeo-Video eingebettet hat, verbindet sich Ihr Browser mit den Servern von Vimeo. Dabei kommt es zu einer Datenübertragung. Diese Daten werden auf den Vimeo-Servern gesammelt, gespeichert und verarbeitet. Unabhängig davon, ob Sie ein Vimeo-Konto haben oder nicht, sammelt Vimeo Daten über Sie. Dazu zählen Ihre IP-Adresse, technische Infos über Ihren Browsertyp, Ihr Betriebssystem oder ganz grundlegende Geräteinformationen. Weiters speichert Vimeo Informationen über welche Webseite Sie den Vimeo-Dienst nutzen und welche Handlungen (Webaktivitäten) Sie auf unserer Webseite ausführen. Zu diesen Webaktivitäten zählen beispielsweise Sitzungsdauer, Absprungrate oder auf welchen Button Sie auf unserer Webseite mit eingebauter Vimeo-Funktion geklickt haben. Diese Handlungen kann Vimeo mit Hilfe von Cookies und ähnlichen Technologien verfolgen und speichern.</p>
-<p>Falls Sie als registriertes Mitglied bei Vimeo eingeloggt sind, können meistens mehr Daten erhoben werden, da möglicherweise mehr Cookies bereits in Ihrem Browser gesetzt wurden. Zudem werden Ihre Handlungen auf unsere Webseite direkt mit Ihrem Vimeo-Account verknüpft. Um dies zu verhindern müssen Sie sich, während des &#8220;Surfens&#8221; auf unserer Webseite, von Vimeo ausloggen.</p>
-<p>Nachfolgend zeigen wir Ihnen Cookies, die von Vimeo gesetzt werden, wenn Sie auf einer Webseite mit integrierter Vimeo-Funktion, sind. Diese Liste erhebt keinen Anspruch auf Vollständigkeit und geht davon aus, dass Sie keinen Vimeo-Account haben.</p>
-<p>
-<strong class="adsimple-321290480">Name:</strong> player<br />
-<strong class="adsimple-321290480">Wert:</strong> &#8220;&#8221;<br />
-<strong class="adsimple-321290480">Verwendungszweck:</strong> Dieses Cookie speichert Ihre Einstellungen, bevor Sie ein eingebettetes Vimeo-Video abspielen. Dadurch bekommen Sie beim nächsten Mal, wenn Sie ein Vimeo-Video ansehen, wieder Ihre bevorzugten Einstellungen.<br />
-<strong class="adsimple-321290480">Ablaufdatum:</strong> nach einem Jahr</p>
-<p>
-<strong class="adsimple-321290480">Name</strong>: vuid<br />
-<strong class="adsimple-321290480">Wert: </strong>pl1046149876.614422590321290480-4<strong class="adsimple-321290480">
-<br />
-<strong class="adsimple-321290480">Verwendungszweck: </strong>
-</strong>Dieses Cookie sammelt Informationen über Ihre Handlungen auf Webseiten, die ein Vimeo-Video eingebettet haben.<strong class="adsimple-321290480">
-<br />
-<strong class="adsimple-321290480">Ablaufdatum: </strong>
-</strong>nach 2 Jahren</p>
-<p>
-<strong class="adsimple-321290480">Anmerkung:</strong> Diese beiden Cookies werden immer gesetzt, sobald Sie sich auf einer Webseite mit einem eingebetteten Vimeo-Video befinden. Wenn Sie das Video ansehen und auf die Schaltfläche klicken, um beispielsweise das Video zu &#8220;teilen&#8221; oder zu &#8220;liken&#8221;, werden weitere Cookies gesetzt. Dabei handelt es sich auch um Drittanbieter-Cookies wie  _ga oder _gat_UA-76641-8 von Google Analytics oder _fbp von Facebook. Welche Cookies hier genau gesetzt werden, hängt von Ihrer Interaktion mit dem Video ab.</p>
-<p>Die folgende Liste zeigt einen Ausschnitt möglicher Cookies, die gesetzt werden, wenn Sie mit dem Vimeo-Video interagieren:</p>
-<p>
-<strong class="adsimple-321290480">Name:</strong> _abexps<br />
-<strong class="adsimple-321290480">Wert:</strong> %5B%5D<br />
-<strong class="adsimple-321290480">Verwendungszweck: </strong>Dieses Vimeo-Cookie hilft Vimeo, sich an die von Ihnen getroffenen Einstellungen zu erinnern. Dabei kann es sich zum Beispiel um eine voreingestellte Sprache, um eine Region oder einen Benutzernamen handeln. Im Allgemeinen speichert das Cookie Daten darüber, wie Sie Vimeo verwenden.<br />
-<strong class="adsimple-321290480">Ablaufdatum:</strong> nach einem Jahr</p>
-<p>
-<strong class="adsimple-321290480">Name:</strong> continuous_play_v3<br />
-<strong class="adsimple-321290480">Wert:</strong> 1<br />
-<strong class="adsimple-321290480">Verwendungszweck: </strong>Bei diesem Cookie handelt es sich um ein Erstanbieter-Cookie von Vimeo. Das Cookie sammelt Informationen wie Sie das Vimeo-Service verwenden. Beispielsweise speichert das Cookie, wann Sie ein Video pausieren bzw. wieder abspielen.<br />
-<strong class="adsimple-321290480">Ablaufdatum:</strong> nach einem Jahr</p>
-<p>
-<strong class="adsimple-321290480">Name:</strong> _ga<br />
-<strong class="adsimple-321290480">Wert:</strong> GA1.2.1522249635.1578401280321290480-7<br />
-<strong class="adsimple-321290480">Verwendungszweck: </strong>Dieses Cookie ist ein Drittanbieter-Cookie von Google. Standardmäßig verwendet analytics.js das Cookie _ga, um die User-ID zu speichern. Grundsätzlich dient es zur Unterscheidung der Websitebesucher.<br />
-<strong class="adsimple-321290480">Ablaufdatum:</strong> nach 2 Jahren</p>
-<p>
-<strong class="adsimple-321290480">Name:</strong> _gcl_au<br />
-<strong class="adsimple-321290480">Wert:</strong> 1.1.770887836.1578401279321290480-3<br />
-<strong class="adsimple-321290480">Verwendungszweck: </strong>Dieses Drittanbieter-Cookie von Google AdSense wird verwendet, um die Effizienz von Werbeanzeigen auf Websites zu verbessern.<br />
-<strong class="adsimple-321290480">Ablaufdatum:</strong> nach 3 Monaten</p>
-<p>
-<strong class="adsimple-321290480">Name:</strong> _fbp<br />
-<strong class="adsimple-321290480">Wert:</strong> fb.1.1578401280585.310434968<br />
-<strong class="adsimple-321290480">Verwendungszweck:</strong> Das ist ein Facebook-Cookie. Dieses Cookie wird verwendet, um Werbeanzeigen bzw. Werbeprodukte von Facebook oder anderen Werbetreibenden einzublenden.<br />
-<strong class="adsimple-321290480">Ablaufdatum:</strong> nach 3 Monaten</p>
-<p>Vimeo nutzt diese Daten unter anderem, um das eigene Service zu verbessern, um mit Ihnen in Kommunikation zu treten und um eigene zielgerichtete Werbemaßnahmen zu setzen. Vimeo betont auf seiner Website, dass bei eingebetteten Videos nur Erstanbieter-Cookies (also Cookies von Vimeo selbst) verwendet werden, solange man mit dem Video nicht interagiert.</p>
-<h3 class="adsimple-321290480">Wie lange und wo werden die Daten gespeichert?</h3>
-<p>Vimeo hat den Hauptsitz in White Plains im Bundesstaat New York (USA). Die Dienste werden aber weltweit angeboten. Dabei verwendet das Unternehmen Computersysteme, Datenbanken und Server in den USA und auch in anderen Ländern. Ihre Daten können somit auch auf Servern in Amerika gespeichert und verarbeitet werden. Die Daten bleiben bei Vimeo so lange gespeichert, bis das Unternehmen keinen wirtschaftlichen Grund mehr für die Speicherung hat. Dann werden die Daten gelöscht oder anonymisiert.</p>
-<h3 class="adsimple-321290480">Wie kann ich meine Daten löschen bzw. die Datenspeicherung verhindern?</h3>
-<p>Sie haben immer die Möglichkeit, Cookies in Ihrem Browser nach Ihren Wünschen zu verwalten. Wenn Sie beispielsweise nicht wollen, dass Vimeo Cookies setzt und so Informationen über Sie sammelt, können Sie in Ihren Browser-Einstellungen Cookies jederzeit löschen oder deaktivieren. Je nach Browser funktioniert dies ein bisschen anders. Bitte beachten Sie, dass möglicherweise nach dem Deaktivieren/Löschen von Cookies diverse Funktionen nicht mehr im vollen Ausmaß zur Verfügung stehen. Die folgenden Anleitungen zeigen, wie Sie Cookies in Ihrem Browser verwalten bzw. löschen.</p>
-<p>
-<a class="adsimple-321290480" href="https://support.google.com/chrome/answer/95647?tid=321290480" target="_blank" rel="noopener noreferrer">Chrome: Cookies in Chrome löschen, aktivieren und verwalten</a>
-</p>
-<p>
-<a class="adsimple-321290480" href="https://support.apple.com/de-at/guide/safari/sfri11471/mac?tid=321290480" target="_blank" rel="noopener noreferrer">Safari: Verwalten von Cookies und Websitedaten mit Safari</a>
-</p>
-<p>
-<a class="adsimple-321290480" href="https://support.mozilla.org/de/kb/cookies-und-website-daten-in-firefox-loschen?tid=321290480" target="_blank" rel="noopener noreferrer">Firefox: Cookies löschen, um Daten zu entfernen, die Websites auf Ihrem Computer abgelegt haben</a>
-</p>
-<p>
-<a class="adsimple-321290480" href="https://support.microsoft.com/de-at/help/17442/windows-internet-explorer-delete-manage-cookies?tid=321290480" target="_blank" rel="noopener noreferrer">Internet Explorer: Löschen und Verwalten von Cookies</a>
-</p>
-<p>
-<a class="adsimple-321290480" href="https://support.microsoft.com/de-at/help/4027947/windows-delete-cookies?tid=321290480" target="_blank" rel="noopener noreferrer">Microsoft Edge: Löschen und Verwalten von Cookies</a>
-</p>
-<p>Falls Sie ein registriertes Vimeo-Mitglied sind, können Sie auch in den Einstellungen bei Vimeo die verwendeten Cookies verwalten.</p>
-<h3 class="adsimple-321290480">Rechtsgrundlage</h3>
-<p>Wenn Sie eingewilligt haben, dass Daten von Ihnen durch eingebundene Vimeo-Elemente verarbeitet und gespeichert werden können, gilt diese Einwilligung als Rechtsgrundlage der Datenverarbeitung <strong class="adsimple-321290480">(Art. 6 Abs. 1 lit. a DSGVO)</strong>. Grundsätzlich werden Ihre Daten auch auf Grundlage unseres berechtigten Interesses <strong class="adsimple-321290480">(Art. 6 Abs. 1 lit. f DSGVO)</strong> an einer schnellen und guten Kommunikation mit Ihnen oder anderen Kunden und Geschäftspartnern gespeichert und verarbeitet. Wir setzen die eingebundenen Vimeo-Elemente gleichwohl nur ein, soweit Sie eine Einwilligung erteilt haben. Vimeo setzt auch Cookies in Ihrem Browser, um Daten zu speichern. Darum empfehlen wir Ihnen, unseren Datenschutztext über Cookies genau durchzulesen und die Datenschutzerklärung oder die Cookie-Richtlinien des jeweiligen Dienstanbieters anzusehen.</p>
-<p>Wir weisen darauf hin, dass nach Meinung des Europäischen Gerichtshofs derzeit kein angemessenes Schutzniveau für den Datentransfer in die USA besteht. Die Datenverarbeitung geschieht im Wesentlichen durch Vimeo. Dies kann dazu führen, dass gegebenenfalls Daten nicht anonymisiert verarbeitet und gespeichert werden. Ferner können gegebenenfalls US-amerikanische staatliche Behörden Zugriff auf einzelne Daten nehmen. Es kann ferner vorkommen, dass diese Daten mit Daten aus möglichen anderen Diensten von Vimeo, bei denen Sie ein Nutzerkonto haben, verknüpft werden.</p>
-<p>Mehr über den Einsatz von Cookies bei Vimeo erfahren Sie auf <a class="adsimple-321290480" href="https://vimeo.com/cookie_policy?tid=321290480" target="_blank" rel="follow noopener noreferrer">https://vimeo.com/cookie_policy</a>, Informationen zum Datenschutz bei Vimeo können Sie auf <a class="adsimple-321290480" href="https://vimeo.com/privacy?tid=321290480" target="_blank" rel="follow noopener noreferrer">https://vimeo.com/privacy</a> nachlesen.</p>
-<h2 id="youtube-datenschutzerklaerung" class="adsimple-321290480">YouTube Datenschutzerklärung</h2>
-<table border="1" cellpadding="15">
-<tbody>
-<tr>
-<td>
-<strong class="adsimple-321290480">YouTube Datenschutzerklärung Zusammenfassung</strong>
-<br />
-&#x1f465; Betroffene: Besucher der Website<br />
-&#x1f91d; Zweck: Optimierung unserer Serviceleistung<br />
-&#x1f4d3; Verarbeitete Daten: Daten wie etwa Kontaktdaten, Daten zum Nutzerverhalten, Informationen zu Ihrem Gerät und Ihre IP-Adresse können gespeichert werden.<br />
-Mehr Details dazu finden Sie weiter unten in dieser Datenschutzerklärung.<br />
-&#x1f4c5; Speicherdauer: Daten bleiben grundsätzlich gespeichert, solange sie für den Dienstzweck nötig sind<br />
-&#x2696;&#xfe0f; Rechtsgrundlagen: Art. 6 Abs. 1 lit. a DSGVO (Einwilligung), Art. 6 Abs. 1 lit. f DSGVO (Berechtigte Interessen)</td>
-</tr>
-</tbody>
-</table>
-<h3 class="adsimple-321290480">Was ist YouTube?</h3>
-<p>Wir haben auf unserer Website YouTube-Videos eingebaut. So können wir Ihnen interessante Videos direkt auf unserer Seite präsentieren. YouTube ist ein Videoportal, das seit 2006 eine Tochterfirma von Google ist. Betrieben wird das Videoportal durch YouTube, LLC, 901 Cherry Ave., San Bruno, CA 94066, USA. Wenn Sie auf unserer Website eine Seite aufrufen, die ein YouTube-Video eingebettet hat, verbindet sich Ihr Browser automatisch mit den Servern von YouTube bzw. Google. Dabei werden (je nach Einstellungen) verschiedene Daten übertragen. Für die gesamte Datenverarbeitung im europäischen Raum ist Google Ireland Limited (Gordon House, Barrow Street Dublin 4, Irland) verantwortlich.</p>
-<p>Im Folgenden wollen wir Ihnen genauer erklären, welche Daten verarbeitet werden, warum wir YouTube-Videos eingebunden haben und wie Sie Ihre Daten verwalten oder löschen können.</p>
-<p>Auf YouTube können die User kostenlos Videos ansehen, bewerten, kommentieren und selbst hochladen. Über die letzten Jahre wurde YouTube zu einem der wichtigsten Social-Media-Kanäle weltweit. Damit wir Videos auf unserer Webseite anzeigen können, stellt YouTube einen Codeausschnitt zur Verfügung, den wir auf unserer Seite eingebaut haben.</p>
-<h3 class="adsimple-321290480">Warum verwenden wir YouTube-Videos auf unserer Website?</h3>
-<p>YouTube ist die Videoplattform mit den meisten Besuchern und dem besten Content. Wir sind bemüht, Ihnen die bestmögliche User-Erfahrung auf unserer Webseite zu bieten. Und natürlich dürfen interessante Videos dabei nicht fehlen. Mithilfe unserer eingebetteten Videos stellen wir Ihnen neben unseren Texten und Bildern weiteren hilfreichen Content zur Verfügung. Zudem wird unsere Webseite auf der Google-Suchmaschine durch die eingebetteten Videos leichter gefunden. Auch wenn wir über Google Ads Werbeanzeigen schalten, kann Google – dank der gesammelten Daten – diese Anzeigen wirklich nur Menschen zeigen, die sich für unsere Angebote interessieren.</p>
-<h3 class="adsimple-321290480">Welche Daten werden von YouTube gespeichert?</h3>
-<p>Sobald Sie eine unserer Seiten besuchen, die ein YouTube-Video eingebaut hat, setzt YouTube zumindest ein Cookie, das Ihre IP-Adresse und unsere URL speichert. Wenn Sie in Ihrem YouTube-Konto eingeloggt sind, kann YouTube Ihre Interaktionen auf unserer Webseite meist mithilfe von Cookies Ihrem Profil zuordnen. Dazu zählen Daten wie Sitzungsdauer, Absprungrate, ungefährer Standort, technische Informationen wie Browsertyp, Bildschirmauflösung oder Ihr Internetanbieter. Weitere Daten können Kontaktdaten, etwaige Bewertungen, das Teilen von Inhalten über Social Media oder das Hinzufügen zu Ihren Favoriten auf YouTube sein.</p>
-<p>Wenn Sie nicht in einem Google-Konto oder einem Youtube-Konto angemeldet sind, speichert Google Daten mit einer eindeutigen Kennung, die mit Ihrem Gerät, Browser oder App verknüpft sind. So bleibt beispielsweise Ihre bevorzugte Spracheinstellung beibehalten. Aber viele Interaktionsdaten können nicht gespeichert werden, da weniger Cookies gesetzt werden.</p>
-<p>In der folgenden Liste zeigen wir Cookies, die in einem Test im Browser gesetzt wurden. Wir zeigen einerseits Cookies, die ohne angemeldetes YouTube-Konto gesetzt werden. Andererseits zeigen wir Cookies, die mit angemeldetem Account gesetzt werden. Die Liste kann keinen Vollständigkeitsanspruch erheben, weil die Userdaten immer von den Interaktionen auf YouTube abhängen.</p>
-<p>
-<strong class="adsimple-321290480">Name:</strong> YSC<br />
-<strong class="adsimple-321290480">Wert:</strong> b9-CV6ojI5Y321290480-1<br />
-<strong class="adsimple-321290480">Verwendungszweck:</strong> Dieses Cookie registriert eine eindeutige ID, um Statistiken des gesehenen Videos zu speichern.<br />
-<strong class="adsimple-321290480">Ablaufdatum:</strong> nach Sitzungsende</p>
-<p>
-<strong class="adsimple-321290480">Name:</strong> PREF<br />
-<strong class="adsimple-321290480">Wert:</strong> f1=50000000<br />
-<strong class="adsimple-321290480">Verwendungszweck:</strong> Dieses Cookie registriert ebenfalls Ihre eindeutige ID. Google bekommt über PREF Statistiken, wie Sie YouTube-Videos auf unserer Webseite verwenden.<br />
-<strong class="adsimple-321290480">Ablaufdatum:</strong> nach 8 Monaten</p>
-<p>
-<strong class="adsimple-321290480">Name:</strong> GPS<br />
-<strong class="adsimple-321290480">Wert:</strong> 1<br />
-<strong class="adsimple-321290480">Verwendungszweck:</strong> Dieses Cookie registriert Ihre eindeutige ID auf mobilen Geräten, um den GPS-Standort zu tracken.<br />
-<strong class="adsimple-321290480">Ablaufdatum:</strong> nach 30 Minuten</p>
-<p>
-<strong class="adsimple-321290480">Name:</strong> VISITOR_INFO1_LIVE<br />
-<strong class="adsimple-321290480">Wert:</strong> 95Chz8bagyU<br />
-<strong class="adsimple-321290480">Verwendungszweck:</strong> Dieses Cookie versucht die Bandbreite des Users auf unseren Webseiten (mit eingebautem YouTube-Video) zu schätzen.<br />
-<strong class="adsimple-321290480">Ablaufdatum:</strong> nach 8 Monaten</p>
-<p>Weitere Cookies, die gesetzt werden, wenn Sie mit Ihrem YouTube-Konto angemeldet sind:</p>
-<p>
-<strong class="adsimple-321290480">Name:</strong> APISID<br />
-<strong class="adsimple-321290480">Wert:</strong> zILlvClZSkqGsSwI/AU1aZI6HY7321290480-<br />
-<strong class="adsimple-321290480">Verwendungszweck:</strong> Dieses Cookie wird verwendet, um ein Profil über Ihre Interessen zu erstellen. Genützt werden die Daten für personalisierte Werbeanzeigen.<br />
-<strong class="adsimple-321290480">Ablaufdatum:</strong> nach 2 Jahren</p>
-<p>
-<strong class="adsimple-321290480">Name:</strong> CONSENT<br />
-<strong class="adsimple-321290480">Wert:</strong> YES+AT.de+20150628-20-0<br />
-<strong class="adsimple-321290480">Verwendungszweck:</strong> Das Cookie speichert den Status der Zustimmung eines Users zur Nutzung unterschiedlicher Services von Google. CONSENT dient auch der Sicherheit, um User zu überprüfen und Userdaten vor unbefugten Angriffen zu schützen.<br />
-<strong class="adsimple-321290480">Ablaufdatum: </strong>nach 19 Jahren</p>
-<p>
-<strong class="adsimple-321290480">Name:</strong> HSID<br />
-<strong class="adsimple-321290480">Wert:</strong> AcRwpgUik9Dveht0I<br />
-<strong class="adsimple-321290480">Verwendungszweck:</strong> Dieses Cookie wird verwendet, um ein Profil über Ihre Interessen zu erstellen. Diese Daten helfen personalisierte Werbung anzeigen zu können.<br />
-<strong class="adsimple-321290480">Ablaufdatum:</strong> nach 2 Jahren</p>
-<p>
-<strong class="adsimple-321290480">Name:</strong> LOGIN_INFO<br />
-<strong class="adsimple-321290480">Wert:</strong> AFmmF2swRQIhALl6aL…<br />
-<strong class="adsimple-321290480">Verwendungszweck:</strong> In diesem Cookie werden Informationen über Ihre Login-Daten gespeichert.<br />
-<strong class="adsimple-321290480">Ablaufdatum:</strong> nach 2 Jahren</p>
-<p>
-<strong class="adsimple-321290480">Name:</strong> SAPISID<br />
-<strong class="adsimple-321290480">Wert:</strong> 7oaPxoG-pZsJuuF5/AnUdDUIsJ9iJz2vdM<br />
-<strong class="adsimple-321290480">Verwendungszweck:</strong> Dieses Cookie funktioniert, indem es Ihren Browser und Ihr Gerät eindeutig identifiziert. Es wird verwendet, um ein Profil über Ihre Interessen zu erstellen.<br />
-<strong class="adsimple-321290480">Ablaufdatum:</strong> nach 2 Jahren</p>
-<p>
-<strong class="adsimple-321290480">Name:</strong> SID<br />
-<strong class="adsimple-321290480">Wert:</strong> oQfNKjAsI321290480-<br />
-<strong class="adsimple-321290480">Verwendungszweck:</strong> Dieses Cookie speichert Ihre Google-Konto-ID und Ihren letzten Anmeldezeitpunkt in digital signierter und verschlüsselter Form.<br />
-<strong class="adsimple-321290480">Ablaufdatum:</strong> nach 2 Jahren</p>
-<p>
-<strong class="adsimple-321290480">Name:</strong> SIDCC<br />
-<strong class="adsimple-321290480">Wert:</strong> AN0-TYuqub2JOcDTyL<br />
-<strong class="adsimple-321290480">Verwendungszweck:</strong> Dieses Cookie speichert Informationen, wie Sie die Webseite nutzen und welche Werbung Sie vor dem Besuch auf unserer Seite möglicherweise gesehen haben.<br />
-<strong class="adsimple-321290480">Ablaufdatum:</strong> nach 3 Monaten</p>
-<h3 class="adsimple-321290480">Wie lange und wo werden die Daten gespeichert?</h3>
-<p>Die Daten, die YouTube von Ihnen erhält und verarbeitet werden auf den Google-Servern gespeichert. Die meisten dieser Server befinden sich in Amerika. Unter <a class="adsimple-321290480" href="https://www.google.com/about/datacenters/inside/locations/?hl=de" target="_blank" rel="noopener noreferrer">https://www.google.com/about/datacenters/inside/locations/?hl=de</a>  sehen Sie genau wo sich die Google-Rechenzentren befinden. Ihre Daten sind auf den Servern verteilt. So sind die Daten schneller abrufbar und vor Manipulation besser geschützt.</p>
-<p>Die erhobenen Daten speichert Google unterschiedlich lang. Manche Daten können Sie jederzeit löschen, andere werden automatisch nach einer begrenzten Zeit gelöscht und wieder andere werden von Google über längere Zeit gespeichert. Einige Daten (wie Elemente aus „Meine Aktivität“, Fotos oder Dokumente, Produkte), die in Ihrem Google-Konto gespeichert sind, bleiben so lange gespeichert, bis Sie sie löschen. Auch wenn Sie nicht in einem Google-Konto angemeldet sind, können Sie einige Daten, die mit Ihrem Gerät, Browser oder App verknüpft sind, löschen.</p>
-<h3 class="adsimple-321290480">Wie kann ich meine Daten löschen bzw. die Datenspeicherung verhindern?</h3>
-<p>Grundsätzlich können Sie Daten im Google Konto manuell löschen. Mit der 2019 eingeführten automatischen Löschfunktion von Standort- und Aktivitätsdaten werden Informationen abhängig von Ihrer Entscheidung &#8211; entweder 3 oder 18 Monate gespeichert und dann gelöscht.</p>
-<p>Unabhängig, ob Sie ein Google-Konto haben oder nicht, können Sie Ihren Browser so konfigurieren, dass Cookies von Google gelöscht bzw. deaktiviert werden. Je nachdem welchen Browser Sie verwenden, funktioniert dies auf unterschiedliche Art und Weise. Die folgenden Anleitungen zeigen, wie Sie Cookies in Ihrem Browser verwalten:</p>
-<p>
-<a class="adsimple-321290480" href="https://support.google.com/chrome/answer/95647?tid=321290480" target="_blank" rel="noopener noreferrer">Chrome: Cookies in Chrome löschen, aktivieren und verwalten</a>
-</p>
-<p>
-<a class="adsimple-321290480" href="https://support.apple.com/de-at/guide/safari/sfri11471/mac?tid=321290480" target="_blank" rel="noopener noreferrer">Safari: Verwalten von Cookies und Websitedaten mit Safari</a>
-</p>
-<p>
-<a class="adsimple-321290480" href="https://support.mozilla.org/de/kb/cookies-und-website-daten-in-firefox-loschen?tid=321290480" target="_blank" rel="noopener noreferrer">Firefox: Cookies löschen, um Daten zu entfernen, die Websites auf Ihrem Computer abgelegt haben</a>
-</p>
-<p>
-<a class="adsimple-321290480" href="https://support.microsoft.com/de-at/help/17442/windows-internet-explorer-delete-manage-cookies?tid=321290480" target="_blank" rel="noopener noreferrer">Internet Explorer: Löschen und Verwalten von Cookies</a>
-</p>
-<p>
-<a class="adsimple-321290480" href="https://support.microsoft.com/de-at/help/4027947/windows-delete-cookies?tid=321290480" target="_blank" rel="noopener noreferrer">Microsoft Edge: Löschen und Verwalten von Cookies</a>
-</p>
-<p>Falls Sie grundsätzlich keine Cookies haben wollen, können Sie Ihren Browser so einrichten, dass er Sie immer informiert, wenn ein Cookie gesetzt werden soll. So können Sie bei jedem einzelnen Cookie entscheiden, ob Sie es erlauben oder nicht.</p>
-<h3 class="adsimple-321290480">Rechtsgrundlage</h3>
-<p>Wenn Sie eingewilligt haben, dass Daten von Ihnen durch eingebundene YouTube-Elemente verarbeitet und gespeichert werden können, gilt diese Einwilligung als Rechtsgrundlage der Datenverarbeitung <strong class="adsimple-321290480">(Art. 6 Abs. 1 lit. a DSGVO)</strong>. Grundsätzlich werden Ihre Daten auch auf Grundlage unseres berechtigten Interesses <strong class="adsimple-321290480">(Art. 6 Abs. 1 lit. f DSGVO)</strong> an einer schnellen und guten Kommunikation mit Ihnen oder anderen Kunden und Geschäftspartnern gespeichert und verarbeitet. Wir setzen die eingebundenen YouTube-Elemente gleichwohl nur ein, soweit Sie eine Einwilligung erteilt haben. YouTube setzt auch Cookies in Ihrem Browser, um Daten zu speichern. Darum empfehlen wir Ihnen, unseren Datenschutztext über Cookies genau durchzulesen und die Datenschutzerklärung oder die Cookie-Richtlinien des jeweiligen Dienstanbieters anzusehen.</p>
-<p>Wir weisen darauf hin, dass nach Meinung des Europäischen Gerichtshofs derzeit kein angemessenes Schutzniveau für den Datentransfer in die USA besteht. Die Datenverarbeitung geschieht im Wesentlichen durch YouTube. Dies kann dazu führen, dass gegebenenfalls Daten nicht anonymisiert verarbeitet und gespeichert werden. Ferner können gegebenenfalls US-amerikanische staatliche Behörden Zugriff auf einzelne Daten nehmen. Es kann ferner vorkommen, dass diese Daten mit Daten aus möglichen anderen Diensten von YouTube bzw. Google, bei denen Sie ein Nutzerkonto haben, verknüpft werden.</p>
-<p>Da YouTube ein Tochterunternehmen von Google ist, gibt es eine gemeinsame Datenschutzerklärung. Wenn Sie mehr über den Umgang mit Ihren Daten erfahren wollen, empfehlen wir Ihnen die Datenschutzerklärung unter <a class="adsimple-321290480" href="https://policies.google.com/privacy?hl=de" target="_blank" rel="noopener noreferrer">https://policies.google.com/privacy?hl=de.</a>
-</p>
-<h2 id="youtube-abonnieren-button" class="adsimple-321290480">YouTube Abonnieren Button Datenschutzerklärung</h2>
-<p>Wir haben auf unserer Webseite den YouTube Abonnieren Button (engl. „Subscribe-Button“) eingebaut. Sie erkennen den Button meist am klassischen YouTube-Logo. Das Logo zeigt vor rotem Hintergrund in weißer Schrift die Wörter „Abonnieren“ oder „YouTube“ und links davon das weiße „Play-Symbol“. Der Button kann aber auch in einem anderen Design dargestellt sein.</p>
-<p>Unser YouTube-Kanal bietet Ihnen immer wieder lustige, interessante oder spannende Videos. Mit dem eingebauten „Abonnieren-Button“ können Sie unseren Kanal direkt von unserer Webseite aus abonnieren und müssen nicht eigens die YouTube-Webseite aufrufen. Wir wollen Ihnen somit den Zugang zu unserem umfassenden Content so einfach wie möglich machen. Bitte beachten Sie, dass YouTube dadurch Daten von Ihnen speichern und verarbeiten kann.</p>
-<p>Wenn Sie auf unserer Seite einen eingebauten Abo-Button sehen, setzt YouTube &#8211; laut Google &#8211; mindestens ein Cookie. Dieses Cookie speichert Ihre IP-Adresse und unsere URL. Auch Informationen über Ihren Browser, Ihren ungefähren Standort und Ihre voreingestellte Sprache kann YouTube so erfahren. Bei unserem Test wurden folgende vier Cookies gesetzt, ohne bei YouTube angemeldet zu sein:</p>
-<p>
-<strong class="adsimple-321290480">Name:</strong> YSC<br />
-<strong class="adsimple-321290480">Wert:</strong> b9-CV6ojI5321290480Y<br />
-<strong class="adsimple-321290480">Verwendungszweck:</strong> Dieses Cookie registriert eine eindeutige ID, um Statistiken des gesehenen Videos zu speichern.<br />
-<strong class="adsimple-321290480">Ablaufdatum:</strong> nach Sitzungsende</p>
-<p>
-<strong class="adsimple-321290480">Name:</strong> PREF<br />
-<strong class="adsimple-321290480">Wert:</strong> f1=50000000<br />
-<strong class="adsimple-321290480">Verwendungszweck:</strong> Dieses Cookie registriert ebenfalls Ihre eindeutige ID. Google bekommt über PREF Statistiken, wie Sie YouTube-Videos auf unserer Webseite verwenden.<br />
-<strong class="adsimple-321290480">Ablaufdatum:</strong> nach 8 Monate</p>
-<p>
-<strong class="adsimple-321290480">Name:</strong> GPS<br />
-<strong class="adsimple-321290480">Wert:</strong> 1<br />
-<strong class="adsimple-321290480">Verwendungszweck:</strong> Dieses Cookie registriert Ihre eindeutige ID auf mobilen Geräten, um den GPS-Standort zu tracken.<br />
-<strong class="adsimple-321290480">Ablaufdatum:</strong> nach 30 Minuten</p>
-<p>
-<strong class="adsimple-321290480">Name:</strong> VISITOR_INFO1_LIVE<br />
-<strong class="adsimple-321290480">Wert:</strong> 32129048095Chz8bagyU<br />
-<strong class="adsimple-321290480">Verwendungszweck:</strong> Dieses Cookie versucht die Bandbreite des Users auf unseren Webseiten (mit eingebautem YouTube-Video) zu schätzen.<br />
-<strong class="adsimple-321290480">Ablaufdatum:</strong> nach 8 Monaten</p>
-<p>
-<strong class="adsimple-321290480">Anmerkung:</strong> Diese Cookies wurden nach einem Test gesetzt und können nicht den Anspruch auf Vollständigkeit erheben.</p>
-<p>Wenn Sie in Ihrem YouTube-Konto angemeldet sind, kann YouTube viele Ihrer Handlungen/Interaktionen auf unserer Webseite mit Hilfe von Cookies speichern und Ihrem YouTube-Konto zuordnen. YouTube bekommt dadurch zum Beispiel Informationen wie lange Sie auf unserer Seite surfen, welchen Browsertyp Sie verwenden, welche Bildschirmauflösung Sie bevorzugen oder welche Handlungen Sie ausführen.</p>
-<p>YouTube verwendet diese Daten zum einen um die eigenen Dienstleistungen und Angebote zu verbessern, zum anderen um Analysen und Statistiken für Werbetreibende (die Google Ads verwenden) bereitzustellen.</p>
-<p>Alle Texte sind urheberrechtlich geschützt.</p>
-<p style="margin-top:15px;">Quelle: Erstellt mit dem <a href="https://www.adsimple.de/datenschutz-generator/" >Datenschutz Generator</a> von AdSimple</p>
-    
+<main data-barba="container" data-barba-namespace="impressum">
+
+<div style="height: 80px;" class="md:block hidden"></div>
+
+<div style="height: 20px;" class="block md:hidden"></div>
+
+<div class="container container mx-auto px-10 py-20 bg-white">
+
+    <h1 class="adsimple-321290480">Impressum</h1>
+    <p class="adsimple-321290480">Informationspflicht laut § 5 TMG.</p>
+    <p class="adsimple-321290480">THG Freiburg<br />Andreas-Hofer-Straße 1, <br />79111 Freiburg im Breisgau, <br />Deutschland</p>
+    <p class="adsimple-321290480">
+    </p>
+    <p class="adsimple-321290480">
+    <strong>Tel.:</strong> 0761 2017690<br />
+    <strong>E-Mail:</strong> <a href="mailto:sekretariat.thgvn@freiburger-schulen.bwl.de">sekretariat.thgvn@freiburger-schulen.bwl.de</a>
+    </p>
+    <p class="adsimple-321290480">
+    <strong>Aufsichtsbehörde</strong>
+    <br>Ministerium für Kultus, Jugend und Sport Baden-Württemberg<br />
+    <strong>Anschrift der Aufsichtsbehörde</strong>
+    <br> Postfach 10 34 42
+    70029 Stuttgart<br />
+    </p>
+    <p style="margin-top:15px;">Quelle: Erstellt mit dem <a href="https://www.adsimple.de/impressum-generator/" >Impressum Generator</a> von AdSimple</p>
+    <h2 id="eu-streitschlichtung" class="adsimple-321290480">EU-Streitschlichtung</h2>
+    <p>Gemäß Verordnung über Online-Streitbeilegung in Verbraucherangelegenheiten (ODR-Verordnung) möchten wir Sie über die Online-Streitbeilegungsplattform (OS-Plattform) informieren.<br />
+    Verbraucher haben die Möglichkeit, Beschwerden an die Online Streitbeilegungsplattform der Europäischen Kommission unter <a class="adsimple-321290480" href="https://ec.europa.eu/consumers/odr/main/index.cfm?event=main.home2.show&amp;lng=DE" target="_blank" rel="noopener">http://ec.europa.eu/odr?tid=321290480</a> zu richten. Die dafür notwendigen Kontaktdaten finden Sie oberhalb in unserem Impressum.</p>
+    <p>Wir möchten Sie jedoch darauf hinweisen, dass wir nicht bereit oder verpflichtet sind, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</p>
+    <h2 id="haftungs-inhalte-website" class="adsimple-321290480">Haftung für Inhalte dieser Website</h2>
+    <p>Wir entwickeln die Inhalte dieser Webseite ständig weiter und bemühen uns korrekte und aktuelle Informationen bereitzustellen. Laut Telemediengesetz <a class="adsimple-321290480" href="https://www.gesetze-im-internet.de/tmg/__7.html?tid=321290480" rel="noopener" target="_blank">(TMG) §7 (1)</a> sind wir als Diensteanbieter für eigene Informationen, die wir zur Nutzung bereitstellen, nach den allgemeinen Gesetzen verantwortlich. Leider können wir keine Haftung für die Korrektheit aller Inhalte auf dieser Webseite übernehmen, speziell für jene die seitens Dritter bereitgestellt wurden. Als Diensteanbieter im Sinne der §§ 8 bis 10 sind wir nicht verpflichtet, die von ihnen übermittelten oder gespeicherten Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen.</p>
+    <p>Unsere Verpflichtungen zur Entfernung von Informationen oder zur Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen aufgrund von gerichtlichen oder behördlichen Anordnungen bleiben auch im Falle unserer Nichtverantwortlichkeit nach den §§ 8 bis 10 unberührt. </p>
+    <p>Sollten Ihnen problematische oder rechtswidrige Inhalte auffallen, bitte wir Sie uns umgehend zu kontaktieren, damit wir die rechtswidrigen Inhalte entfernen können. Sie finden die Kontaktdaten im Impressum.</p>
+    <h2 id="haftung-links-website" class="adsimple-321290480">Haftung für Links auf dieser Website</h2>
+    <p>Unsere Webseite enthält Links zu anderen Webseiten für deren Inhalt wir nicht verantwortlich sind. Haftung für verlinkte Websites besteht für uns nicht, da wir keine Kenntnis rechtswidriger Tätigkeiten hatten und haben, uns solche Rechtswidrigkeiten auch bisher nicht aufgefallen sind und wir Links sofort entfernen würden, wenn uns Rechtswidrigkeiten bekannt werden.</p>
+    <p>Wenn Ihnen rechtswidrige Links auf unserer Website auffallen, bitte wir Sie uns zu kontaktieren. Sie finden die Kontaktdaten im Impressum.</p>
+    <h2 id="urheberrechtshinweis" class="adsimple-321290480">Urheberrechtshinweis</h2>
+    <p>Alle Inhalte dieser Webseite (Bilder, Fotos, Texte, Videos) unterliegen dem Urheberrecht der Bundesrepublik Deutschland. Bitte fragen Sie uns bevor Sie die Inhalte dieser Website verbreiten, vervielfältigen oder verwerten wie zum Beispiel auf anderen Websites erneut veröffentlichen. Falls notwendig, werden wir die unerlaubte Nutzung von Teilen der Inhalte unserer Seite rechtlich verfolgen.</p>
+    <p>Sollten Sie auf dieser Webseite Inhalte finden, die das Urheberrecht verletzen, bitten wir Sie uns zu kontaktieren.</p>
+    <h2 id="bildernachweis" class="adsimple-321290480">Bildernachweis</h2>
+    <p>Die Bilder, Fotos und Grafiken auf dieser Webseite sind urheberrechtlich geschützt.</p>
+    <p>Die Bilderrechte liegen bei den folgenden Fotografen und Unternehmen:</p>
+    <ul class="adsimple-321290480">
+    <li class="adsimple-321290480">Fotograf Mustermann</li>
+    </ul>
+    <h1 class="adsimple-321290480">Datenschutzerklärung</h1>
+    <h2>Inhaltsverzeichnis</h2>
+    <ul>
+    <li>
+    <a href="#einleitung-ueberblick">Einleitung und Überblick</a>
+    </li>
+    <li>
+    <a href="#rechtsgrundlagen">Rechtsgrundlagen</a>
+    </li>
+    <li>
+    <a href="#kontaktdaten-verantwortliche">Kontaktdaten des Verantwortlichen</a>
+    </li>
+    <li>
+    <a href="#rechte-dsgvo">Rechte laut Datenschutzgrundverordnung</a>
+    </li>
+    <li>
+    <a href="#kontaktdaten-datenschutzbeauftragter">Kontaktdaten des Datenschutzbeauftragten</a>
+    </li>
+    <li>
+    <a href="#sicherheit-datenverarbeitung">Sicherheit der Datenverarbeitung</a>
+    </li>
+    <li>
+    <a href="#kommunikation">Kommunikation</a>
+    </li>
+    <li>
+    <a href="#webhosting">Webhosting</a>
+    </li>
+    <li>
+    <a href="#cookies">Cookies</a>
+    </li>
+    <li>
+    <a href="#vimeo-datenschutzerklaerung">Vimeo Datenschutzerklärung</a>
+    </li>
+    <li>
+    <a href="#youtube-datenschutzerklaerung">YouTube Datenschutzerklärung</a>
+    </li>
+    </ul>
+    <h2 id="einleitung-ueberblick" class="adsimple-321290480">Einleitung und Überblick</h2>
+    <p>Wir haben diese Datenschutzerklärung (Fassung 15.07.2021-321290480) verfasst, um Ihnen gemäß der Vorgaben der <a class="adsimple-321290480" href="https://eur-lex.europa.eu/legal-content/DE/ALL/?uri=celex%3A32016R0679&amp;tid=321290480" target="_blank" rel="noopener">Datenschutz-Grundverordnung (EU) 2016/679</a> und anwendbaren nationalen Gesetzen zu erklären, welche personenbezogenen Daten (kurz Daten) wir als Verantwortliche &#8211; und die von uns beauftragten Auftragsverarbeiter (z. B. Provider) &#8211; verarbeiten, zukünftig verarbeiten werden und welche rechtmäßigen Möglichkeiten Sie haben. Die verwendeten Begriffe sind geschlechtsneutral zu verstehen.<br />
+    <strong class="adsimple-321290480">Kurz gesagt:</strong> Wir informieren Sie umfassend über Daten, die wir über Sie verarbeiten.</p>
+    <p>Datenschutzerklärungen klingen für gewöhnlich sehr technisch und verwenden juristische Fachbegriffe. Diese Datenschutzerklärung soll Ihnen hingegen die wichtigsten Dinge so einfach und transparent wie möglich beschreiben. Soweit es der Transparenz förderlich ist, werden technische <strong class="adsimple-321290480">Begriffe leserfreundlich erklärt</strong>, <strong class="adsimple-321290480">Links</strong> zu weiterführenden Informationen geboten und <strong class="adsimple-321290480">Grafiken</strong> zum Einsatz gebracht. Wir informieren damit in klarer und einfacher Sprache, dass wir im Rahmen unserer Geschäftstätigkeiten nur dann personenbezogene Daten verarbeiten, wenn eine entsprechende gesetzliche Grundlage gegeben ist. Das ist sicher nicht möglich, wenn man möglichst knappe, unklare und juristisch-technische Erklärungen abgibt, so wie sie im Internet oft Standard sind, wenn es um Datenschutz geht. Ich hoffe, Sie finden die folgenden Erläuterungen interessant und informativ und vielleicht ist die eine oder andere Information dabei, die Sie noch nicht kannten.<br />
+    Wenn trotzdem Fragen bleiben, möchten wir Sie bitten, sich an die unten bzw. im Impressum genannte verantwortliche Stelle zu wenden, den vorhandenen Links zu folgen und sich weitere Informationen auf Drittseiten anzusehen. Unsere Kontaktdaten finden Sie selbstverständlich auch im Impressum.</p>
+    <h2 id="rechtsgrundlagen" class="adsimple-321290480">Rechtsgrundlagen</h2>
+    <p>In der folgenden Datenschutzerklärung geben wir Ihnen transparente Informationen zu den rechtlichen Grundsätzen und Vorschriften, also den Rechtsgrundlagen der Datenschutz-Grundverordnung, die uns ermöglichen, personenbezogene Daten zu verarbeiten.<br />
+    Was das EU-Recht betrifft, beziehen wir uns auf die VERORDNUNG (EU) 2016/679 DES EUROPÄISCHEN PARLAMENTS UND DES RATES vom 27. April 2016. Diese Datenschutz-Grundverordnung der EU können Sie selbstverständlich online auf EUR-Lex, dem Zugang zum EU-Recht, unter <a class="adsimple-321290480" href="https://eur-lex.europa.eu/legal-content/DE/ALL/?uri=celex%3A32016R0679&amp;tid=321290480" target="_blank" rel="noopener">https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=celex%3A32016R0679</a> nachlesen.</p>
+    <p>Wir verarbeiten Ihre Daten nur, wenn mindestens eine der folgenden Bedingungen zutrifft:</p>
+    <ol>
+    <li class="adsimple-321290480">
+    <strong class="adsimple-321290480">Einwilligung</strong> (Artikel 6 Absatz 1 lit. a DSGVO): Sie haben uns Ihre Einwilligung gegeben, Daten zu einem bestimmten Zweck zu verarbeiten. Ein Beispiel wäre die Speicherung Ihrer eingegebenen Daten eines Kontaktformulars.</li>
+    <li class="adsimple-321290480">
+    <strong class="adsimple-321290480">Vertrag</strong> (Artikel 6 Absatz 1 lit. b DSGVO): Um einen Vertrag oder vorvertragliche Verpflichtungen mit Ihnen zu erfüllen, verarbeiten wir Ihre Daten. Wenn wir zum Beispiel einen Kaufvertrag mit Ihnen abschließen, benötigen wir vorab personenbezogene Informationen.</li>
+    <li class="adsimple-321290480">
+    <strong class="adsimple-321290480">Rechtliche Verpflichtung</strong> (Artikel 6 Absatz 1 lit. c DSGVO): Wenn wir einer rechtlichen Verpflichtung unterliegen, verarbeiten wir Ihre Daten. Zum Beispiel sind wir gesetzlich verpflichtet Rechnungen für die Buchhaltung aufzuheben. Diese enthalten in der Regel personenbezogene Daten.</li>
+    <li class="adsimple-321290480">
+    <strong class="adsimple-321290480">Berechtigte Interessen</strong> (Artikel 6 Absatz 1 lit. f DSGVO): Im Falle berechtigter Interessen, die Ihre Grundrechte nicht einschränken, behalten wir uns die Verarbeitung personenbezogener Daten vor. Wir müssen zum Beispiel gewisse Daten verarbeiten, um unsere Website sicher und wirtschaftlich effizient betreiben zu können. Diese Verarbeitung ist somit ein berechtigtes Interesse.</li>
+    </ol>
+    <p>Weitere Bedingungen wie die Wahrnehmung von Aufnahmen im öffentlichen Interesse und Ausübung öffentlicher Gewalt sowie dem Schutz lebenswichtiger Interessen treten bei uns in der Regel nicht auf. Soweit eine solche Rechtsgrundlage doch einschlägig sein sollte, wird diese an der entsprechenden Stelle ausgewiesen.</p>
+    <p>Zusätzlich zu der EU-Verordnung gelten auch noch nationale Gesetze:</p>
+    <ul class="adsimple-321290480">
+    <li class="adsimple-321290480">In <strong class="adsimple-321290480">Österreich</strong> ist dies das Bundesgesetz zum Schutz natürlicher Personen bei der Verarbeitung personenbezogener Daten (<strong class="adsimple-321290480">Datenschutzgesetz</strong>), kurz <strong class="adsimple-321290480">DSG</strong>.</li>
+    <li class="adsimple-321290480">In <strong class="adsimple-321290480">Deutschland</strong> gilt das <strong class="adsimple-321290480">Bundesdatenschutzgesetz</strong>, kurz<strong class="adsimple-321290480"> BDSG</strong>.</li>
+    </ul>
+    <p>Sofern weitere regionale oder nationale Gesetze zur Anwendung kommen, informieren wir Sie in den folgenden Abschnitten darüber.</p>
+    <h2 id="kontaktdaten-verantwortliche" class="adsimple-321290480">Kontaktdaten des Verantwortlichen</h2>
+    <p>Sollten Sie Fragen zum Datenschutz haben, finden Sie nachfolgend die Kontaktdaten der verantwortlichen Person bzw. Stelle:<br />
+    Musterfirma GmbH<br />
+    Musterstraße 1, 4711 Musterort<br />
+    <span class="adsimple-321290480" style="font-weight: 400;">Vertretungsberechtigt: Markus Mustermann</span>
+    <br />
+    E-Mail: <a class="adsimple-321290480" href="mailto:office@musterfirma.com">office@musterfirma.com</a>
+    <br />
+    Telefon: <span class="adsimple-321290480" style="font-weight: 400;">+49 47114 654165</span>
+    <br />
+    Impressum: <a class="adsimple-321290480" href="http://www.testfirma.de/impressum" target="_blank" rel="noopener">https://www.testfirma.de/impressum</a>
+    </p>
+    <h2 id="rechte-dsgvo" class="adsimple-321290480">Rechte laut Datenschutzgrundverordnung</h2>
+    <p>Laut Artikel 13 DSGVO stehen Ihnen die folgenden Rechte zu, damit es zu einer fairen und transparenten Verarbeitung von Daten kommt:</p>
+    <ul class="adsimple-321290480">
+    <li class="adsimple-321290480">Sie haben laut Artikel 15 DSGVO ein Auskunftsrecht darüber, ob wir Daten von Ihnen verarbeiten. Sollte das zutreffen, haben Sie Recht darauf eine Kopie der Daten zu erhalten und die folgenden Informationen zu erfahren:
+    <ul class="adsimple-321290480">
+    <li class="adsimple-321290480">zu welchem Zweck wir die Verarbeitung durchführen;</li>
+    <li class="adsimple-321290480">die Kategorien, also die Arten von Daten, die verarbeitet werden;</li>
+    <li class="adsimple-321290480">wer diese Daten erhält und wenn die Daten an Drittländer übermittelt werden, wie die Sicherheit garantiert werden kann;</li>
+    <li class="adsimple-321290480">wie lange die Daten gespeichert werden;</li>
+    <li class="adsimple-321290480">das Bestehen des Rechts auf Berichtigung, Löschung oder Einschränkung der Verarbeitung und dem Widerspruchsrecht gegen die Verarbeitung;</li>
+    <li class="adsimple-321290480">dass Sie sich bei einer Aufsichtsbehörde beschweren können (Links zu diesen Behörden finden Sie weiter unten);</li>
+    <li class="adsimple-321290480">die Herkunft der Daten, wenn wir sie nicht bei Ihnen erhoben haben;</li>
+    <li class="adsimple-321290480">ob Profiling durchgeführt wird, ob also Daten automatisch ausgewertet werden, um zu einem persönlichen Profil von Ihnen zu gelangen.</li>
+    </ul>
+    </li>
+    <li class="adsimple-321290480">Sie haben laut Artikel 16 DSGVO ein Recht auf Berichtigung der Daten, was bedeutet, dass wir Daten richtig stellen müssen, falls Sie Fehler finden.</li>
+    <li class="adsimple-321290480">Sie haben laut Artikel 17 DSGVO das Recht auf Löschung („Recht auf Vergessenwerden“), was konkret bedeutet, dass Sie die Löschung Ihrer Daten verlangen dürfen.</li>
+    <li class="adsimple-321290480">Sie haben laut Artikel 18 DSGVO das Recht auf Einschränkung der Verarbeitung, was bedeutet, dass wir die Daten nur mehr speichern dürfen aber nicht weiter verwenden.</li>
+    <li class="adsimple-321290480">Sie haben laut Artikel 19 DSGVO das Recht auf Datenübertragbarkeit, was bedeutet, dass wir Ihnen auf Anfrage Ihre Daten in einem gängigen Format zur Verfügung stellen.</li>
+    <li class="adsimple-321290480">Sie haben laut Artikel 21 DSGVO ein Widerspruchsrecht, welches nach Durchsetzung eine Änderung der Verarbeitung mit sich bringt.
+    <ul class="adsimple-321290480">
+    <li class="adsimple-321290480">Wenn die Verarbeitung Ihrer Daten auf Artikel 6 Abs. 1 lit. e (öffentliches Interesse, Ausübung öffentlicher Gewalt) oder Artikel 6 Abs. 1 lit. f (berechtigtes Interesse) basiert, können Sie gegen die Verarbeitung Widerspruch einlegen. Wir prüfen danach so rasch wie möglich, ob wir diesem Widerspruch rechtlich nachkommen können.</li>
+    <li class="adsimple-321290480">Werden Daten verwendet, um Direktwerbung zu betreiben, können Sie jederzeit gegen diese Art der Datenverarbeitung widersprechen. Wir dürfen Ihre Daten danach nicht mehr für Direktmarketing verwenden.</li>
+    <li class="adsimple-321290480">Werden Daten verwendet, um Profiling zu betreiben, können Sie jederzeit gegen diese Art der Datenverarbeitung widersprechen. Wir dürfen Ihre Daten danach nicht mehr für Profiling verwenden.</li>
+    </ul>
+    </li>
+    <li class="adsimple-321290480">Sie haben laut Artikel 22 DSGVO unter Umständen das Recht, nicht einer ausschließlich auf einer automatisierten Verarbeitung (zum Beispiel Profiling) beruhenden Entscheidung unterworfen zu werden.</li>
+    </ul>
+    <p>Wenn Sie glauben, dass die Verarbeitung Ihrer Daten gegen das Datenschutzrecht verstößt oder Ihre datenschutzrechtlichen Ansprüche in sonst einer Weise verletzt worden sind, können Sie sich bei der Aufsichtsbehörde beschweren. Diese ist für Österreich die Datenschutzbehörde, deren Website Sie unter <a class="adsimple-321290480" href="https://www.dsb.gv.at/?tid=321290480" target="_blank" rel="noopener">https://www.dsb.gv.at/</a> finden und für Deutschland können Sie sich an die <a class="adsimple-321290480" class="321290480" href="https://www.bfdi.bund.de" target="_blank" rel="noopener">Bundesbeauftragte für den Datenschutz und die Informationsfreiheit (BfDI)</a> wenden.</p>
+    <p>
+    <strong class="adsimple-321290480">Kurz gesagt:</strong> Sie haben Rechte &#8211; zögern Sie nicht, die oben gelistete verantwortliche Stelle bei uns zu kontaktieren!</p>
+    <h2 id="kontaktdaten-datenschutzbeauftragter" class="adsimple-321290480">Kontaktdaten des Datenschutzbeauftragten</h2>
+    <p>Nachfolgend finden Sie die Kontaktdaten unseres Datenschutzbeauftragten.</p>
+    <p>E-Mail: <a class="adsimple-321290480" href="mailto:datenschutz@musterfirma.com">datenschutz@musterfirma.com</a>
+    <br />
+    Telefon: <span class="adsimple-321290480" style="font-weight: 400;">+43 4711 65416</span>
+    </p>
+    <h2 id="sicherheit-datenverarbeitung" class="adsimple-321290480">Sicherheit der Datenverarbeitung</h2>
+    <p>Um personenbezogene Daten zu schützen, haben wir sowohl technische als auch organisatorische Maßnahmen umgesetzt. Wo es uns möglich ist, verschlüsseln oder pseudonymisieren wir personenbezogene Daten. Dadurch machen wir es im Rahmen unserer Möglichkeiten so schwer wie möglich, dass Dritte aus unseren Daten auf persönliche Informationen schließen können.</p>
+    <p>Art. 25 DSGVO spricht hier von &#8220;Datenschutz durch Technikgestaltung und durch datenschutzfreundliche Voreinstellungen&#8221; und meint damit, dass man sowohl bei Software (z. B. Formularen) also auch Hardware (z. B. Zugang zum Serverraum) immer an Sicherheit denkt und entsprechende Maßnahmen setzt. Im Folgenden gehen wir, falls erforderlich, noch auf konkrete Maßnahmen ein.</p>
+    <h2 id="kommunikation" class="adsimple-321290480">Kommunikation</h2>
+    <table border="1" cellpadding="15">
+    <tbody>
+    <tr>
+    <td>
+    <strong class="adsimple-321290480">Kommunikation Zusammenfassung</strong>
+    <br />
+    &#x1f465; Betroffene: Alle, die mit uns per Telefon, E-Mail oder Online-Formular kommunizieren<br />
+    &#x1f4d3; Verarbeitete Daten: z. B. Telefonnummer, Name, E-Mail-Adresse, eingegebene Formulardaten. Mehr Details dazu finden Sie bei der jeweils eingesetzten Kontaktart<br />
+    &#x1f91d; Zweck: Abwicklung der Kommunikation mit Kunden, Geschäftspartnern usw.<br />
+    &#x1f4c5; Speicherdauer: Dauer des Geschäftsfalls und der gesetzlichen Vorschriften<br />
+    &#x2696;&#xfe0f; Rechtsgrundlagen: Art. 6 Abs. 1 lit. a DSGVO (Einwilligung), Art. 6 Abs. 1 lit. b DSGVO (Vertrag), Art. 6 Abs. 1 lit. f DSGVO (Berechtigte Interessen)</td>
+    </tr>
+    </tbody>
+    </table>
+    <p>Wenn Sie mit uns Kontakt aufnehmen und per Telefon, E-Mail oder Online-Formular kommunizieren, kann es zur Verarbeitung personenbezogener Daten kommen.</p>
+    <p>Die Daten werden für die Abwicklung und Bearbeitung Ihrer Frage und des damit zusammenhängenden Geschäftsvorgangs verarbeitet. Die Daten während ebensolange gespeichert bzw. so lange es das Gesetz vorschreibt.</p>
+    <h3 class="adsimple-321290480">Betroffene Personen</h3>
+    <p>Von den genannten Vorgängen sind alle betroffen, die über die von uns bereit gestellten Kommunikationswege den Kontakt zu uns suchen.</p>
+    <h3 class="adsimple-321290480">Telefon</h3>
+    <p>Wenn Sie uns anrufen, werden die Anrufdaten auf dem jeweiligen Endgerät und beim eingesetzten Telekommunikationsanbieter pseudonymisiert gespeichert. Außerdem können Daten wie Name und Telefonnummer im Anschluss per E-Mail versendet und zur Anfragebeantwortung gespeichert werden. Die Daten werden gelöscht, sobald der Geschäftsfall beendet wurde und es gesetzliche Vorgaben erlauben.</p>
+    <h3 class="adsimple-321290480">E-Mail</h3>
+    <p>Wenn Sie mit uns per E-Mail kommunizieren, werden Daten gegebenenfalls auf dem jeweiligen Endgerät (Computer, Laptop, Smartphone,&#8230;) gespeichert und es kommt zur Speicherung von Daten auf dem E-Mail-Server. Die Daten werden gelöscht, sobald der Geschäftsfall beendet wurde und es gesetzliche Vorgaben erlauben.</p>
+    <h3 class="adsimple-321290480">Online Formulare</h3>
+    <p>Wenn Sie mit uns mittels Online-Formular kommunizieren, werden Daten auf unserem Webserver gespeichert und gegebenenfalls an eine E-Mail-Adresse von uns weitergeleitet. Die Daten werden gelöscht, sobald der Geschäftsfall beendet wurde und es gesetzliche Vorgaben erlauben.</p>
+    <h3 class="adsimple-321290480">Rechtsgrundlagen</h3>
+    <p>Die Verarbeitung der Daten basiert auf den folgenden Rechtsgrundlagen:</p>
+    <ul class="adsimple-321290480">
+    <li class="adsimple-321290480">Art. 6 Abs. 1 lit. a DSGVO (Einwilligung): Sie geben uns die Einwilligung Ihre Daten zu speichern und weiter für den Geschäftsfall betreffende Zwecke zu verwenden;</li>
+    <li class="adsimple-321290480">Art. 6 Abs. 1 lit. b DSGVO (Vertrag): Es besteht die Notwendigkeit für die Erfüllung eines Vertrags mit Ihnen oder einem Auftragsverarbeiter wie z. B. dem Telefonanbieter oder wir müssen die Daten für vorvertragliche Tätigkeiten, wie z. B. die Vorbereitung eines Angebots, verarbeiten;</li>
+    <li class="adsimple-321290480">Art. 6 Abs. 1 lit. f DSGVO (Berechtigte Interessen): Wir wollen Kundenanfragen und geschäftliche Kommunikation in einem professionellen Rahmen betreiben. Dazu sind gewisse technische Einrichtungen wie z. B. E-Mail-Programme, Exchange-Server und Mobilfunkbetreiber notwendig, um die Kommunikation effizient betreiben zu können.</li>
+    </ul>
+    <h2 id="webhosting" class="adsimple-321290480">Webhosting</h2>
+    <table border="1" cellpadding="15">
+    <tbody>
+    <tr>
+    <td>
+    <strong class="adsimple-321290480">Webhosting Zusammenfassung</strong>
+    <br />
+    &#x1f465; Betroffene: Besucher der Website<br />
+    &#x1f91d; Zweck: professionelles Hosting der Website und Absicherung des Betriebs<br />
+    &#x1f4d3; Verarbeitete Daten: IP-Adresse, Zeitpunkt des Websitebesuchs, verwendeter Browser und weitere Daten. Mehr Details dazu finden Sie weiter unten bzw. beim jeweils eingesetzten Webhosting Provider.<br />
+    &#x1f4c5; Speicherdauer: abhängig vom jeweiligen Provider, aber in der Regel 2 Wochen<br />
+    &#x2696;&#xfe0f; Rechtsgrundlagen: Art. 6 Abs. 1 lit.f DSGVO (Berechtigte Interessen)</td>
+    </tr>
+    </tbody>
+    </table>
+    <h3 class="adsimple-321290480">Was ist Webhosting?</h3>
+    <p>Wenn Sie heutzutage Websites besuchen, werden gewisse Informationen &#8211; auch personenbezogene Daten &#8211; automatisch erstellt und gespeichert, so auch auf dieser Website. Diese Daten sollten möglichst sparsam und nur mit Begründung verarbeitet werden. Mit Website meinen wir übrigens die Gesamtheit aller Webseiten auf einer Domain, d.h. alles von der Startseite (Homepage) bis hin zur aller letzten Unterseite (wie dieser hier). Mit Domain meinen wir zum Beispiel beispiel.de oder musterbeispiel.com.</p>
+    <p>Wenn Sie eine Website auf einem Bildschirm ansehen möchten, verwenden Sie dafür ein Programm, das sich Webbrowser nennt. Sie kennen vermutlich einige Webbrowser beim Namen: Google Chrome, Microsoft Edge, Mozilla Firefox und Apple Safari.</p>
+    <p>Dieser Webbrowser muss sich zu einem anderen Computer verbinden, wo der Code der Website gespeichert ist: dem Webserver. Der Betrieb eines Webservers ist eine komplizierte und aufwendige Aufgabe, weswegen dies in der Regel von professionellen Anbietern, den Providern, übernommen wird. Diese bieten Webhosting an und sorgen damit für eine verlässliche und fehlerfreie Speicherung der Daten von Websites.</p>
+    <p>Bei der Verbindungsaufnahme des Browsers auf Ihrem Computer (Desktop, Laptop, Smartphone) und während der Datenübertragung zu und vom Webserver kann es zu einer Verarbeitung personenbezogener Daten kommen. Einerseits speichert Ihr Computer Daten, andererseits muss auch der Webserver Daten eine Zeit lang speichern, um einen ordentlichen Betrieb zu gewährleisten.</p>
+    <p>Zur Veranschaulichung:</p>
+    <p>
+    <img role="img" src="https://www.adsimple.at/wp-content/uploads/2018/03/browser-und-webserver.svg" alt="Browser und Webserver" width="100%" />
+    </p>
+    <h3 class="adsimple-321290480">Warum verarbeiten wir personenbezogene Daten?</h3>
+    <p>Die Zwecke der Datenverarbeitung sind:</p>
+    <ol>
+    <li class="adsimple-321290480">Professionelles Hosting der Website und Absicherung des Betriebs</li>
+    <li class="adsimple-321290480">zur Aufrechterhaltung der Betriebs- und IT-Sicherheit</li>
+    <li class="adsimple-321290480">Anonyme Auswertung des Zugriffsverhaltens zur Verbesserung unseres Angebots und ggf. zur Strafverfolgung bzw. Verfolgung von Ansprüchen</li>
+    </ol>
+    <h3 class="adsimple-321290480">Welche Daten werden verarbeitet?</h3>
+    <p>Auch während Sie unsere Website jetzt gerade besuchen, speichert unser Webserver, das ist der Computer auf dem diese Webseite gespeichert ist, in der Regel automatisch Daten wie</p>
+    <ul class="adsimple-321290480">
+    <li class="adsimple-321290480">die komplette Internetadresse (URL) der aufgerufenen Webseite (z. B. https://www.beispielwebsite.de/beispielunterseite.html?tid=321290480)</li>
+    <li class="adsimple-321290480">Browser und Browserversion (z. B. Chrome 87)</li>
+    <li class="adsimple-321290480">das verwendete Betriebssystem (z. B. Windows 10)</li>
+    <li class="adsimple-321290480">die Adresse (URL) der zuvor besuchten Seite (Referrer URL) (z. B. https://www.beispielquellsite.de/vondabinichgekommen.html/)</li>
+    <li class="adsimple-321290480">den Hostnamen und die IP-Adresse des Geräts von welchem aus zugegriffen wird (z. B. COMPUTERNAME und 194.23.43.121)</li>
+    <li class="adsimple-321290480">Datum und Uhrzeit</li>
+    <li class="adsimple-321290480">in Dateien, den sogenannten Webserver-Logfiles</li>
+    </ul>
+    <h3 class="adsimple-321290480">Wie lange werden Daten gespeichert?</h3>
+    <p>In der Regel werden die oben genannten Daten zwei Wochen gespeichert und danach automatisch gelöscht. Wir geben diese Daten nicht weiter, können jedoch nicht ausschließen, dass diese Daten beim Vorliegen von rechtswidrigem Verhalten von Behörden eingesehen werden.</p>
+    <p>
+    <strong class="adsimple-321290480">Kurz gesagt:</strong> Ihr Besuch wird durch unseren Provider (Firma, die unsere Website auf speziellen Computern (Servern) laufen lässt), protokolliert, aber wir geben Ihre Daten nicht ohne Zustimmung weiter!</p>
+    <h3 class="adsimple-321290480">Rechtsgrundlage</h3>
+    <p>Die Rechtmäßigkeit der Verarbeitung personenbezogener Daten im Rahmen des Webhosting ergibt sich aus Art. 6 Abs. 1 lit. f DSGVO (Wahrung der berechtigten Interessen), denn die Nutzung von professionellem Hosting bei einem Provider ist notwendig, um das Unternehmen im Internet sicher und nutzerfreundlich präsentieren und Angriffe und Forderungen hieraus gegebenenfalls verfolgen zu können.</p>
+    <h2 id="cookies" class="adsimple-321290480">Cookies</h2>
+    <table border="1" cellpadding="15">
+    <tbody>
+    <tr>
+    <td>
+    <strong class="adsimple-321290480">Cookies Zusammenfassung</strong>
+    <br />
+    &#x1f465; Betroffene: Besucher der Website<br />
+    &#x1f91d; Zweck: abhängig vom jeweiligen Cookie. Mehr Details dazu finden Sie weiter unten bzw. beim Hersteller der Software, der das Cookie setzt.<br />
+    &#x1f4d3; Verarbeitete Daten: Abhängig vom jeweils eingesetzten Cookie. Mehr Details dazu finden Sie weiter unten bzw. beim Hersteller der Software, der das Cookie setzt.<br />
+    &#x1f4c5; Speicherdauer: abhängig vom jeweiligen Cookie, kann von Stunden bis hin zu Jahren variieren<br />
+    &#x2696;&#xfe0f; Rechtsgrundlagen: Art. 6 Abs. 1 lit. a DSGVO (Einwilligung), Art. 6 Abs. 1 lit.f DSGVO (Berechtigte Interessen)</td>
+    </tr>
+    </tbody>
+    </table>
+    <h3 class="adsimple-321290480">Was sind Cookies?</h3>
+    <p>Unsere Website verwendet HTTP-Cookies, um nutzerspezifische Daten zu speichern.<br />
+    Im Folgenden erklären wir, was Cookies sind und warum Sie genutzt werden, damit Sie die folgende Datenschutzerklärung besser verstehen.</p>
+    <p>Immer wenn Sie durch das Internet surfen, verwenden Sie einen Browser. Bekannte Browser sind beispielsweise Chrome, Safari, Firefox, Internet Explorer und Microsoft Edge. Die meisten Websites speichern kleine Text-Dateien in Ihrem Browser. Diese Dateien nennt man Cookies.</p>
+    <p>Eines ist nicht von der Hand zu weisen: Cookies sind echt nützliche Helferlein. Fast alle Websites verwenden Cookies. Genauer gesprochen sind es HTTP-Cookies, da es auch noch andere Cookies für andere Anwendungsbereiche gibt. HTTP-Cookies sind kleine Dateien, die von unserer Website auf Ihrem Computer gespeichert werden. Diese Cookie-Dateien werden automatisch im Cookie-Ordner, quasi dem &#8220;Hirn&#8221; Ihres Browsers, untergebracht. Ein Cookie besteht aus einem Namen und einem Wert. Bei der Definition eines Cookies müssen zusätzlich ein oder mehrere Attribute angegeben werden.</p>
+    <p>Cookies speichern gewisse Nutzerdaten von Ihnen, wie beispielsweise Sprache oder persönliche Seiteneinstellungen. Wenn Sie unsere Seite wieder aufrufen, übermittelt Ihr Browser die „userbezogenen“ Informationen an unsere Seite zurück. Dank der Cookies weiß unsere Website, wer Sie sind und bietet Ihnen die Einstellung, die Sie gewohnt sind. In einigen Browsern hat jedes Cookie eine eigene Datei, in anderen wie beispielsweise Firefox sind alle Cookies in einer einzigen Datei gespeichert.</p>
+    <p>Die folgende Grafik zeigt eine mögliche Interaktion zwischen einem Webbrowser wie z. B. Chrome und dem Webserver. Dabei fordert der Webbrowser eine Website an und erhält vom Server ein Cookie zurück, welches der Browser erneut verwendet, sobald eine andere Seite angefordert wird.</p>
+    <p>
+    <img role="img" src="https://www.adsimple.at/wp-content/uploads/2018/03/http-cookie-interaction.svg" alt="HTTP Cookie Interaktion zwischen Browser und Webserver" width="100%" />
+    </p>
+    <p>Es gibt sowohl Erstanbieter Cookies als auch Drittanbieter-Cookies. Erstanbieter-Cookies werden direkt von unserer Seite erstellt, Drittanbieter-Cookies werden von Partner-Websites (z.B. Google Analytics) erstellt. Jedes Cookie ist individuell zu bewerten, da jedes Cookie andere Daten speichert. Auch die Ablaufzeit eines Cookies variiert von ein paar Minuten bis hin zu ein paar Jahren. Cookies sind keine Software-Programme und enthalten keine Viren, Trojaner oder andere „Schädlinge“. Cookies können auch nicht auf Informationen Ihres PCs zugreifen.</p>
+    <p>So können zum Beispiel Cookie-Daten aussehen:</p>
+    <p>
+    <strong class="adsimple-321290480">Name:</strong> _ga<br />
+    <strong class="adsimple-321290480">Wert:</strong> GA1.2.1326744211.152321290480-9<br />
+    <strong class="adsimple-321290480">Verwendungszweck:</strong> Unterscheidung der Websitebesucher<br />
+    <strong class="adsimple-321290480">Ablaufdatum:</strong> nach 2 Jahren</p>
+    <p>Diese Mindestgrößen sollte ein Browser unterstützen können:</p>
+    <ul class="adsimple-321290480">
+    <li class="adsimple-321290480">Mindestens 4096 Bytes pro Cookie</li>
+    <li class="adsimple-321290480">Mindestens 50 Cookies pro Domain</li>
+    <li class="adsimple-321290480">Mindestens 3000 Cookies insgesamt</li>
+    </ul>
+    <h3 class="adsimple-321290480">Welche Arten von Cookies gibt es?</h3>
+    <p>Die Frage welche Cookies wir im Speziellen verwenden, hängt von den verwendeten Diensten ab und wird in den folgenden Abschnitten der Datenschutzerklärung geklärt. An dieser Stelle möchten wir kurz auf die verschiedenen Arten von HTTP-Cookies eingehen.</p>
+    <p>Man kann 4 Arten von Cookies unterscheiden:</p>
+    <p>
+    <strong class="adsimple-321290480">Unerlässliche Cookies<br />
+    </strong>Diese Cookies sind nötig, um grundlegende Funktionen der Website sicherzustellen. Zum Beispiel braucht es diese Cookies, wenn ein User ein Produkt in den Warenkorb legt, dann auf anderen Seiten weitersurft und später erst zur Kasse geht. Durch diese Cookies wird der Warenkorb nicht gelöscht, selbst wenn der User sein Browserfenster schließt.</p>
+    <p>
+    <strong class="adsimple-321290480">Zweckmäßige Cookies<br />
+    </strong>Diese Cookies sammeln Infos über das Userverhalten und ob der User etwaige Fehlermeldungen bekommt. Zudem werden mithilfe dieser Cookies auch die Ladezeit und das Verhalten der Website bei verschiedenen Browsern gemessen.</p>
+    <p>
+    <strong class="adsimple-321290480">Zielorientierte Cookies<br />
+    </strong>Diese Cookies sorgen für eine bessere Nutzerfreundlichkeit. Beispielsweise werden eingegebene Standorte, Schriftgrößen oder Formulardaten gespeichert.</p>
+    <p>
+    <strong class="adsimple-321290480">Werbe-Cookies<br />
+    </strong>Diese Cookies werden auch Targeting-Cookies genannt. Sie dienen dazu dem User individuell angepasste Werbung zu liefern. Das kann sehr praktisch, aber auch sehr nervig sein.</p>
+    <p>Üblicherweise werden Sie beim erstmaligen Besuch einer Website gefragt, welche dieser Cookiearten Sie zulassen möchten. Und natürlich wird diese Entscheidung auch in einem Cookie gespeichert.</p>
+    <p>Wenn Sie mehr über Cookies wissen möchten und technische Dokumentationen nicht scheuen, empfehlen wir <a class="adsimple-321290480" href="https://tools.ietf.org/html/rfc6265" target="_blank" rel="nofollow noopener">https://tools.ietf.org/html/rfc6265</a>, dem Request for Comments der Internet Engineering Task Force (IETF) namens &#8220;HTTP State Management Mechanism&#8221;.</p>
+    <h3 class="adsimple-321290480">Zweck der Verarbeitung über Cookies</h3>
+    <p>Der Zweck ist letztendlich abhängig vom jeweiligen Cookie. Mehr Details dazu finden Sie weiter unten bzw. beim Hersteller der Software, die das Cookie setzt.</p>
+    <h3 class="adsimple-321290480">Welche Daten werden verarbeitet?</h3>
+    <p>Cookies sind kleine Gehilfen für eine viele verschiedene Aufgaben. Welche Daten in Cookies gespeichert werden, kann man leider nicht verallgemeinern, aber wir werden Sie im Rahmen der folgenden Datenschutzerklärung über die verarbeiteten bzw. gespeicherten Daten informieren.</p>
+    <h3 class="adsimple-321290480">Speicherdauer von Cookies</h3>
+    <p>Die Speicherdauer hängt vom jeweiligen Cookie ab und wird weiter unter präzisiert. Manche Cookies werden nach weniger als einer Stunde gelöscht, andere können mehrere Jahre auf einem Computer gespeichert bleiben.</p>
+    <p>Sie haben außerdem selbst Einfluss auf die Speicherdauer. Sie können über ihren Browser sämtliche Cookies jederzeit manuell löschen (siehe auch unten &#8220;Widerspruchsrecht&#8221;). Ferner werden Cookies, die auf einer Einwilligung beruhen, spätestens nach Widerruf Ihrer Einwilligung gelöscht, wobei die Rechtmäßigkeit der Speicherung bis dahin unberührt bleibt.</p>
+    <h3 class="adsimple-321290480">Widerspruchsrecht &#8211; wie kann ich Cookies löschen?</h3>
+    <p>Wie und ob Sie Cookies verwenden wollen, entscheiden Sie selbst. Unabhängig von welchem Service oder welcher Website die Cookies stammen, haben Sie immer die Möglichkeit Cookies zu löschen, zu deaktivieren oder nur teilweise zuzulassen. Zum Beispiel können Sie Cookies von Drittanbietern blockieren, aber alle anderen Cookies zulassen.</p>
+    <p>Wenn Sie feststellen möchten, welche Cookies in Ihrem Browser gespeichert wurden, wenn Sie Cookie-Einstellungen ändern oder löschen wollen, können Sie dies in Ihren Browser-Einstellungen finden:</p>
+    <p>
+    <a class="adsimple-321290480" href="https://support.google.com/chrome/answer/95647?tid=321290480" target="_blank" rel="noopener noreferrer">Chrome: Cookies in Chrome löschen, aktivieren und verwalten</a>
+    </p>
+    <p>
+    <a class="adsimple-321290480" href="https://support.apple.com/de-at/guide/safari/sfri11471/mac?tid=321290480" target="_blank" rel="noopener noreferrer">Safari: Verwalten von Cookies und Websitedaten mit Safari</a>
+    </p>
+    <p>
+    <a class="adsimple-321290480" href="https://support.mozilla.org/de/kb/cookies-und-website-daten-in-firefox-loschen?tid=321290480" target="_blank" rel="noopener noreferrer">Firefox: Cookies löschen, um Daten zu entfernen, die Websites auf Ihrem Computer abgelegt haben</a>
+    </p>
+    <p>
+    <a class="adsimple-321290480" href="https://support.microsoft.com/de-at/help/17442/windows-internet-explorer-delete-manage-cookies?tid=321290480" target="_blank" rel="noopener noreferrer">Internet Explorer: Löschen und Verwalten von Cookies</a>
+    </p>
+    <p>
+    <a class="adsimple-321290480" href="https://support.microsoft.com/de-at/help/4027947/windows-delete-cookies?tid=321290480" target="_blank" rel="noopener noreferrer">Microsoft Edge: Löschen und Verwalten von Cookies</a>
+    </p>
+    <p>Falls Sie grundsätzlich keine Cookies haben wollen, können Sie Ihren Browser so einrichten, dass er Sie immer informiert, wenn ein Cookie gesetzt werden soll. So können Sie bei jedem einzelnen Cookie entscheiden, ob Sie das Cookie erlauben oder nicht. Die Vorgangsweise ist je nach Browser verschieden. Am besten Sie suchen die Anleitung in Google mit dem Suchbegriff “Cookies löschen Chrome” oder &#8220;Cookies deaktivieren Chrome&#8221; im Falle eines Chrome Browsers.</p>
+    <h3 class="adsimple-321290480">Rechtsgrundlage</h3>
+    <p>Seit 2009 gibt es die sogenannten „Cookie-Richtlinien“. Darin ist festgehalten, dass das Speichern von Cookies eine <strong class="adsimple-321290480">Einwilligung</strong> (Artikel 6 Abs. 1 lit. a DSGVO) von Ihnen verlangt. Innerhalb der EU-Länder gibt es allerdings noch sehr unterschiedliche Reaktionen auf diese Richtlinien. In Österreich erfolgte aber die Umsetzung dieser Richtlinie in § 96 Abs. 3 des Telekommunikationsgesetzes (TKG). In Deutschland wurden die Cookie-Richtlinien nicht als nationales Recht umgesetzt. Stattdessen erfolgte die Umsetzung dieser Richtlinie weitgehend in § 15 Abs.3 des Telemediengesetzes (TMG).</p>
+    <p>Für unbedingt notwendige Cookies, auch soweit keine Einwilligung vorliegt. bestehen <strong class="adsimple-321290480">berechtigte Interessen</strong> (Artikel 6 Abs. 1 lit. f DSGVO), die in den meisten Fällen wirtschaftlicher Natur sind. Wir möchten den Besuchern der Website eine angenehme Benutzererfahrung bescheren und dafür sind bestimmte Cookies oft unbedingt notwendig.</p>
+    <p>Soweit nicht unbedingt erforderliche Cookies zum Einsatz kommen, geschieht dies nur im Falle Ihrer Einwilligung. Rechtsgrundlage ist insoweit Art. 6 Abs. 1 lit. a DSGVO.</p>
+    <p>In den folgenden Abschnitten werden Sie genauer über den Einsatz von Cookies informiert, sofern eingesetzte Software Cookies verwendet.</p>
+    <h2 id="vimeo-datenschutzerklaerung" class="adsimple-321290480">Vimeo Datenschutzerklärung</h2>
+    <table border="1" cellpadding="15">
+    <tbody>
+    <tr>
+    <td>
+    <strong class="adsimple-321290480">Vimeo Datenschutzerklärung Zusammenfassung</strong>
+    <br />
+    &#x1f465; Betroffene: Besucher der Website<br />
+    &#x1f91d; Zweck: Optimierung unserer Serviceleistung<br />
+    &#x1f4d3; Verarbeitete Daten: Daten wie etwa Kontaktdaten, Daten zum Nutzerverhalten, Informationen zu Ihrem Gerät und Ihre IP-Adresse können gespeichert werden.<br />
+    Mehr Details dazu finden Sie weiter unten in dieser Datenschutzerklärung.<br />
+    &#x1f4c5; Speicherdauer: Daten bleiben grundsätzlich gespeichert, solange sie für den Dienstzweck nötig sind<br />
+    &#x2696;&#xfe0f; Rechtsgrundlagen: Art. 6 Abs. 1 lit. a DSGVO (Einwilligung), Art. 6 Abs. 1 lit. f DSGVO (Berechtigte Interessen)</td>
+    </tr>
+    </tbody>
+    </table>
+    <h3 class="adsimple-321290480">Was ist Vimeo?</h3>
+    <p>Wir verwenden auf unserer Website auch Videos der Firma Vimeo. Betrieben wird das Videoportal durch Vimeo LLC, 555 West 18th Street, New York, New York 10011, USA. Mit Hilfe eines Plug-ins können wir Ihnen so interessantes Videomaterial direkt auf unserer Website anzeigen. Dabei können gewissen Daten von Ihnen an Vimeo übertragen werden. In dieser Datenschutzerklärung zeigen wir Ihnen, um welche Daten es sich handelt, warum wir Vimeo verwenden und wie Sie Ihre Daten bzw. die Datenübertragung verwalten oder unterbinden können.</p>
+    <p>Vimeo ist eine Videoplattform, die 2004 gegründet wurde und seit 2007 das Streamen von Videos in HD-Qualität ermöglicht. Seit 2015 kann auch in 4k Ultra HD gestreamt werden. Die Nutzung des Portals ist kostenlos, es kann allerdings auch kostenpflichtiger Content veröffentlicht werden. Im Vergleich zum Marktführer YouTube, legt Vimeo vorrangig Wert auf hochwertigen Content in guter Qualität. So bietet das Portal einerseits viele künstlerische Inhalte wie Musikvideos und Kurzfilme, andererseits aber auch wissenswerte Dokumentationen zu den unterschiedlichsten Themen.</p>
+    <h3 class="adsimple-321290480">Warum verwenden wir Vimeo auf unserer Webseite?</h3>
+    <p>Ziel unserer Webpräsenz ist es, Ihnen den bestmöglichen Content zu liefern. Und zwar so einfach zugänglich wie möglich. Erst wenn wir das geschafft haben, sind wir mit unserem Service zufrieden. Der Videodienst Vimeo unterstützt uns dieses Ziel zu erreichen. Vimeo bietet uns die Möglichkeit, Ihnen qualitativ hochwertige Inhalte direkt auf unserer Website zu präsentieren. Statt Ihnen nur einen Link zu einem interessanten Video zu geben, können Sie so das Video gleich bei uns ansehen. Das erweitert unser Service und erleichtert Ihnen den Zugang zu interessanten Inhalten. Somit bieten wir neben unseren Texten und Bildern auch Video-Content an.</p>
+    <h3 class="adsimple-321290480">Welche Daten werden auf Vimeo gespeichert?</h3>
+    <p>Wenn Sie auf unserer Website eine Seite aufrufen, die ein Vimeo-Video eingebettet hat, verbindet sich Ihr Browser mit den Servern von Vimeo. Dabei kommt es zu einer Datenübertragung. Diese Daten werden auf den Vimeo-Servern gesammelt, gespeichert und verarbeitet. Unabhängig davon, ob Sie ein Vimeo-Konto haben oder nicht, sammelt Vimeo Daten über Sie. Dazu zählen Ihre IP-Adresse, technische Infos über Ihren Browsertyp, Ihr Betriebssystem oder ganz grundlegende Geräteinformationen. Weiters speichert Vimeo Informationen über welche Webseite Sie den Vimeo-Dienst nutzen und welche Handlungen (Webaktivitäten) Sie auf unserer Webseite ausführen. Zu diesen Webaktivitäten zählen beispielsweise Sitzungsdauer, Absprungrate oder auf welchen Button Sie auf unserer Webseite mit eingebauter Vimeo-Funktion geklickt haben. Diese Handlungen kann Vimeo mit Hilfe von Cookies und ähnlichen Technologien verfolgen und speichern.</p>
+    <p>Falls Sie als registriertes Mitglied bei Vimeo eingeloggt sind, können meistens mehr Daten erhoben werden, da möglicherweise mehr Cookies bereits in Ihrem Browser gesetzt wurden. Zudem werden Ihre Handlungen auf unsere Webseite direkt mit Ihrem Vimeo-Account verknüpft. Um dies zu verhindern müssen Sie sich, während des &#8220;Surfens&#8221; auf unserer Webseite, von Vimeo ausloggen.</p>
+    <p>Nachfolgend zeigen wir Ihnen Cookies, die von Vimeo gesetzt werden, wenn Sie auf einer Webseite mit integrierter Vimeo-Funktion, sind. Diese Liste erhebt keinen Anspruch auf Vollständigkeit und geht davon aus, dass Sie keinen Vimeo-Account haben.</p>
+    <p>
+    <strong class="adsimple-321290480">Name:</strong> player<br />
+    <strong class="adsimple-321290480">Wert:</strong> &#8220;&#8221;<br />
+    <strong class="adsimple-321290480">Verwendungszweck:</strong> Dieses Cookie speichert Ihre Einstellungen, bevor Sie ein eingebettetes Vimeo-Video abspielen. Dadurch bekommen Sie beim nächsten Mal, wenn Sie ein Vimeo-Video ansehen, wieder Ihre bevorzugten Einstellungen.<br />
+    <strong class="adsimple-321290480">Ablaufdatum:</strong> nach einem Jahr</p>
+    <p>
+    <strong class="adsimple-321290480">Name</strong>: vuid<br />
+    <strong class="adsimple-321290480">Wert: </strong>pl1046149876.614422590321290480-4<strong class="adsimple-321290480">
+    <br />
+    <strong class="adsimple-321290480">Verwendungszweck: </strong>
+    </strong>Dieses Cookie sammelt Informationen über Ihre Handlungen auf Webseiten, die ein Vimeo-Video eingebettet haben.<strong class="adsimple-321290480">
+    <br />
+    <strong class="adsimple-321290480">Ablaufdatum: </strong>
+    </strong>nach 2 Jahren</p>
+    <p>
+    <strong class="adsimple-321290480">Anmerkung:</strong> Diese beiden Cookies werden immer gesetzt, sobald Sie sich auf einer Webseite mit einem eingebetteten Vimeo-Video befinden. Wenn Sie das Video ansehen und auf die Schaltfläche klicken, um beispielsweise das Video zu &#8220;teilen&#8221; oder zu &#8220;liken&#8221;, werden weitere Cookies gesetzt. Dabei handelt es sich auch um Drittanbieter-Cookies wie  _ga oder _gat_UA-76641-8 von Google Analytics oder _fbp von Facebook. Welche Cookies hier genau gesetzt werden, hängt von Ihrer Interaktion mit dem Video ab.</p>
+    <p>Die folgende Liste zeigt einen Ausschnitt möglicher Cookies, die gesetzt werden, wenn Sie mit dem Vimeo-Video interagieren:</p>
+    <p>
+    <strong class="adsimple-321290480">Name:</strong> _abexps<br />
+    <strong class="adsimple-321290480">Wert:</strong> %5B%5D<br />
+    <strong class="adsimple-321290480">Verwendungszweck: </strong>Dieses Vimeo-Cookie hilft Vimeo, sich an die von Ihnen getroffenen Einstellungen zu erinnern. Dabei kann es sich zum Beispiel um eine voreingestellte Sprache, um eine Region oder einen Benutzernamen handeln. Im Allgemeinen speichert das Cookie Daten darüber, wie Sie Vimeo verwenden.<br />
+    <strong class="adsimple-321290480">Ablaufdatum:</strong> nach einem Jahr</p>
+    <p>
+    <strong class="adsimple-321290480">Name:</strong> continuous_play_v3<br />
+    <strong class="adsimple-321290480">Wert:</strong> 1<br />
+    <strong class="adsimple-321290480">Verwendungszweck: </strong>Bei diesem Cookie handelt es sich um ein Erstanbieter-Cookie von Vimeo. Das Cookie sammelt Informationen wie Sie das Vimeo-Service verwenden. Beispielsweise speichert das Cookie, wann Sie ein Video pausieren bzw. wieder abspielen.<br />
+    <strong class="adsimple-321290480">Ablaufdatum:</strong> nach einem Jahr</p>
+    <p>
+    <strong class="adsimple-321290480">Name:</strong> _ga<br />
+    <strong class="adsimple-321290480">Wert:</strong> GA1.2.1522249635.1578401280321290480-7<br />
+    <strong class="adsimple-321290480">Verwendungszweck: </strong>Dieses Cookie ist ein Drittanbieter-Cookie von Google. Standardmäßig verwendet analytics.js das Cookie _ga, um die User-ID zu speichern. Grundsätzlich dient es zur Unterscheidung der Websitebesucher.<br />
+    <strong class="adsimple-321290480">Ablaufdatum:</strong> nach 2 Jahren</p>
+    <p>
+    <strong class="adsimple-321290480">Name:</strong> _gcl_au<br />
+    <strong class="adsimple-321290480">Wert:</strong> 1.1.770887836.1578401279321290480-3<br />
+    <strong class="adsimple-321290480">Verwendungszweck: </strong>Dieses Drittanbieter-Cookie von Google AdSense wird verwendet, um die Effizienz von Werbeanzeigen auf Websites zu verbessern.<br />
+    <strong class="adsimple-321290480">Ablaufdatum:</strong> nach 3 Monaten</p>
+    <p>
+    <strong class="adsimple-321290480">Name:</strong> _fbp<br />
+    <strong class="adsimple-321290480">Wert:</strong> fb.1.1578401280585.310434968<br />
+    <strong class="adsimple-321290480">Verwendungszweck:</strong> Das ist ein Facebook-Cookie. Dieses Cookie wird verwendet, um Werbeanzeigen bzw. Werbeprodukte von Facebook oder anderen Werbetreibenden einzublenden.<br />
+    <strong class="adsimple-321290480">Ablaufdatum:</strong> nach 3 Monaten</p>
+    <p>Vimeo nutzt diese Daten unter anderem, um das eigene Service zu verbessern, um mit Ihnen in Kommunikation zu treten und um eigene zielgerichtete Werbemaßnahmen zu setzen. Vimeo betont auf seiner Website, dass bei eingebetteten Videos nur Erstanbieter-Cookies (also Cookies von Vimeo selbst) verwendet werden, solange man mit dem Video nicht interagiert.</p>
+    <h3 class="adsimple-321290480">Wie lange und wo werden die Daten gespeichert?</h3>
+    <p>Vimeo hat den Hauptsitz in White Plains im Bundesstaat New York (USA). Die Dienste werden aber weltweit angeboten. Dabei verwendet das Unternehmen Computersysteme, Datenbanken und Server in den USA und auch in anderen Ländern. Ihre Daten können somit auch auf Servern in Amerika gespeichert und verarbeitet werden. Die Daten bleiben bei Vimeo so lange gespeichert, bis das Unternehmen keinen wirtschaftlichen Grund mehr für die Speicherung hat. Dann werden die Daten gelöscht oder anonymisiert.</p>
+    <h3 class="adsimple-321290480">Wie kann ich meine Daten löschen bzw. die Datenspeicherung verhindern?</h3>
+    <p>Sie haben immer die Möglichkeit, Cookies in Ihrem Browser nach Ihren Wünschen zu verwalten. Wenn Sie beispielsweise nicht wollen, dass Vimeo Cookies setzt und so Informationen über Sie sammelt, können Sie in Ihren Browser-Einstellungen Cookies jederzeit löschen oder deaktivieren. Je nach Browser funktioniert dies ein bisschen anders. Bitte beachten Sie, dass möglicherweise nach dem Deaktivieren/Löschen von Cookies diverse Funktionen nicht mehr im vollen Ausmaß zur Verfügung stehen. Die folgenden Anleitungen zeigen, wie Sie Cookies in Ihrem Browser verwalten bzw. löschen.</p>
+    <p>
+    <a class="adsimple-321290480" href="https://support.google.com/chrome/answer/95647?tid=321290480" target="_blank" rel="noopener noreferrer">Chrome: Cookies in Chrome löschen, aktivieren und verwalten</a>
+    </p>
+    <p>
+    <a class="adsimple-321290480" href="https://support.apple.com/de-at/guide/safari/sfri11471/mac?tid=321290480" target="_blank" rel="noopener noreferrer">Safari: Verwalten von Cookies und Websitedaten mit Safari</a>
+    </p>
+    <p>
+    <a class="adsimple-321290480" href="https://support.mozilla.org/de/kb/cookies-und-website-daten-in-firefox-loschen?tid=321290480" target="_blank" rel="noopener noreferrer">Firefox: Cookies löschen, um Daten zu entfernen, die Websites auf Ihrem Computer abgelegt haben</a>
+    </p>
+    <p>
+    <a class="adsimple-321290480" href="https://support.microsoft.com/de-at/help/17442/windows-internet-explorer-delete-manage-cookies?tid=321290480" target="_blank" rel="noopener noreferrer">Internet Explorer: Löschen und Verwalten von Cookies</a>
+    </p>
+    <p>
+    <a class="adsimple-321290480" href="https://support.microsoft.com/de-at/help/4027947/windows-delete-cookies?tid=321290480" target="_blank" rel="noopener noreferrer">Microsoft Edge: Löschen und Verwalten von Cookies</a>
+    </p>
+    <p>Falls Sie ein registriertes Vimeo-Mitglied sind, können Sie auch in den Einstellungen bei Vimeo die verwendeten Cookies verwalten.</p>
+    <h3 class="adsimple-321290480">Rechtsgrundlage</h3>
+    <p>Wenn Sie eingewilligt haben, dass Daten von Ihnen durch eingebundene Vimeo-Elemente verarbeitet und gespeichert werden können, gilt diese Einwilligung als Rechtsgrundlage der Datenverarbeitung <strong class="adsimple-321290480">(Art. 6 Abs. 1 lit. a DSGVO)</strong>. Grundsätzlich werden Ihre Daten auch auf Grundlage unseres berechtigten Interesses <strong class="adsimple-321290480">(Art. 6 Abs. 1 lit. f DSGVO)</strong> an einer schnellen und guten Kommunikation mit Ihnen oder anderen Kunden und Geschäftspartnern gespeichert und verarbeitet. Wir setzen die eingebundenen Vimeo-Elemente gleichwohl nur ein, soweit Sie eine Einwilligung erteilt haben. Vimeo setzt auch Cookies in Ihrem Browser, um Daten zu speichern. Darum empfehlen wir Ihnen, unseren Datenschutztext über Cookies genau durchzulesen und die Datenschutzerklärung oder die Cookie-Richtlinien des jeweiligen Dienstanbieters anzusehen.</p>
+    <p>Wir weisen darauf hin, dass nach Meinung des Europäischen Gerichtshofs derzeit kein angemessenes Schutzniveau für den Datentransfer in die USA besteht. Die Datenverarbeitung geschieht im Wesentlichen durch Vimeo. Dies kann dazu führen, dass gegebenenfalls Daten nicht anonymisiert verarbeitet und gespeichert werden. Ferner können gegebenenfalls US-amerikanische staatliche Behörden Zugriff auf einzelne Daten nehmen. Es kann ferner vorkommen, dass diese Daten mit Daten aus möglichen anderen Diensten von Vimeo, bei denen Sie ein Nutzerkonto haben, verknüpft werden.</p>
+    <p>Mehr über den Einsatz von Cookies bei Vimeo erfahren Sie auf <a class="adsimple-321290480" href="https://vimeo.com/cookie_policy?tid=321290480" target="_blank" rel="follow noopener noreferrer">https://vimeo.com/cookie_policy</a>, Informationen zum Datenschutz bei Vimeo können Sie auf <a class="adsimple-321290480" href="https://vimeo.com/privacy?tid=321290480" target="_blank" rel="follow noopener noreferrer">https://vimeo.com/privacy</a> nachlesen.</p>
+    <h2 id="youtube-datenschutzerklaerung" class="adsimple-321290480">YouTube Datenschutzerklärung</h2>
+    <table border="1" cellpadding="15">
+    <tbody>
+    <tr>
+    <td>
+    <strong class="adsimple-321290480">YouTube Datenschutzerklärung Zusammenfassung</strong>
+    <br />
+    &#x1f465; Betroffene: Besucher der Website<br />
+    &#x1f91d; Zweck: Optimierung unserer Serviceleistung<br />
+    &#x1f4d3; Verarbeitete Daten: Daten wie etwa Kontaktdaten, Daten zum Nutzerverhalten, Informationen zu Ihrem Gerät und Ihre IP-Adresse können gespeichert werden.<br />
+    Mehr Details dazu finden Sie weiter unten in dieser Datenschutzerklärung.<br />
+    &#x1f4c5; Speicherdauer: Daten bleiben grundsätzlich gespeichert, solange sie für den Dienstzweck nötig sind<br />
+    &#x2696;&#xfe0f; Rechtsgrundlagen: Art. 6 Abs. 1 lit. a DSGVO (Einwilligung), Art. 6 Abs. 1 lit. f DSGVO (Berechtigte Interessen)</td>
+    </tr>
+    </tbody>
+    </table>
+    <h3 class="adsimple-321290480">Was ist YouTube?</h3>
+    <p>Wir haben auf unserer Website YouTube-Videos eingebaut. So können wir Ihnen interessante Videos direkt auf unserer Seite präsentieren. YouTube ist ein Videoportal, das seit 2006 eine Tochterfirma von Google ist. Betrieben wird das Videoportal durch YouTube, LLC, 901 Cherry Ave., San Bruno, CA 94066, USA. Wenn Sie auf unserer Website eine Seite aufrufen, die ein YouTube-Video eingebettet hat, verbindet sich Ihr Browser automatisch mit den Servern von YouTube bzw. Google. Dabei werden (je nach Einstellungen) verschiedene Daten übertragen. Für die gesamte Datenverarbeitung im europäischen Raum ist Google Ireland Limited (Gordon House, Barrow Street Dublin 4, Irland) verantwortlich.</p>
+    <p>Im Folgenden wollen wir Ihnen genauer erklären, welche Daten verarbeitet werden, warum wir YouTube-Videos eingebunden haben und wie Sie Ihre Daten verwalten oder löschen können.</p>
+    <p>Auf YouTube können die User kostenlos Videos ansehen, bewerten, kommentieren und selbst hochladen. Über die letzten Jahre wurde YouTube zu einem der wichtigsten Social-Media-Kanäle weltweit. Damit wir Videos auf unserer Webseite anzeigen können, stellt YouTube einen Codeausschnitt zur Verfügung, den wir auf unserer Seite eingebaut haben.</p>
+    <h3 class="adsimple-321290480">Warum verwenden wir YouTube-Videos auf unserer Website?</h3>
+    <p>YouTube ist die Videoplattform mit den meisten Besuchern und dem besten Content. Wir sind bemüht, Ihnen die bestmögliche User-Erfahrung auf unserer Webseite zu bieten. Und natürlich dürfen interessante Videos dabei nicht fehlen. Mithilfe unserer eingebetteten Videos stellen wir Ihnen neben unseren Texten und Bildern weiteren hilfreichen Content zur Verfügung. Zudem wird unsere Webseite auf der Google-Suchmaschine durch die eingebetteten Videos leichter gefunden. Auch wenn wir über Google Ads Werbeanzeigen schalten, kann Google – dank der gesammelten Daten – diese Anzeigen wirklich nur Menschen zeigen, die sich für unsere Angebote interessieren.</p>
+    <h3 class="adsimple-321290480">Welche Daten werden von YouTube gespeichert?</h3>
+    <p>Sobald Sie eine unserer Seiten besuchen, die ein YouTube-Video eingebaut hat, setzt YouTube zumindest ein Cookie, das Ihre IP-Adresse und unsere URL speichert. Wenn Sie in Ihrem YouTube-Konto eingeloggt sind, kann YouTube Ihre Interaktionen auf unserer Webseite meist mithilfe von Cookies Ihrem Profil zuordnen. Dazu zählen Daten wie Sitzungsdauer, Absprungrate, ungefährer Standort, technische Informationen wie Browsertyp, Bildschirmauflösung oder Ihr Internetanbieter. Weitere Daten können Kontaktdaten, etwaige Bewertungen, das Teilen von Inhalten über Social Media oder das Hinzufügen zu Ihren Favoriten auf YouTube sein.</p>
+    <p>Wenn Sie nicht in einem Google-Konto oder einem Youtube-Konto angemeldet sind, speichert Google Daten mit einer eindeutigen Kennung, die mit Ihrem Gerät, Browser oder App verknüpft sind. So bleibt beispielsweise Ihre bevorzugte Spracheinstellung beibehalten. Aber viele Interaktionsdaten können nicht gespeichert werden, da weniger Cookies gesetzt werden.</p>
+    <p>In der folgenden Liste zeigen wir Cookies, die in einem Test im Browser gesetzt wurden. Wir zeigen einerseits Cookies, die ohne angemeldetes YouTube-Konto gesetzt werden. Andererseits zeigen wir Cookies, die mit angemeldetem Account gesetzt werden. Die Liste kann keinen Vollständigkeitsanspruch erheben, weil die Userdaten immer von den Interaktionen auf YouTube abhängen.</p>
+    <p>
+    <strong class="adsimple-321290480">Name:</strong> YSC<br />
+    <strong class="adsimple-321290480">Wert:</strong> b9-CV6ojI5Y321290480-1<br />
+    <strong class="adsimple-321290480">Verwendungszweck:</strong> Dieses Cookie registriert eine eindeutige ID, um Statistiken des gesehenen Videos zu speichern.<br />
+    <strong class="adsimple-321290480">Ablaufdatum:</strong> nach Sitzungsende</p>
+    <p>
+    <strong class="adsimple-321290480">Name:</strong> PREF<br />
+    <strong class="adsimple-321290480">Wert:</strong> f1=50000000<br />
+    <strong class="adsimple-321290480">Verwendungszweck:</strong> Dieses Cookie registriert ebenfalls Ihre eindeutige ID. Google bekommt über PREF Statistiken, wie Sie YouTube-Videos auf unserer Webseite verwenden.<br />
+    <strong class="adsimple-321290480">Ablaufdatum:</strong> nach 8 Monaten</p>
+    <p>
+    <strong class="adsimple-321290480">Name:</strong> GPS<br />
+    <strong class="adsimple-321290480">Wert:</strong> 1<br />
+    <strong class="adsimple-321290480">Verwendungszweck:</strong> Dieses Cookie registriert Ihre eindeutige ID auf mobilen Geräten, um den GPS-Standort zu tracken.<br />
+    <strong class="adsimple-321290480">Ablaufdatum:</strong> nach 30 Minuten</p>
+    <p>
+    <strong class="adsimple-321290480">Name:</strong> VISITOR_INFO1_LIVE<br />
+    <strong class="adsimple-321290480">Wert:</strong> 95Chz8bagyU<br />
+    <strong class="adsimple-321290480">Verwendungszweck:</strong> Dieses Cookie versucht die Bandbreite des Users auf unseren Webseiten (mit eingebautem YouTube-Video) zu schätzen.<br />
+    <strong class="adsimple-321290480">Ablaufdatum:</strong> nach 8 Monaten</p>
+    <p>Weitere Cookies, die gesetzt werden, wenn Sie mit Ihrem YouTube-Konto angemeldet sind:</p>
+    <p>
+    <strong class="adsimple-321290480">Name:</strong> APISID<br />
+    <strong class="adsimple-321290480">Wert:</strong> zILlvClZSkqGsSwI/AU1aZI6HY7321290480-<br />
+    <strong class="adsimple-321290480">Verwendungszweck:</strong> Dieses Cookie wird verwendet, um ein Profil über Ihre Interessen zu erstellen. Genützt werden die Daten für personalisierte Werbeanzeigen.<br />
+    <strong class="adsimple-321290480">Ablaufdatum:</strong> nach 2 Jahren</p>
+    <p>
+    <strong class="adsimple-321290480">Name:</strong> CONSENT<br />
+    <strong class="adsimple-321290480">Wert:</strong> YES+AT.de+20150628-20-0<br />
+    <strong class="adsimple-321290480">Verwendungszweck:</strong> Das Cookie speichert den Status der Zustimmung eines Users zur Nutzung unterschiedlicher Services von Google. CONSENT dient auch der Sicherheit, um User zu überprüfen und Userdaten vor unbefugten Angriffen zu schützen.<br />
+    <strong class="adsimple-321290480">Ablaufdatum: </strong>nach 19 Jahren</p>
+    <p>
+    <strong class="adsimple-321290480">Name:</strong> HSID<br />
+    <strong class="adsimple-321290480">Wert:</strong> AcRwpgUik9Dveht0I<br />
+    <strong class="adsimple-321290480">Verwendungszweck:</strong> Dieses Cookie wird verwendet, um ein Profil über Ihre Interessen zu erstellen. Diese Daten helfen personalisierte Werbung anzeigen zu können.<br />
+    <strong class="adsimple-321290480">Ablaufdatum:</strong> nach 2 Jahren</p>
+    <p>
+    <strong class="adsimple-321290480">Name:</strong> LOGIN_INFO<br />
+    <strong class="adsimple-321290480">Wert:</strong> AFmmF2swRQIhALl6aL…<br />
+    <strong class="adsimple-321290480">Verwendungszweck:</strong> In diesem Cookie werden Informationen über Ihre Login-Daten gespeichert.<br />
+    <strong class="adsimple-321290480">Ablaufdatum:</strong> nach 2 Jahren</p>
+    <p>
+    <strong class="adsimple-321290480">Name:</strong> SAPISID<br />
+    <strong class="adsimple-321290480">Wert:</strong> 7oaPxoG-pZsJuuF5/AnUdDUIsJ9iJz2vdM<br />
+    <strong class="adsimple-321290480">Verwendungszweck:</strong> Dieses Cookie funktioniert, indem es Ihren Browser und Ihr Gerät eindeutig identifiziert. Es wird verwendet, um ein Profil über Ihre Interessen zu erstellen.<br />
+    <strong class="adsimple-321290480">Ablaufdatum:</strong> nach 2 Jahren</p>
+    <p>
+    <strong class="adsimple-321290480">Name:</strong> SID<br />
+    <strong class="adsimple-321290480">Wert:</strong> oQfNKjAsI321290480-<br />
+    <strong class="adsimple-321290480">Verwendungszweck:</strong> Dieses Cookie speichert Ihre Google-Konto-ID und Ihren letzten Anmeldezeitpunkt in digital signierter und verschlüsselter Form.<br />
+    <strong class="adsimple-321290480">Ablaufdatum:</strong> nach 2 Jahren</p>
+    <p>
+    <strong class="adsimple-321290480">Name:</strong> SIDCC<br />
+    <strong class="adsimple-321290480">Wert:</strong> AN0-TYuqub2JOcDTyL<br />
+    <strong class="adsimple-321290480">Verwendungszweck:</strong> Dieses Cookie speichert Informationen, wie Sie die Webseite nutzen und welche Werbung Sie vor dem Besuch auf unserer Seite möglicherweise gesehen haben.<br />
+    <strong class="adsimple-321290480">Ablaufdatum:</strong> nach 3 Monaten</p>
+    <h3 class="adsimple-321290480">Wie lange und wo werden die Daten gespeichert?</h3>
+    <p>Die Daten, die YouTube von Ihnen erhält und verarbeitet werden auf den Google-Servern gespeichert. Die meisten dieser Server befinden sich in Amerika. Unter <a class="adsimple-321290480" href="https://www.google.com/about/datacenters/inside/locations/?hl=de" target="_blank" rel="noopener noreferrer">https://www.google.com/about/datacenters/inside/locations/?hl=de</a>  sehen Sie genau wo sich die Google-Rechenzentren befinden. Ihre Daten sind auf den Servern verteilt. So sind die Daten schneller abrufbar und vor Manipulation besser geschützt.</p>
+    <p>Die erhobenen Daten speichert Google unterschiedlich lang. Manche Daten können Sie jederzeit löschen, andere werden automatisch nach einer begrenzten Zeit gelöscht und wieder andere werden von Google über längere Zeit gespeichert. Einige Daten (wie Elemente aus „Meine Aktivität“, Fotos oder Dokumente, Produkte), die in Ihrem Google-Konto gespeichert sind, bleiben so lange gespeichert, bis Sie sie löschen. Auch wenn Sie nicht in einem Google-Konto angemeldet sind, können Sie einige Daten, die mit Ihrem Gerät, Browser oder App verknüpft sind, löschen.</p>
+    <h3 class="adsimple-321290480">Wie kann ich meine Daten löschen bzw. die Datenspeicherung verhindern?</h3>
+    <p>Grundsätzlich können Sie Daten im Google Konto manuell löschen. Mit der 2019 eingeführten automatischen Löschfunktion von Standort- und Aktivitätsdaten werden Informationen abhängig von Ihrer Entscheidung &#8211; entweder 3 oder 18 Monate gespeichert und dann gelöscht.</p>
+    <p>Unabhängig, ob Sie ein Google-Konto haben oder nicht, können Sie Ihren Browser so konfigurieren, dass Cookies von Google gelöscht bzw. deaktiviert werden. Je nachdem welchen Browser Sie verwenden, funktioniert dies auf unterschiedliche Art und Weise. Die folgenden Anleitungen zeigen, wie Sie Cookies in Ihrem Browser verwalten:</p>
+    <p>
+    <a class="adsimple-321290480" href="https://support.google.com/chrome/answer/95647?tid=321290480" target="_blank" rel="noopener noreferrer">Chrome: Cookies in Chrome löschen, aktivieren und verwalten</a>
+    </p>
+    <p>
+    <a class="adsimple-321290480" href="https://support.apple.com/de-at/guide/safari/sfri11471/mac?tid=321290480" target="_blank" rel="noopener noreferrer">Safari: Verwalten von Cookies und Websitedaten mit Safari</a>
+    </p>
+    <p>
+    <a class="adsimple-321290480" href="https://support.mozilla.org/de/kb/cookies-und-website-daten-in-firefox-loschen?tid=321290480" target="_blank" rel="noopener noreferrer">Firefox: Cookies löschen, um Daten zu entfernen, die Websites auf Ihrem Computer abgelegt haben</a>
+    </p>
+    <p>
+    <a class="adsimple-321290480" href="https://support.microsoft.com/de-at/help/17442/windows-internet-explorer-delete-manage-cookies?tid=321290480" target="_blank" rel="noopener noreferrer">Internet Explorer: Löschen und Verwalten von Cookies</a>
+    </p>
+    <p>
+    <a class="adsimple-321290480" href="https://support.microsoft.com/de-at/help/4027947/windows-delete-cookies?tid=321290480" target="_blank" rel="noopener noreferrer">Microsoft Edge: Löschen und Verwalten von Cookies</a>
+    </p>
+    <p>Falls Sie grundsätzlich keine Cookies haben wollen, können Sie Ihren Browser so einrichten, dass er Sie immer informiert, wenn ein Cookie gesetzt werden soll. So können Sie bei jedem einzelnen Cookie entscheiden, ob Sie es erlauben oder nicht.</p>
+    <h3 class="adsimple-321290480">Rechtsgrundlage</h3>
+    <p>Wenn Sie eingewilligt haben, dass Daten von Ihnen durch eingebundene YouTube-Elemente verarbeitet und gespeichert werden können, gilt diese Einwilligung als Rechtsgrundlage der Datenverarbeitung <strong class="adsimple-321290480">(Art. 6 Abs. 1 lit. a DSGVO)</strong>. Grundsätzlich werden Ihre Daten auch auf Grundlage unseres berechtigten Interesses <strong class="adsimple-321290480">(Art. 6 Abs. 1 lit. f DSGVO)</strong> an einer schnellen und guten Kommunikation mit Ihnen oder anderen Kunden und Geschäftspartnern gespeichert und verarbeitet. Wir setzen die eingebundenen YouTube-Elemente gleichwohl nur ein, soweit Sie eine Einwilligung erteilt haben. YouTube setzt auch Cookies in Ihrem Browser, um Daten zu speichern. Darum empfehlen wir Ihnen, unseren Datenschutztext über Cookies genau durchzulesen und die Datenschutzerklärung oder die Cookie-Richtlinien des jeweiligen Dienstanbieters anzusehen.</p>
+    <p>Wir weisen darauf hin, dass nach Meinung des Europäischen Gerichtshofs derzeit kein angemessenes Schutzniveau für den Datentransfer in die USA besteht. Die Datenverarbeitung geschieht im Wesentlichen durch YouTube. Dies kann dazu führen, dass gegebenenfalls Daten nicht anonymisiert verarbeitet und gespeichert werden. Ferner können gegebenenfalls US-amerikanische staatliche Behörden Zugriff auf einzelne Daten nehmen. Es kann ferner vorkommen, dass diese Daten mit Daten aus möglichen anderen Diensten von YouTube bzw. Google, bei denen Sie ein Nutzerkonto haben, verknüpft werden.</p>
+    <p>Da YouTube ein Tochterunternehmen von Google ist, gibt es eine gemeinsame Datenschutzerklärung. Wenn Sie mehr über den Umgang mit Ihren Daten erfahren wollen, empfehlen wir Ihnen die Datenschutzerklärung unter <a class="adsimple-321290480" href="https://policies.google.com/privacy?hl=de" target="_blank" rel="noopener noreferrer">https://policies.google.com/privacy?hl=de.</a>
+    </p>
+    <h2 id="youtube-abonnieren-button" class="adsimple-321290480">YouTube Abonnieren Button Datenschutzerklärung</h2>
+    <p>Wir haben auf unserer Webseite den YouTube Abonnieren Button (engl. „Subscribe-Button“) eingebaut. Sie erkennen den Button meist am klassischen YouTube-Logo. Das Logo zeigt vor rotem Hintergrund in weißer Schrift die Wörter „Abonnieren“ oder „YouTube“ und links davon das weiße „Play-Symbol“. Der Button kann aber auch in einem anderen Design dargestellt sein.</p>
+    <p>Unser YouTube-Kanal bietet Ihnen immer wieder lustige, interessante oder spannende Videos. Mit dem eingebauten „Abonnieren-Button“ können Sie unseren Kanal direkt von unserer Webseite aus abonnieren und müssen nicht eigens die YouTube-Webseite aufrufen. Wir wollen Ihnen somit den Zugang zu unserem umfassenden Content so einfach wie möglich machen. Bitte beachten Sie, dass YouTube dadurch Daten von Ihnen speichern und verarbeiten kann.</p>
+    <p>Wenn Sie auf unserer Seite einen eingebauten Abo-Button sehen, setzt YouTube &#8211; laut Google &#8211; mindestens ein Cookie. Dieses Cookie speichert Ihre IP-Adresse und unsere URL. Auch Informationen über Ihren Browser, Ihren ungefähren Standort und Ihre voreingestellte Sprache kann YouTube so erfahren. Bei unserem Test wurden folgende vier Cookies gesetzt, ohne bei YouTube angemeldet zu sein:</p>
+    <p>
+    <strong class="adsimple-321290480">Name:</strong> YSC<br />
+    <strong class="adsimple-321290480">Wert:</strong> b9-CV6ojI5321290480Y<br />
+    <strong class="adsimple-321290480">Verwendungszweck:</strong> Dieses Cookie registriert eine eindeutige ID, um Statistiken des gesehenen Videos zu speichern.<br />
+    <strong class="adsimple-321290480">Ablaufdatum:</strong> nach Sitzungsende</p>
+    <p>
+    <strong class="adsimple-321290480">Name:</strong> PREF<br />
+    <strong class="adsimple-321290480">Wert:</strong> f1=50000000<br />
+    <strong class="adsimple-321290480">Verwendungszweck:</strong> Dieses Cookie registriert ebenfalls Ihre eindeutige ID. Google bekommt über PREF Statistiken, wie Sie YouTube-Videos auf unserer Webseite verwenden.<br />
+    <strong class="adsimple-321290480">Ablaufdatum:</strong> nach 8 Monate</p>
+    <p>
+    <strong class="adsimple-321290480">Name:</strong> GPS<br />
+    <strong class="adsimple-321290480">Wert:</strong> 1<br />
+    <strong class="adsimple-321290480">Verwendungszweck:</strong> Dieses Cookie registriert Ihre eindeutige ID auf mobilen Geräten, um den GPS-Standort zu tracken.<br />
+    <strong class="adsimple-321290480">Ablaufdatum:</strong> nach 30 Minuten</p>
+    <p>
+    <strong class="adsimple-321290480">Name:</strong> VISITOR_INFO1_LIVE<br />
+    <strong class="adsimple-321290480">Wert:</strong> 32129048095Chz8bagyU<br />
+    <strong class="adsimple-321290480">Verwendungszweck:</strong> Dieses Cookie versucht die Bandbreite des Users auf unseren Webseiten (mit eingebautem YouTube-Video) zu schätzen.<br />
+    <strong class="adsimple-321290480">Ablaufdatum:</strong> nach 8 Monaten</p>
+    <p>
+    <strong class="adsimple-321290480">Anmerkung:</strong> Diese Cookies wurden nach einem Test gesetzt und können nicht den Anspruch auf Vollständigkeit erheben.</p>
+    <p>Wenn Sie in Ihrem YouTube-Konto angemeldet sind, kann YouTube viele Ihrer Handlungen/Interaktionen auf unserer Webseite mit Hilfe von Cookies speichern und Ihrem YouTube-Konto zuordnen. YouTube bekommt dadurch zum Beispiel Informationen wie lange Sie auf unserer Seite surfen, welchen Browsertyp Sie verwenden, welche Bildschirmauflösung Sie bevorzugen oder welche Handlungen Sie ausführen.</p>
+    <p>YouTube verwendet diese Daten zum einen um die eigenen Dienstleistungen und Angebote zu verbessern, zum anderen um Analysen und Statistiken für Werbetreibende (die Google Ads verwenden) bereitzustellen.</p>
+    <p>Alle Texte sind urheberrechtlich geschützt.</p>
+    <p style="margin-top:15px;">Quelle: Erstellt mit dem <a href="https://www.adsimple.de/datenschutz-generator/" >Datenschutz Generator</a> von AdSimple</p>
+        
+
+
 
 </div>
-
+</main>
     
 
 <!-- Footer -->
@@ -662,25 +678,26 @@ Mehr Details dazu finden Sie weiter unten in dieser Datenschutzerklärung.<br />
         <img src="./assets/Mission-THEO-1-THG-Space-Agency-SVG.svg" alt="" style="height: 170px;" class=" mb-5">  
     </div>
     <div class="text-white md:col-start-3 md:col-span-1 pt-5">
-        <h3 class="text-md text-gray-400">Links:</h3>
+        <h3 class="text-xl md:text-md text-gray-400">Links:</h3>
         <ul class="p-2">
-            <li><a href="./sitemap.xml" class="hover:text-indigo-500">Sitemap</a></li>
-            <li><a href="./impressum.html" class="hover:text-indigo-500">Impressum</a></li>
-            <li><a href="#" class="hover:text-indigo-500">Datenschutz</a></li>
+            <li><a href="./sitemap.xml" class="block hover:text-indigo-500">Sitemap</a></li>
+            <li><a href="./impressum.html" class="block hover:text-indigo-500">Impressum</a></li>
+            <li><a href="#" class="block hover:text-indigo-500">Datenschutz</a></li>
         </ul>
     </div>
     <div class="text-white md:col-start-4 md:col-span-2 p-5">
-        <h3 class="text-md text-gray-400">Unterstützt von:</h3>
-        <ul class="p-2 md:flex-row flex-col flex items-center h-100 mt-3">
-            <li class=" md:mt-0 md:mr-5 flex items-center" style="height: 50px;"><a href="https://thomas-rosswog.de" class="text-2xl text-center md:transform hover:translate-y-2 transition ease-in-out duration-300">Thomas Roßwog</a></li>
-            <li class="mt-5 md:mt-0 md:mr-5" style="height: 50px;"><a href="https://www.linkedin.com/in/carlo-von-reyher" class="hover:text-indigo-500"><a href="https://www.linkedin.com/in/carlo-von-reyher"><img src="./assets/Carlo_von_Reyher_Logo.svg" alt="Logo Carlo von Reyher" style="height: 48px;" class="hover:text-indigo-500 text-2xl text-center md:transform hover:translate-y-2 transition ease-in-out duration-300"></a></li>
+        <h3 class="text-xl md:text-md text-gray-400 mb-1">Unterstützt von:</h3>
+        <ul class="md:flex">
+            <li class="text-center mb-5 md:mr-10 md:transform hover:translate-y-2 transition ease-in-out duration-300"><a href="http://www.thomas-rosswog.de/" class="text-2xl">Thomas <br> Roßwog</a></li>
+            <li class="text-center mb-5 md:mr-10 md:transform hover:translate-y-2 transition ease-in-out duration-300"><a href="https://www.thg-freiburg.de" class="text-2xl">THG <br> Freiburg</a></li>
+            <li class="text-center mb-5 md:mr-10 md:transform hover:translate-y-2 transition ease-in-out duration-300 mt-2"><a href="https://vonreyher.com/linktree.html"><img src="./assets/Carlo_von_Reyher_Logo.svg" alt="Logo Carlo von Reyher" style="height: 54px;"></a></li>
         </ul>
           
     </div>
 </div>
 
     
-</main>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/ScrollTrigger.min.js"></script>
     <script src="https://unpkg.com/@barba/core"></script>

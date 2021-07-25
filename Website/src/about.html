@@ -1,19 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Live Tracking Baloon</title>
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"/>
-    <link rel="stylesheet" href="./main.css">
     <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="160">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>THG Stratoflight | THEO-1 Mission | Live Map</title>
+    <title>THG Stratoflight Agency</title>
     <link rel="stylesheet" href="./loader.css">
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="styles.css">
     <link rel="apple-touch-icon" sizes="57x57" href="./assets/icons/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="./assets/icons/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="./assets/icons/apple-icon-72x72.png">
@@ -31,36 +27,42 @@
     <meta name="msapplication-TileColor" content="#141414">
     <meta name="msapplication-TileImage" content="./assets/icons/ms-icon-144x144.png">
     <meta name="theme-color" content="#141414">
-    <meta name="description" content="Hier kann man live den Ballon der Mission verfolgen!">
-    <style>
-        /* Map */
-
-        body {
-            padding: 0;
-            margin: 0;
-            font-family: 'Roboto', sans-serif;
-        }
-        html, body, #map {
-            height: 100%;
-            width: 100vw;
-        }
-
-    </style>
+    <meta name="description" content="Das ist die Website von Stratoflight THG Space Agency, mit der THEO-1 Mission">
+    <meta name="keywords" content="space, school, THEO-1, baloon, Wetterballon, All, Stratosphere">
+    <meta name="google-site-verification" content="dOcoOsoBdpItd6QNITsgQXcXQ1YpJzveMIt4N8j59Ec" />
+    <meta property="og:title" content="THG Space Agency | THEO-1 Mission">
+    <meta property="og:description" content="We gonna go to the Edge of Space. Unser Ziel ist es mit einem Wetterballon zur Grenze des All zu fliegen.">
+    <meta property="og:image" content="http://stratoflight.thg.thomas-rosswog.de/assets/">
+    <meta property="og:url" content="http://stratoflight.thg.thomas-rosswog.de/assets/nasa-i9w4Uy1pU-s-unsplash.jpg">
+    <meta name="twitter:title" content="Film Dokumentation der THEO-1 Missoion">
+    <meta name="twitter:description" content=" We gonna go to the Edge of Space. Unser Ziel ist es mit einem Wetterballon zur Grenze des All zu fliegen.">
+    <meta name="twitter:image" content="http://stratoflight.thg.thomas-rosswog.de/assets/nasa-i9w4Uy1pU-s-unsplash.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <title>Über die THG Space Agency</title>
 </head>
-<body>
-    <div style="position: absolute; bottom: 0px; padding: 20px; background-color: aliceblue; z-index: 10000;">
-        <ul style="padding: 5px;">
-            <li><a href="./" style="padding: 3px;" class=" bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">Zurück zur Homepage</a></li>
-            <li style="padding: 3px;">
-                <h5>Letzter Baterie Status:</h5>
-                <div id="battery"></div>
-            </li>
-        </ul>
-    </div>
-    <div id="map" style="z-index: 100;"></div>
+<body data-barba="wrapper">
     
-    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
-    <script src="./map.js"></script>
-</body>
+
+    <!--(bake ../includes/header.html)-->
+
+    <main data-barba="container" data-barba-namespace="about">
+
+
+
+    </main>
+
+
+    <!--(bake ../includes/footer.html)-->
+
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/ScrollTrigger.min.js"></script>
+<script src="https://unpkg.com/@barba/core"></script>
+<script src="./mobilenavigation.js"></script>
+<script src="./loadinganimations.js"></script>
+
 </body>
 </html>
