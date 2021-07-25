@@ -96,6 +96,8 @@ module.exports = function(grunt) {
             {expand: true, cwd: 'src', src: ['**/**/**/*.ico'], dest: 'public'},
             {expand: true, cwd: 'src', src: ['**/**/**/*.xml'], dest: 'public'},
             {expand: true, cwd: 'src', src: ['**/**/**/*.js'], dest: 'public'},
+            {expand: true, cwd: 'src', src: ['**/**/**/*.jpg'], dest: 'public'},
+            {expand: true, cwd: 'src', src: ['**/**/**/*.png'], dest: 'public'},
        
           ],
         }
